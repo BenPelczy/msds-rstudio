@@ -68,3 +68,26 @@ ex_unique <- function(strex) {
 
 print(ex_unique("strings on this"))
 print(ex_unique(c(2, 3, 5, 2)))
+
+min_and_max <- function(x) {
+  max_x = max(x)
+  min_x = min(x)
+  return(c(mIN_x, max_x))
+}
+
+print(min_and_max(c(10, 20, 30, 40)))
+
+print(seq(20, 50))
+print(mean(20:60))
+print(sum(51:91))
+
+v1 = c("a", "b", "c", "d", "e", "f", "g", "h", "i", "j")
+v2 = seq(from=.1, to=1, by=.1)    
+v3 = seq(from=1, to=10)
+v4 = c(T, F, T, F, T, T, T, F, F, T)
+df <- data.frame(v1, v2, v3, v4)
+df
+
+airquality[c(3,5), c(1,3)]
+
+plot(mtcars[c("mpg", "cyl", "hp")])
