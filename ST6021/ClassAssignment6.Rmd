@@ -1,0 +1,39 @@
+---
+title: "ClassAssignment6"
+author: "Ben Pelczynski"
+date: "2024-07-23"
+output: html_document
+---
+
+```{r}
+library(tidyverse)
+life_data <- read.csv("expectancy.csv")
+
+life_data3<-select(life_data,Life.expectancy, Adult.Mortality,
+infant.deaths,HIV.AIDS,BMI, GDP,Schooling)%>%
+na.omit()
+```
+
+```{r}
+X <- as.matrix(cbind(rep(1, 151), life_data3$Adult.Mortality, life_data3$infant.deaths, life_data3$HIV.AIDS, life_data3$BMI, life_data3$GDP, life_data3$Schooling))
+X
+```
+
+```{r}
+solve(t(X)  %*% X) %*% t(X) %*% life_data3$Life.expectancy
+```
+
+```{r}
+ lm(Life.expectancy~Adult.Mortality+infant.deaths+HIV.AIDS+BMI+GDP+Schooling, data = life_data3)
+```
+
+```{r}
+bootstrap_estimates <- replicate(10000, {
+  bootstrap_samples <- life_data3[sample(1:nrow(life_data3),nrow(life_data3),
+                                       replace=TRUE),]
+  bootstrap_models <- lm(Life.expectancy~Adult.Mortality+infant.deaths+HIV.AIDS+BMI+GDP+Schooling, data = bootstrap_samples)
+  coef(bootstrap_models)
+})
+estimates <- data.frame(t(bootstrap_estimates))
+estimates
+```

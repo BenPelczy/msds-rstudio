@@ -1,0 +1,48 @@
+---
+title: "ClassAssigment5"
+author: "Ben Pelczynski"
+date: "2024-07-22"
+output: html_document
+---
+
+```{r}
+library(tidyverse)
+life_data <- read.csv("expectancy.csv")
+
+life_data2<-select(life_data,Life.expectancy, GDP)%>%
+  na.omit()
+```
+
+```{r}
+ggplot(life_data2, aes(x=GDP, y=Life.expectancy))+geom_point()+ geom_smooth(method = "lm", se=FALSE)
+```
+
+```{r}
+cor(life_data2$Life.expectancy, life_data2$GDP)
+```
+With a correlation of 0.45, and with the visualization clearly showing several incongruous data points, a linear model is not appropriate for predicting life.Expectancy.
+using GDP.
+
+```{r}
+slope <- cor(life_data2$Life.expectancy, life_data2$GDP) * sd(life_data2$Life.expectancy)/sd(life_data2$GDP)
+
+intercept <- mean(life_data2$Life.expectancy)-slope*mean(life_data2$GDP)
+
+slope
+intercept
+```
+
+```{r}
+mod<-lm(Life.expectancy~GDP, data = life_data2)
+coef(mod)
+```
+
+```{r}
+X <- as.matrix(cbind(rep(1, 154), life_data2$GDP))
+X
+```
+
+```{r}
+Y <- as.matrix(life_data2$Life.expectancy)
+solve(t(X)  %*% X) %*% t(X) %*%  Y
+```

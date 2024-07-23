@@ -1,0 +1,33 @@
+---
+title: "ClassAssignment4"
+author: "Ben Pelczynski"
+date: "2024-07-19"
+output: html_document
+---
+
+```{r}
+library(tidyverse)
+BooksData <- read.csv("Books_Data_Clean.csv")
+```
+
+```{r}
+ggplot(BooksData, aes(,x=Author_Rating,y=gross.sales, fill=Author_Rating)) + geom_boxplot()
+```
+```{r}
+ggplot(BooksData, aes(,x=Author_Rating,y=gross.sales, fill=Author_Rating)) + geom_boxplot()+ ylim(0,4000)
+```
+
+Null Hypothesis H0: the Author Rating population means are all equal
+
+Alternative Hypothesis HA: at least one Author population mean is different
+```{r}
+anova<-aov(gross.sales~Author_Rating, data=BooksData)
+summary(anova)
+```
+As the p-value 3.03e-11 < 0.05 we can with a 95% level of confidence reject the null hypothesis, and assert that the average gross sales is not the same across the four Author Ratings; at least one is different.
+```{r}
+TukeyHSD(anova,conf.level = .95)
+```
+Given the lower and upper bounds across this comparison of means (particularly I-E, N-E, and N-F), one could conclude that the top two Author Rating categories that yields higher average gross sales are Intermediate and Novice. However, this conclusion does come with the caveat that the Novice means are greatly inflated by two outlier data points; if we exclude these data points from our model, the top two Author Rating categories that yields higher average gross sales becomes inconclusive, as Famous and Excellent are too similar to separate.
+
+To investigate relationship between gross.sales and other variables (specifically whether it is linear), I would first create scatter plots (with gross.sales as the y value) to conduct a visual analysis, eliminating variables whose plot clearly do not correspond to the drawn linear model. I would then test if the residual values of the remaining scatter plots fall below to a certain threshold to definitively determine whether the relationship is linear.

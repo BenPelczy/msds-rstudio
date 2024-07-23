@@ -1,0 +1,38 @@
+---
+title: "ClassActivity2"
+author: "Ben Pelczynski"
+output: html_document
+date: "2024-07-17"
+---
+
+```{r}
+library(tidyverse)
+MarketData <- read.csv("WA_Marketing-Campaign.csv")
+Promotion3_data<-subset(MarketData, Promotion==3)
+```
+
+```{r}
+mean_calc <- function(x){
+  return(mean(x, na.rm = TRUE))
+}
+
+bootstrapped_means <- replicate(1000, {
+  bootstrapped_data <- sample(Promotion3_data$SalesInThousands, replace = TRUE)
+  mean_calc(bootstrapped_data)  
+})
+
+quantile(bootstrapped_means, c(.05, .95))
+```
+
+```{r}
+t.test(Promotion3_data$SalesInThousands)
+```
+With a 95% level of confidence, the average sale amount generated based on Promotion 3 is between 52.95 and 57.78 thousand dollars.
+
+In terms of widths, the Bootstrap test is closer with a difference of 3.81, as opposed to the t-test's difference of 4.83.
+
+```{r}
+Promotion_2_3<-subset(MarketData, Promotion==2 | Promotion==3)
+t.test(SalesInThousands~Promotion,data=Promotion_2_3)
+```
+Based on this data, Promotion 3 should be uses for the addition of the new item to the menu, as it generates approximately $8,035 more in sales on average.

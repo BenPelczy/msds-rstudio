@@ -1,0 +1,37 @@
+---
+title: "ClassActivity1"
+author: "Ben Pelczynski"
+output: html_document
+date: "2024-07-16"
+---
+
+```{r}
+library(tidyverse)
+OurData <- read.csv("ClassData.csv")
+head(OurData)
+```
+
+```{r}
+OurData2 <- OurData %>%
+  mutate(Slp = as.numeric(Sleep_Hrs)) %>%
+  mutate(Phone_Hrs = as.numeric(Phone_Time))
+head(OurData2)
+```
+
+```{r}
+ggplot(OurData2, aes(x=Phone_Hrs, y=Slp))+geom_point()
+```
+There does not appear to be a linear relationship between phone hours and sleep hours.
+```{r}
+mean_calc <- function(x){
+  return(mean(x, na.rm = TRUE))
+}
+
+bootstrapped_means <- replicate(10000, {
+  bootstrapped_data <- sample(OurData2$Phone_Hrs, replace = TRUE)
+  mean_calc(bootstrapped_data)  
+})
+
+quantile(bootstrapped_means, c(.05, .95))
+```
+With a 95% level of confidence, all UVA graduate students spend on an average of between 3.78 and 4.46 hours their phone per day.

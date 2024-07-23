@@ -1,0 +1,29 @@
+---
+title: "ClassAssignment3"
+author: "Ben Pelczynski"
+output: html_document
+date: "2024-07-18"
+---
+
+```{r}
+library(tidyverse)
+MarketData <- read.csv("WA_Marketing-Campaign.csv")
+```
+
+```{r}
+ggplot(MarketData, aes(group=Promotion,x=Promotion,y=SalesInThousands, fill=Promotion)) + geom_boxplot()
+```
+
+The best analysis to answer the research question is the Analysis of Variance (ANOVA).
+
+H0 : μ1 = μ2 = μ3 (Null Hypothesis: the Promotion population means are all equal)
+
+HA : μ1 ≠ μ2 ∨ μ1 ≠ μ3 ∨ μ2 ≠ μ3 (Alternative Hypothesis: at least one Promotion population mean is different)
+
+```{r}
+anova<-aov(SalesInThousands~as.character(Promotion),data=MarketData)
+summary(anova)
+```
+Given that the p-value = 6.77e-10 < 0.05, we can reject the null hypothesis H0; the average sales amount is the not same across all three promotions.
+
+Since the average sales are not equal, a post hoc test to investigate which promotion yields the most average sales would need to be done.
