@@ -1,0 +1,61 @@
+---
+title: "ClassAssignment11"
+author: "Ben Pelczynski"
+date: "2024-08-02"
+output: html_document
+---
+
+```{r}
+library(tidyverse)
+library(MASS)
+library(caret)
+library(car)
+library(broom)
+library(glmnet)
+life_data <- read.csv("expectancy.csv")
+life_data4<-dplyr::select(life_data,Life.expectancy, Status, Adult.Mortality,
+infant.deaths,HIV.AIDS,BMI, GDP,Schooling)%>%
+na.omit()
+```
+
+```{r}
+goodmodel <- lm(Life.expectancy~Status + Adult.Mortality + HIV.AIDS + Schooling, data=life_data4)
+summary(goodmodel)
+```
+
+The adjusted $R^2$ of the model is 0.8375.
+
+```{r}
+life_data4good <-life_data4[-c(4,6,7)]
+X<- model.matrix(Life.expectancy~0+.,data=life_data4good)
+y <- life_data4good$Life.expectancy
+ridgemodel <- glmnet(x=X, y=y, alpha = 0)
+kcvridgemodel <- cv.glmnet(x=X, y=y, alpha = 0, nfolds=10)
+kcvridgemodel$lambda.1se
+```
+
+
+```{r}
+plot(ridgemodel, label=T,xvar='lambda')+abline(v=log(kcvridgemodel$lambda.1se))
+```
+
+```{r}
+predict(ridgemodel, type="coefficient", s=kcvridgemodel$lambda.1se, newx=X[1:2,])
+```
+
+The ridge model uses the same predictors as the original model, so the adjusted $R^2$ value will be the same.
+```{r}
+lassomodel <- glmnet(x=X, y=y, alpha = 1)
+kcvlassomodel <- cv.glmnet(x=X, y=y, alpha = 1, nfolds=10)
+kcvlassomodel$lambda.1se
+```
+
+```{r}
+plot(lassomodel, label=T,xvar='lambda')+abline(v=log(kcvlassomodel$lambda.1se))
+```
+
+```{r}
+predict(lassomodel, type="coefficient", s=kcvlassomodel$lambda.1se, newx=X[1:2,])
+```
+
+The lasso model picked Adult.Mortality, HIV.AIDS, and Schooling for predicting life.Expectancy.

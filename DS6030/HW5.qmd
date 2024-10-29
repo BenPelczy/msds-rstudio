@@ -1,0 +1,294 @@
+---
+title: "Homework #5: Probability and Classification" 
+author: "**Benton Pelczynski**"
+format: ds6030hw-html
+---
+
+```{r config, include=FALSE}
+# Set global configurations and settings here
+knitr::opts_chunk$set()                 # set global chunk options
+ggplot2::theme_set(ggplot2::theme_bw()) # set ggplot2 theme
+```
+
+# Required R packages and Directories {.unnumbered .unlisted}
+
+```{r packages, message=FALSE, warning=FALSE}
+dir_data= 'https://mdporter.github.io/teaching/data/' # data directory
+library(glmnet)
+library(tidyverse) # functions for data manipulation  
+```
+
+# Crime Linkage
+
+Crime linkage attempts to determine if a set of unsolved crimes share a common offender. *Pairwise* crime linkage is the more simple task of deciding if two crimes share a common offender; it can be considered a binary classification problem. The linkage training data has 8 evidence variables that measure the similarity between a pair of crimes:
+
+-   `spatial` is the spatial distance between the crimes
+-   `temporal` is the fractional time (in days) between the crimes
+-   `tod` and `dow` are the differences in time of day and day of week between the crimes
+-   `LOC`, `POA,` and `MOA` are binary with a 1 corresponding to a match (type of property, point of entry, method of entry)
+-   `TIMERANGE` is the time between the earliest and latest possible times the crime could have occurred (because the victim was away from the house during the crime).
+-   The response variable indicates if the crimes are linked ($y=1$) or unlinked ($y=0$).
+
+These problems use the [linkage-train](%60r%20file.path(dir_data,%20%22linkage_train.csv%22)%20%60) and [linkage-test](%60r%20file.path(dir_data,%20%22linkage_test.csv%22)%20%60) datasets (click on links for data).
+
+## Load Crime Linkage Data
+
+::: {.callout-note title="Solution"}
+```{r}
+link_train <- read.csv("linkage_train.csv")
+link_test <- read.csv("linkage_test.csv")
+```
+:::
+
+# Problem 1: Penalized Regression for Crime Linkage
+
+## a. Fit a penalized *linear regression* model to predict linkage.
+
+Use an elastic net penalty (including lasso and ridge) (your choice).
+
+-   Report the value of $\alpha \in [0, 1]$ used.
+-   Report the value of $\lambda$ used.
+-   Report the estimated coefficients.
+
+::: {.callout-note title="Solution"}
+```{r}
+#-- Settings
+K = 10           # number of CV folds
+Alpha = 100      # number of simulations
+
+results <- tibble()
+set.seed(1200)
+folds = rep(1:K, length=nrow(link_train)) %>% sample()
+# iterate over a wide range of alpha values
+for(a in 1:Alpha) {
+
+  # build training model using cross-validation
+  train_link_model <- cv.glmnet(as.matrix(link_train[,!names(link_train) %in% c("y")]), link_train$y, foldid = folds, alpha=a/Alpha)
+  
+  # get lambda that minimizes cv error
+  min <- train_link_model$lambda.min
+  i <- which(train_link_model$lambda == min)
+  mse <- train_link_model$cvm[i]
+
+  # set results in tibble
+  newres = tibble(alpha = a/Alpha, lambda = min, mse)
+  results <- rbind(results, newres)
+}
+results[which.min(results$mse),]
+
+opt_result <- results[which.min(results$mse),]
+lin_final_model <- cv.glmnet(as.matrix(link_train[,!names(link_train) %in% c("y")]), link_train$y, foldid = folds, alpha=opt_result$alpha)
+coef(lin_final_model)
+```
+:::
+
+## b. Fit a penalized *logistic regression* model to predict linkage.
+
+Use an elastic net penalty (including lasso and ridge) (your choice).
+
+-   Report the value of $\alpha \in [0, 1]$ used.
+-   Report the value of $\lambda$ used.
+-   Report the estimated coefficients.
+
+::: {.callout-note title="Solution"}
+```{r}
+#-- Settings
+K = 10           # number of CV folds
+Alpha = 100      # number of simulations
+
+results <- tibble()
+set.seed(1200)
+folds = rep(1:K, length=nrow(link_train)) %>% sample()
+# iterate over a wide range of alpha values
+for(a in 1:Alpha) {
+
+  # build training model using cross-validation
+  train_link_model <- cv.glmnet(as.matrix(link_train[,!names(link_train) %in% c("y")]), link_train$y, family = "binomial", foldid = folds, alpha=a/Alpha)
+  
+  # get lambda that minimizes cv error
+  min <- train_link_model$lambda.min
+  i <- which(train_link_model$lambda == min)
+  mse <- train_link_model$cvm[i]
+
+  # set results in tibble
+  newres = tibble(alpha = a/Alpha, lambda = min, mse)
+  results <- rbind(results, newres)
+}
+results[which.min(results$mse),]
+
+opt_result <- results[which.min(results$mse),]
+log_final_model <- cv.glmnet(as.matrix(link_train[,!names(link_train) %in% c("y")]), link_train$y, family = "binomial", foldid = folds, alpha=opt_result$alpha)
+coef(log_final_model)
+```
+:::
+
+# Problem 2: Random Forest for Crime Linkage
+
+Fit a random forest model to predict crime linkage.
+
+-   Report the loss function (or splitting rule) used.
+-   Report any non-default tuning parameters.
+-   Report the variable importance (indicate which importance method was used).
+
+::: {.callout-note title="Solution"}
+```{r}
+library(ranger)
+
+
+results <- tibble()
+
+for(i in 1:6){
+  for(j in 1:10){
+    mtry = i
+    min.bucket = j
+    oob_mse = 0
+    for(x in 1:5){
+      rf_model <- ranger(y ~ ., data = link_train, importance = 'impurity',
+                         mtry = mtry, min.bucket = min.bucket, seed = i)
+      oob_mse = oob_mse + rf_model$prediction.error
+    }
+    newres = tibble(loss_function = oob_mse/5, mtry = i, min.bucket = j, importance = "impurity")
+    results <- rbind(results, newres)
+  }
+}
+results[which.min(results$loss_function),]
+
+opt_result <- results[which.min(results$loss_function),]
+rf_final_model <- ranger(y ~ ., data = link_train, importance = 'impurity',
+                         mtry = opt_result$mtry, min.bucket = opt_result$min.bucket, seed = opt_result$mtry)
+```
+:::
+
+# Problem 3: ROC Curves
+
+## a. ROC curve: training data
+
+Produce one plot that has the ROC curves, using the *training data*, for all three models (linear, logistic, and random forest). Use color and/or linetype to distinguish between models and include a legend.\
+Also report the AUC (area under the ROC curve) for each model. Again, use the *training data*.
+
+-   Note: you should be weary of being asked to evaluation predictive performance from the same data used to estimate the tuning and model parameters. The next problem will walk you through a more proper way of evaluating predictive performance with resampling.
+
+::: {.callout-note title="Solution"}
+```{r}
+library(pROC)
+
+lin_pred <- predict(lin_final_model, as.matrix(subset(link_train, select = -y)), s = log_final_model$lambda.min,type="response")
+log_pred <- predict(log_final_model, as.matrix(subset(link_train, select = -y)), s = log_final_model$lambda.min, type="response")
+rf_pred <- predict(rf_final_model, subset(link_train, select = -y), type="response")
+
+lin_roc=roc(link_train$y, lin_pred)
+log_roc=roc(link_train$y, log_pred)
+rf_roc=roc(link_train$y, rf_pred$predictions)
+ggroc(list("linear" = lin_roc, "logistic"= log_roc, "random forest" = rf_roc))+geom_abline(slope=1,intercept=1,linetype=3)
+
+lin_auc = auc(lin_roc)
+log_auc = auc(log_roc)
+rf_auc = auc(rf_roc)
+tibble(lin_auc, log_auc, rf_auc)
+```
+:::
+
+## b. ROC curve: resampling estimate
+
+Recreate the ROC curve from the penalized logistic regression (logreg) and random forest (rf) models using repeated hold-out data. The following steps will guide you:
+
+-   For logreg, use $\alpha=.75$. For rf use *mtry = 2*, *num.trees = 1000*, and fix any other tuning parameters at your choice.
+-   Run the following steps 25 times:
+    i.  Hold out 500 observations.
+    ii. Use the remaining observations to estimate $\lambda$ using 10-fold CV for the logreg model. Don't tune any rf parameters.
+    iii. Predict the probability of linkage for the 500 hold-out observations.
+    iv. Store the predictions and hold-out labels.
+    v.  Calculate the AUC.
+-   Report the mean AUC and standard error for both models. Compare to the results from part a.
+-   Produce two plots showing the 25 ROC curves for each model.
+-   Note: by estimating $\lambda$ each iteration, we are incorporating the uncertainty present in estimating that tuning parameter.
+
+::: {.callout-note title="Solution"}
+```{r}
+alpha = .75
+mtry = 2
+num.trees = 1000
+set.seed(2019)
+sum_log_auc = 0
+sum_rf_auc = 0
+sum_log_se = 0
+sum_rf_se = 0
+log_roc_list = vector("list", 25)
+rf_roc_list = vector("list", 25)
+
+
+for(i in 1:25){
+  test.ind = sample(nrow(link_train), size=500)
+  train.ind = -test.ind
+  log_model <- cv.glmnet(as.matrix(link_train[train.ind,!names(link_train) %in% c("y")]), 
+                                link_train[train.ind,]$y, family = "binomial", alpha=alpha, nfolds = 10)
+  rf_model <- ranger(y ~ ., data = link_train[train.ind,], importance = 'impurity',
+                         mtry = mtry, num.trees = num.trees)
+  
+  log_pred <- predict(log_model, as.matrix(subset(link_train[test.ind,], select = -y)), 
+                      s = log_model$lambda.min, type="response")
+  rf_pred <- predict(rf_final_model, subset(link_train[test.ind,], select = -y), type="response")
+  
+  log_roc=roc(link_train[test.ind,]$y, log_pred)
+  rf_roc=roc(link_train[test.ind,]$y, rf_pred$predictions)
+  
+  log_roc_list[[i]] = log_roc
+  rf_roc_list[[i]] = rf_roc
+  
+  sum_log_auc = sum_log_auc + auc(log_roc)
+  sum_rf_auc = sum_rf_auc + auc(rf_roc)
+  sum_log_se = sum_log_se + (sd(log_pred)/sqrt(500))
+  sum_rf_se = sum_rf_se + (sd(rf_pred$predictions)/sqrt(500))
+}
+tibble(mean_log_auc = sum_log_auc/25, mean_rf_auc = sum_rf_auc/25, 
+       mean_log_se = sum_log_se/25, mean_rf_se = sum_rf_se/25)
+
+ggroc(log_roc_list)+geom_abline(slope=1,intercept=1,linetype=3)
+ggroc(rf_roc_list)+geom_abline(slope=1,intercept=1,linetype=3)
+```
+
+In my case the mean logistic AUC via resampling is slightly lower than the logistic AUC via standard training data, and the mean random forest AUC via resampling is slightly higher than the random AUC via standard training data, but the difference appears to be mostly negligible. However, it is worth noting that the standard models received more parameter optimization than the resampling models; it is possible that the resampling models could get even higher if they were similarly tuned.
+:::
+
+# Problem 4: Contest
+
+## a. Contest Part 1: Predict the estimated *probability* of linkage.
+
+Predict the estimated *probability* of linkage for the test data (using any model).
+
+-   Submit a .csv file (ensure comma separated format) named `lastname_firstname_1.csv` that includes the column named **p** that is your estimated posterior probability. We will use automated evaluation, so the format must be exact.
+-   You are free to any model (even ones we haven't yet covered in the course).
+-   You are free to use any data transformation or feature engineering.
+-   You will receive credit for a proper submission; the top five scores will receive 2 bonus points.\
+-   Your probabilities will be evaluated with respect to the mean negative Bernoulli log-likelihood (known as the average *log-loss* metric): $$ 
+    L = - \frac{1}{M} \sum_{i=1}^m [y_i \log \, \hat{p}_i + (1 - y_i) \log \, (1 - \hat{p}_i)]
+    $$ where $M$ is the number of test observations, $\hat{p}_i$ is the prediction for the $i$th test observation, and $y_i \in \{0,1\}$ are the true test set labels.
+
+::: {.callout-note title="Solution"}
+I chose my tuned random forest model, as it produced a near-optimal ROC.
+
+```{r}
+rf_pred <- predict(rf_final_model, link_test, type="response")
+final_pred <- data.frame(rf_pred$predictions) %>% rename(p = 'rf_pred.predictions')
+write.csv(final_pred, "pelczynski_benton_1.csv")
+```
+:::
+
+## b. Contest Part 2: Predict the *linkage label*.
+
+Predict the linkages for the test data (using any model).
+
+-   Submit a .csv file (ensure comma separated format) named `lastname_firstname_2.csv` that includes the column named **linkage** that takes the value of 1 for linked pairs and 0 for unlinked pairs. We will use automated evaluation, so the format must be exact.
+-   You are free to any model (even ones we haven't yet covered in the course).
+-   You are free to use any data transformation or feature engineering.
+-   Your labels will be evaluated based on total cost, where cost is equal to `1*FP + 8*FN`. This implies that False Negatives (FN) are 8 times as costly as False Positives (FP).\
+-   You will receive credit for a proper submission; the top five scores will receive 2 bonus points. Note: you only will get bonus credit for one of the two contests.
+
+::: {.callout-note title="Solution"}
+Since False Negatives are much more costly than False Positives, I set the threshold parameter to the relatively low 0.1.
+
+```{r}
+final_pred2 <- data.frame(ifelse(final_pred >= 0.1, 1, 0)) %>% rename(linkage = 'p')
+write.csv(final_pred2, "pelczynski_benton_2.csv")
+```
+:::

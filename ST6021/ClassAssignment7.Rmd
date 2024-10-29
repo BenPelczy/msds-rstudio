@@ -1,0 +1,40 @@
+---
+title: "ClassAssignment7"
+author: "Ben Pelczynski"
+date: "2024-07-24"
+output: html_document
+---
+
+```{r}
+library(tidyverse)
+life_data <- read.csv("expectancy.csv")
+
+life_data3<-select(life_data,Life.expectancy, Adult.Mortality,
+infant.deaths,HIV.AIDS,BMI, GDP,Schooling)%>%
+na.omit()
+```
+
+```{r}
+life_data_wrap <- gather(life_data3, key="predictor", value = "value",Adult.Mortality,
+infant.deaths,HIV.AIDS,BMI, GDP,Schooling)
+ggplot(life_data_wrap, aes(x=value, y=Life.expectancy, color=predictor)) + 
+  geom_point() + facet_wrap(~predictor, scales="free_x")
+```
+
+Based on these scater plots, a linear model seems appropriate for predicting life expectancy from schooling, BMI, infant deaths, and adult mortality, but there does not appear to be as clear a linear relationship with GDP or HIV/AIDS.
+
+```{r}
+life_model <- lm(Life.expectancy~Adult.Mortality+infant.deaths+HIV.AIDS+BMI+GDP+Schooling, data = life_data3)
+life_pred <- mutate(life_data3, predictions=fitted(life_model), resid=residuals(life_model))
+
+ggplot(life_pred, aes(x=predictions, y=resid)) + geom_point() + geom_hline(yintercept = 0, color="red")
+ggplot(life_pred, aes(sample=resid))+stat_qq()+stat_qq_line(color="red")
+```
+
+Given that the predicted population seems to be evenly distributed across the residual plot (fulfilling the Independence and Equal Variance Assumptions) and normal across the QQ plot (fulfilling the Normal Population Assumption), the model does seem to meet the assumptions for a linear model.
+
+```{r}
+summary(life_data3)
+```
+
+Based on this summary, infant deaths, HIV/AIDS, and GDP might benefit from a transformation before modeling, given their great differences in their quartile distances and between their means and medians.

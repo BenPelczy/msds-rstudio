@@ -1,0 +1,51 @@
+---
+title: "ClassAssignment9"
+author: "Ben Pelczynski"
+date: "2024-07-31"
+output: html_document
+---
+
+```{r}
+library(tidyverse)
+startups <- read.csv("Startups.csv")
+```
+
+
+```{r}
+mod1 <- lm(Profit~State, data=startups)
+summary(mod1)
+```
+
+$Profit = 103905 + 14869(FloridaInd) + 9851(NewYorkInd)$
+
+```{r}
+mod2 <- lm(Profit~State+R.D.Spend, data=startups)
+summary(mod2)
+ggplot(startups, aes(x=R.D.Spend, y = Profit, color=State))+geom_jitter()+
+  geom_smooth(method="lm", model.extract(mod2), se=FALSE)
+```
+
+$Profit = 48750 + 1164(FloridaInd) + 9.597(NewYorkInd) + 0.853(R.D.Spend)$
+
+The coefficient of Florida being 1164 means that the profit of startups in Florida is on average $1164 greater than startups in California that spend the same amount on R&D.
+
+```{r}
+mod3 <- lm(Profit~State*R.D.Spend, data=startups)
+summary(mod3)
+```
+
+$Profit = 43880 + 9242(FloridaInd) + 7921(NewYorkInd) + 0.9284(R.D.Spend) - 0.1151(FloridaInd)(R.D.Spend) - 0.1153(NewYorkInd)(R.D.Spend)$
+
+The coefficient of the interaction terms being 0.1151 and 0.1153 means that the effect of increased R&D spending generates less profit, at a rate of $0.12 less, in Florida or New York compared to California.
+
+```{r}
+startups$State2 <- factor(startups$State, levels = c("Florida", "New York", "California"))
+startups$State3 <- factor(startups$State, levels = c("New York", "California", "Florida"))
+mod4 <- lm(Profit~State2, data=startups)
+summary(mod4)
+mod5 <- lm(Profit~State3, data=startups)
+summary(mod5)
+```
+
+Given the overall p-value of the model is > 0.1, even after changing
+the reference category for State, I would conclude that state is not a useful predictor of Profit.

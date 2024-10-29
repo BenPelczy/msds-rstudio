@@ -1,0 +1,77 @@
+---
+title: "Homework #7: Stacking and Boosting" 
+author: "**Benton Pelczynski**"
+format: ds6030hw-html
+---
+
+```{r config, include=FALSE}
+# Set global configurations and settings here
+knitr::opts_chunk$set()                 # set global chunk options
+ggplot2::theme_set(ggplot2::theme_bw()) # set ggplot2 theme
+```
+
+```{r packages, message=FALSE, warning=FALSE}
+dir_data= 'https://mdporter.github.io/teaching/data/' # data directory
+library(glmnet)
+library(tidymodels)
+library(tidyverse) # functions for data manipulation  
+```
+
+# Stacking for Kaggle
+
+You are to make at least one official entry in the [House Prices: Advanced Regression Techniques](https://www.kaggle.com/c/house-prices-advanced-regression-techniques/overview) Kaggle contest **using stacking or model averaging**; at least one component model must be a boosting model.
+
+-   You will need to register in Kaggle (its free)
+-   Read the details of the contest. Understand the data and evaluation function.
+-   Make at least one submission that uses **stacking or model averaging**.
+-   If you get a score on the public leaderboard of $\text{RMSE}<0.50$ (note RMSE is calculated on the log scale), you receive full credit, otherwise, you'll lose 10 points.
+    -   I'll allow [teaming](https://www.kaggle.com/c/house-prices-advanced-regression-techniques/team). Each team member can produce one component model and then use stacking or model averaging to combine predictions.
+    -   You don't need to team, but must still combine multiple models. At least one of the component models should be boosting.
+-   Each person submit the following in Canvas:
+    -   Code (if teaming, your code and the shared stacking code)
+    -   kaggle name (or team name) so we can ensure you had a valid submission.
+    -   your score and current ranking on the kaggle leaderboard
+-   Top 5 scores get 2 bonus points
+    -   Teams will split their bonus points among team members
+
+Note: Check out the [Kaggle notebooks](https://www.kaggle.com/docs/notebooks) which let you make submissions directly from the notebook. Its very similar to using Rivanna's OnDemand in that you can make a RMarkdown/Jupyter notebook or R/Python scrips that run on the cloud. Free CPU (4 cores, 30GB RAM) - amazing! Let your laptops cool off after all their hard work this semester.
+
+```{r}
+home_train <- read.csv("train.csv")
+home_test <- read.csv("test.csv")
+```
+
+```{r}
+n = 200
+p = n / nrow(home_train)
+home_split = initial_split(home_train, prop = 1 - p)
+```
+
+```{r}
+library(ranger)
+set.seed(1500)
+rf_model = ranger(SalePrice ~ ., data = as.data.frame(training(home_split), na.rm=TRUE))
+rf_pred = predict(g1, testing(home_split))$predictions
+```
+
+```{r}
+
+X = makeX(train = training(home_split) %>% select(-SalePrice),
+          test = testing(data_split) %>% select(-SalePrice),
+)
+set.seed(1500)
+glm_model = cv.glmnet(X$x, training(home_split)$SalePrice)
+glm_pred = predict(glm_mode, X$xtest, s = "lambda.min") 
+```
+
+```{r}
+
+```
+
+```{r}
+
+```
+
+```{r}
+
+```

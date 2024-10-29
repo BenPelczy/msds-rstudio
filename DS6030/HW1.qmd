@@ -1,0 +1,279 @@
+---
+title: "Homework #1: Supervised Learning"
+author: "**Ben Pelczynski**"
+format: ds6030hw-html
+---
+
+```{r config}
+#| include: false
+# Set global configurations and settings here
+knitr::opts_chunk$set()                 # set global chunk options
+ggplot2::theme_set(ggplot2::theme_bw()) # set ggplot2 theme
+```
+
+# Required R packages and Directories {.unnumbered .unlisted}
+
+```{r packages}
+#| message: false
+#| warning: false
+library(tidyverse) # functions for data manipulation
+```
+
+# Problem 1: Evaluating a Regression Model
+
+## a. Data generating functions
+
+Create a set of functions to generate data from the following distributions:
+
+```{=tex}
+\begin{align*}
+X &\sim \mathcal{N}(0, 1) \\
+Y &= -1 + .5X + .2X^2 + \epsilon \\
+\epsilon &\sim \mathcal{N}(0,\, \sigma)
+\end{align*}
+```
+::: {.callout-note title="Solution"}
+```{r}
+generate_X <- function(n){
+  X <- rnorm(n, 0, 1)
+  return (X)
+}
+
+generate_Y <- function(X, e){
+  Y <- e + .2*(X**2) + .5*X - 1
+  return (Y)
+}
+
+generate_e <- function(n, s){
+  e <- rnorm(n, 0, s)
+  return (e)
+}
+```
+:::
+
+## b. Generate training data
+
+Simulate $n=100$ realizations from these distributions using $\sigma=3$. Produce a scatterplot and draw the true regression line $f(x) = E[Y \mid X=x]$.
+
+-   Use `set.seed(611)` prior to generating the data.
+
+::: {.callout-note title="Solution"}
+```{r}
+f = function(x){
+  .2*(x**2) + .5*x - 1
+}
+
+set.seed(611)
+X <- generate_X(100)
+e <- generate_e(100, 3)
+Y <- generate_Y(X, e)
+model_data <- data.frame(X,Y,e)
+ggplot(model_data, aes(x=X,y=Y))+geom_point()+geom_function(fun=f)
+```
+:::
+
+## c. Fit three models
+
+Fit three polynomial regression models using least squares: linear, quadratic, and cubic. Produce another scatterplot, add the fitted lines and true population line $f(x)$ using different colors, and add a legend that maps the line color to a model.
+
+-   Note: The true model is quadratic, but we are also fitting linear (less complex) and cubic (more complex) models.
+
+::: {.callout-note title="Solution"}
+```{r}
+lin_model <- lm(Y~X, data = model_data)
+quad_model <- lm(Y~X+I(X**2), data = model_data)
+cub_model <- lm(Y~X+I(X**2)+I(X**3), data = model_data)
+
+
+
+ggplot(model_data, aes(x=X,y=Y))+geom_point()+geom_function(fun=f, aes(color="f(x)"))+geom_smooth(method='lm', se=FALSE, aes(color='Linear')) + geom_smooth(method='lm', formula = y~x+I(x**2), se=FALSE,  aes(color='Quadratic')) + geom_smooth(method='lm', formula = y~x+I(x**2)+I(x**3), se=FALSE,  aes(color = 'Cubic'))+scale_color_manual(name='Regression Models',breaks=c('f(x)','Linear', 'Quadratic', 'Cubic'),values=c('Cubic'='green', 'Quadratic'='blue', 'Linear'='red', 'f(x)'='black'))
+
+
+```
+:::
+
+## d. Predictive performance
+
+Generate a *test data* set of 10,000 observations from the same distributions. Use `set.seed(612)` prior to generating the test data.
+
+-   Calculate the estimated mean squared error (MSE) for each model.
+-   Are the results as expected?
+
+::: {.callout-note title="Solution"}
+```{r}
+set.seed(612)
+test_X <- generate_X(10000)
+test_e <- generate_e(10000, 3)
+test_Y <- generate_Y(test_X, test_e)
+test_data <- data.frame(X=test_X,Y=test_Y,e=test_e)
+
+lin_predictions <- predict(lin_model, test_data)
+lin_mse <- mean((lin_predictions - test_data$Y)^2)
+lin_mse
+
+quad_predictions <- predict(quad_model, test_data)
+quad_mse <- mean((quad_predictions - test_data$Y)^2)
+quad_mse
+
+cub_predictions <- predict(cub_model, test_data)
+cub_mse <- mean((cub_predictions - test_data$Y)^2)
+cub_mse
+```
+
+The results are not as expected given prior knowledge that the true model is quadratic (meaning the quadratic model should have the least MSE, not the linear model). However, observing the fitted lines of the scatter plot, we can see that the linear model is overall closest to the true f(x), and so the results are as expected for this instance of the training data.
+:::
+
+## e. Optimal performance
+
+What is the best achievable MSE? That is, what is the MSE if the true $f(x)$ was used to evaluate the test set? How close does the best method come to achieving the optimum?
+
+::: {.callout-note title="Solution"}
+```{r}
+true_mse <- mean((f(test_data$X) - test_data$Y)^2)
+true_mse
+```
+
+The best achievable MSE is 8.97, so while the best method MSE (9.29) is relatively high, it does come fairly close (within one standard deviation) to the optimum.
+:::
+
+## f. Replication
+
+The MSE scores obtained in part *d* came from one realization of training data. Here will we explore how much variation there is in the MSE scores by replicating the simulation many times.
+
+-   Re-run parts b. and c. (i.e., generate training data and fit models) 100 times.
+    -   Do not generate new testing data
+    -   Use `set.seed(613)` prior to running the simulation and do not set the seed in any other places.
+-   Calculate the test MSE for all simulations.
+    -   Use the same test data from part d. (This question is only about the variability that comes from the *training data*).
+-   Create kernel density or histogram plots of the resulting MSE values for each model.
+
+::: {.callout-note title="Solution"}
+```{r}
+set.seed(613)
+replication_MSE <- function(n, test_data){
+   mse_data = data.frame(lin_mse=double(), quad_mse=double(),cub_mse=double())
+   col_names <- names(mse_data)
+   for (x in 1:n) {
+     X <- generate_X(100)
+     e <- generate_e(100, 3)
+     Y <- generate_Y(X, e)
+     model_data <- data.frame(X,Y,e)
+     
+     lin_model <- lm(Y~X, data = model_data)
+     quad_model <- lm(Y~X+I(X**2), data = model_data)
+     cub_model <- lm(Y~X+I(X**2)+I(X**3), data = model_data)
+     
+     lin_predictions <- predict(lin_model, test_data)
+     lin_mse <- mean((lin_predictions - test_data$Y)^2)
+     quad_predictions <- predict(quad_model, test_data)
+     quad_mse <- mean((quad_predictions - test_data$Y)^2)
+     cub_predictions <- predict(cub_model, test_data)
+     cub_mse <- mean((cub_predictions - test_data$Y)^2)
+     mse_data <- rbind(mse_data, c(lin_mse, quad_mse,cub_mse))
+   }
+   names(mse_data) <- col_names
+   return (mse_data)
+}
+
+mse_data <- replication_MSE(100, test_data)
+ggplot(mse_data, aes(x=lin_mse))+geom_density()
+ggplot(mse_data, aes(x=quad_mse))+geom_density()
+ggplot(mse_data, aes(x=cub_mse))+geom_density()
+```
+:::
+
+## g. Best model
+
+Show a count of how many times each model was the best. That is, out of the 100 simulations, count how many times each model had the lowest MSE.
+
+::: {.callout-note title="Solution"}
+```{r}
+lowest_counts <- table(unlist(as.matrix(apply(mse_data,1,which.min))))
+names(lowest_counts) <- names(mse_data)
+lowest_counts
+```
+:::
+
+## h. Function to implement simulation
+
+Write a function that implements the simulation in part *f*. The function should have arguments for i) the size of the training data $n$, ii) the standard deviation of the random error $\sigma$, and iii) the test data. Use the same `set.seed(613)`.
+
+::: {.callout-note title="Solution"}
+```{r}
+mse_simulation <- function(n, s, test_data) {
+   set.seed(613)
+   mse_data = data.frame(lin_mse=double(), quad_mse=double(),cub_mse=double())
+   col_names <- names(mse_data)
+   for (x in 1:100) {
+     X <- generate_X(n)
+     e <- generate_e(n, s)
+     Y <- generate_Y(X, e)
+     model_data <- data.frame(X,Y,e)
+     
+     lin_model <- lm(Y~X, data = model_data)
+     quad_model <- lm(Y~X+I(X**2), data = model_data)
+     cub_model <- lm(Y~X+I(X**2)+I(X**3), data = model_data)
+     
+     lin_predictions <- predict(lin_model, test_data)
+     lin_mse <- mean((lin_predictions - test_data$Y)^2)
+     quad_predictions <- predict(quad_model, test_data)
+     quad_mse <- mean((quad_predictions - test_data$Y)^2)
+     cub_predictions <- predict(cub_model, test_data)
+     cub_mse <- mean((cub_predictions - test_data$Y)^2)
+     mse_data <- rbind(mse_data, c(lin_mse, quad_mse,cub_mse))
+   }
+   names(mse_data) <- col_names
+   return (mse_data)
+}
+```
+:::
+
+## i. Performance when $\sigma=2$
+
+Use your function to repeat the simulation in part *f*, but use $\sigma=2$. Report the number of times each model was best (you do not need to produce any plots).
+
+-   Be sure to generate new test data with ($n = 10000$, $\sigma = 2$, using `seed = 612`).
+
+::: {.callout-note title="Solution"}
+```{r}
+set.seed(612)
+test_X2 <- generate_X(10000)
+test_e2 <- generate_e(10000, 2)
+test_Y2 <- generate_Y(test_X2, test_e2)
+test_data2 <- data.frame(X=test_X2,Y=test_Y2,e=test_e2)
+
+mse_data2 <- mse_simulation(100, 2, test_data2)
+lowest_counts2 <- table(unlist(as.matrix(apply(mse_data2,1,which.min))))
+names(lowest_counts2) <- names(mse_data2)
+lowest_counts2
+```
+:::
+
+## j. Performance when $\sigma=4$ and $n=300$
+
+Repeat *i*, but now use $\sigma=4$ and $n=300$.
+
+-   Be sure to generate new test data with ($n = 10000$, $\sigma = 4$, using `seed = 612`).
+
+::: {.callout-note title="Solution"}
+```{r}
+set.seed(612)
+test_X4 <- generate_X(10000)
+test_e4 <- generate_e(10000, 4)
+test_Y4 <- generate_Y(test_X4, test_e4)
+test_data4 <- data.frame(X=test_X4,Y=test_Y4,e=test_e4)
+
+mse_data4 <- mse_simulation(300, 4, test_data4)
+lowest_counts4 <- table(unlist(as.matrix(apply(mse_data4,1,which.min))))
+names(lowest_counts4) <- names(mse_data4)
+lowest_counts4
+```
+:::
+
+## k. Understanding
+
+Describe the effects $\sigma$ and $n$ has on selection of the best model? Why is the *true* model form (i.e., quadratic) not always the *best* model to use when prediction is the goal?
+
+::: {.callout-note title="Solution"}
+Increasing $n$ significantly increases the likelihood that the true model form will be selected, with more complex model forms (i.e. cubic) also slightly increasing in likelihood and less complex model forms (i.e. linear) significantly decreasing in likelihood. This is because the increased amount of training data makes the overall function shape more. Inversely, increasing $\sigma$ significantly decreases the likelihood that the true model form will be selected, with more complex model forms decreasing in likelihood and less complex model forms increasing in likelihood. This makes sense, since increasing $\sigma$ increases the amount of error, and thus pulls data points further away from the true function line. It is because of this error that the true model form not always the best model to use for predicting based on a given data set.
+:::

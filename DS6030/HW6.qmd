@@ -1,0 +1,143 @@
+---
+title: "Homework #6: SVM and Calibration" 
+author: "**Benton Pelczynski**"
+format: ds6030hw-html
+---
+
+```{r config, include=FALSE}
+# Set global configurations and settings here
+knitr::opts_chunk$set()                 # set global chunk options
+ggplot2::theme_set(ggplot2::theme_bw()) # set ggplot2 theme
+```
+
+# Required R packages and Directories {.unnumbered .unlisted}
+
+```{r packages, message=FALSE, warning=FALSE}
+dir_data= 'https://mdporter.github.io/teaching/data/' # data directory
+library(tidyverse)  # functions for data manipulation  
+```
+
+# COMPAS Recidivism Prediction
+
+A recidivism risk model called COMPAS was the topic of a [ProPublica article](https://www.propublica.org/article/machine-bias-risk-assessments-in-criminal-sentencing/) on ML bias. Because the data and notebooks used for article was released on [github](https://github.com/propublica/compas-analysis), we can also evaluate the prediction bias (i.e., calibration).
+
+This code will read in the *violent crime* risk score and apply the filtering used in the [analysis](https://github.com/propublica/compas-analysis/blob/master/Compas%20Analysis.ipynb).
+
+```{r, message=FALSE}
+#| code-fold: true
+library(tidyverse)
+df = read_csv("https://raw.githubusercontent.com/propublica/compas-analysis/master/compas-scores-two-years-violent.csv")
+
+risk = df %>% 
+  filter(days_b_screening_arrest <= 30) %>%
+  filter(days_b_screening_arrest >= -30) %>% 
+  filter(is_recid != -1) %>%
+  filter(c_charge_degree != "O") %>%
+  filter(v_score_text != 'N/A') %>% 
+  transmute(
+    age, age_cat,
+    charge = ifelse(c_charge_degree == "F", "Felony", "Misdemeanor"),
+    race,
+    sex,                 
+    priors_count = priors_count...15,
+    score = v_decile_score,              # the risk score {1,2,...,10}
+    outcome = two_year_recid...53        # outcome {1 = two year recidivate}
+  )
+```
+
+The `risk` data frame has the relevant information for completing the problems.
+
+# Problem 1: COMPAS risk score
+
+## a. Risk Score and Probability (table)
+
+Assess the predictive bias in the COMPAS risk scores by evaluating the probability of recidivism, e.g. estimate $\Pr(Y = 1 \mid \text{Score}=x)$. Use any reasonable techniques (including Bayesian) to estimate the probability of recidivism for each risk score.
+
+Specifically, create a table (e.g., data frame) that provides the following information:
+
+-   The COMPASS risk score.
+-   The point estimate of the probability of recidivism for each risk score.
+-   95% confidence or credible intervals for the probability (e.g., Using normal theory, bootstrap, or Bayesian techniques).
+
+Indicate the choices you made in estimation (e.g., state the prior if you used Bayesian methods).
+
+::: {.callout-note title="Solution"}
+I chose to use the Jeffreys interval formula, with the prior of $Beta(0.5, 0.5)$, for the 95% credible interval estimation.
+
+```{r}
+pos = aggregate(risk$outcome, by=list(risk$score), FUN=sum)
+risk_prob = data.frame(table(risk$score)) %>%
+  mutate(low_CI = qbeta(0.025, pos$x + 0.5, Freq - pos$x + 0.5)) %>%
+  mutate(high_CI = qbeta(0.975, pos$x + 0.5, Freq - pos$x+ 0.5)) %>%
+  mutate(Freq = pos$x/Freq) %>%
+  rename(risk_score = Var1, point_estimate = Freq)
+
+risk_prob
+```
+:::
+
+## b. Risk Score and Probability (plot)
+
+Make a plot of the risk scores and corresponding estimated probability of recidivism.
+
+-   Put the risk score on the x-axis and estimate probability of recidivism on y-axis.
+-   Add the 95% confidence or credible intervals calculated in part a.
+-   Comment on the patterns you see.
+
+::: {.callout-note title="Solution"}
+```{r}
+ggplot(risk_prob, aes(x=risk_score, y=point_estimate)) + geom_pointrange(aes(ymin=low_CI, ymax=high_CI))
+```
+
+Overall the estimated probability of recidivism compared to risk scores roughly matches expectations; the higher the risk score, the more likely the subject is to recidivate. The major exception is risk scores 3, 4, and 5, which are almost identical; this suggests that there isn't actually much difference in this low-to-mid range, and what separates these scores is ultimately arbitrary. Additionally, the highest risk scores have a very large about of variance in their 95% credible interval (which probably explains why, according to point estimate, 9s are more likely to recidivate than 10s), suggesting that more data would need to be collected on these high-risk subjects to present an accurate likelihood of their recidivism.
+:::
+
+## c. Risk Score and Probability (by race)
+
+Repeat the analysis, but this time do so for every race. Produce a set of plots (one per race) and comment on the patterns.
+
+::: {.callout-note title="Solution"}
+```{r}
+data.frame(table(risk$race))
+for(i in data.frame(table(risk$race))$Var1){
+  race_risk = filter(risk, risk$race == i)
+  pos = aggregate(race_risk$outcome, by=list(race_risk$score), FUN=sum)
+  risk_prob = data.frame(table(race_risk$score)) %>%
+    mutate(low_CI = qbeta(0.025, pos$x + 0.5, Freq - pos$x + 0.5)) %>%
+    mutate(high_CI = qbeta(0.975, pos$x + 0.5, Freq - pos$x+ 0.5)) %>%
+    mutate(Freq = pos$x/Freq) %>%
+    rename(risk_score = Var1, point_estimate = Freq)
+  
+  print(risk_prob)
+  print(ggplot(risk_prob, aes(x=risk_score, y=point_estimate)) + geom_pointrange(aes(ymin=low_CI, ymax=high_CI))+ggtitle(i))
+}
+  
+```
+
+Looking at these graphs, an immediate problem that presents itself is a imbalance of sampling across races. Most notably, the Asian and Native American samples are completely ineffective at presenting any sort of accurate probability of recidivism, only having one or two samples (if any) per risk score; the Hispanic and Other samples do not fare much better for anything beyond the lowest risk scores. In fact, that only the African American sample has a large enough size to produce anything resembling a precise estimation across all risk scores suggests serious issues in the data collection, the risk score assesment, and possibly the social factors underpinning the collection of that data.
+:::
+
+## d. ROC Curves
+
+Use the raw COMPAS risk scores to make a ROC curve for each race.
+
+-   Are the best discriminating models the ones you expected?
+-   Are the ROC curves helpful in evaluating the COMPAS risk score?
+
+::: {.callout-note title="Solution"}
+```{r}
+library(pROC)
+roc_list = list()
+for(i in data.frame(table(risk$race))$Var1){
+  risk_roc=roc(filter(risk, race==i)$outcome, filter(risk, race==i)$score)
+  roc_list[[i]] = risk_roc
+}
+ggroc(roc_list)+geom_abline(slope=1,intercept=1,linetype=3)
+```
+
+Unsurprisingly, the most discriminating ROC curves are those with the smallest associated sample size, i.e. the ones that are most overfit by the model. The other curves are much less overfit, but also not quite satisfactory in their ability to identify, with (as expected) the possible exception of the African American sample. Overall, like with the estimation plots, there would need to be more and better balanced data for the ROC curves to be useful in evaluating the model.
+:::
+
+# Problem 2: Support Vector Machines (SVM)
+
+Focus on Problem 1, we won't have an SVM problem this week.

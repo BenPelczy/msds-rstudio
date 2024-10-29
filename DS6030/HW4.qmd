@@ -1,0 +1,166 @@
+---
+title: "Homework #4: Trees and Random Forest" 
+author: "**Benton Pelczynski**"
+format: ds6030hw-html
+---
+
+::: {style="background-color:yellow; color:red; display: block; border-color: black; padding:1em"}
+This is an **independent assignment**. Do not discuss or work with classmates.
+:::
+
+```{r config, include=FALSE}
+# Set global configurations and settings here
+knitr::opts_chunk$set()                 # set global chunk options
+ggplot2::theme_set(ggplot2::theme_bw()) # set ggplot2 theme
+```
+
+# Required R packages and Directories {.unnumbered .unlisted}
+
+```{r packages, message=FALSE, warning=FALSE}
+data_dir = 'https://mdporter.github.io/teaching/data/' # data directory
+library(tidyverse)    # functions for data manipulation  
+library(ranger)       # fast random forest implementation
+library(modeldata)    # for the ames housing data
+```
+
+# Problem 1: Tree splitting metrics for classification
+
+Consider the Gini index, classification error, and entropy impurity measures in a simple classification setting with two classes.
+
+Create a single plot that displays each of these quantities as a function of $p_m$, the estimated probability of an observation in node $m$ being from class 1. The x-axis should display $p_m$, ranging from 0 to 1, and the y-axis should display the value of the Gini index, classification error, and entropy.
+
+::: {.callout-note title="Solution"}
+```{r}
+gini = function(x) {1 - ((x**2 + (1-x)**2))}
+error = function(x) {1 - pmax(c(x), c(1-x))}
+entropy = function(x) {(x * log(1/x)) + ((1-x) * log(1/(1-x)))}
+
+ggplot(data.frame(x=c(0, 1)), aes(x=x)) + geom_function(fun=gini, aes(colour = "Gini Index")) + geom_function(fun=error, aes(colour = "Classification Error")) + geom_function(fun=entropy, aes(colour = "Entropy")) + scale_colour_manual("Impurity Measures", values = c("red", "blue", "green")) + xlab("p_m") + ylab("value")
+```
+:::
+
+# Problem 2: Combining bootstrap estimates
+
+```{r, echo=FALSE}
+p_red = c(0.2, 0.25, 0.3, 0.4, 0.4, 0.45, 0.7, 0.85, 0.9, 0.9)
+```
+
+Suppose we produce ten bootstrapped samples from a data set containing red and green classes. We then apply a classification tree to each bootstrapped sample and, for a specific value of $X$, produce the following 10 estimates of $\Pr(\text{Class is Red} \mid X=x)$: $\{`r stringr::str_c(p_red, sep=", ")`\}$.
+
+## a. Majority Vote
+
+ISLR 8.2 describes the *majority vote* approach for making a hard classification from a set of bagged classifiers. What is the final classification for this example using majority voting?
+
+::: {.callout-note title="Solution"}
+Given that the number of samples with $p_{red} < 0.5$ is 6, and the number of samples with $p_{red} > 0.5$ is 4, the majority of samples have the highest probability of belonging to the green class, and so by majority vote the final classification for this example is green.
+:::
+
+## b. Average Probability
+
+An alternative is to base the final classification on the average probability. What is the final classification for this example using average probability?
+
+::: {.callout-note title="Solution"}
+```{r}
+sum(p_red)/10
+```
+
+The average sample probability for $p_{red} = 0.535 > 0.5$, and thus by average probability the final classification for this example is red.
+:::
+
+# Problem 3: Random Forest Tuning
+
+Random forest has several tuning parameters that you will explore in this problem. We will use the `ames` housing data from the `modeldata` R package.
+
+There are several R packages for Random Forest. The `ranger::ranger()` function is much faster than `randomForest::randomForest()` so we will use this one.
+
+## a. Random forest (`ranger`) tuning parameters
+
+List all of the random forest tuning parameters in the `ranger::ranger()` function. You don't need to list the parameters related to computation, special models (e.g., survival, maxstat), or anything that won't impact the predictive performance.
+
+Indicate the tuning parameters you think will be most important to optimize?
+
+::: {.callout-note title="Solution"}
+-   num.trees: Number of trees.
+
+-   mtry: Number of variables to possibly split at in each node.
+
+-   min.bucket: Minimal terminal node size; no nodes smaller than this value can occur.
+
+-   max.depth: Maximal tree depth.
+
+-   sample.fraction: Fraction of observations to sample.
+
+-   split.select.weights: Numeric vector with weights between 0 and 1, used to calculate the probability to select variables for splitting.
+
+-   regularization.factor: Regularization factor (aka gain penalization).
+
+The primary tuning parameters for Random Forest models are variety (controlled by the number of predictors evaluated at each split) and complexity (controlled by the minimum number of observations in the nodes and/or the depth size) - therefore, the most important parameters to optimize are mtry, min.bucket, and max.depth. num.trees is also an important tuning parameter, but only insofar as it should be as large as possible.
+:::
+
+## b. Implement Random Forest
+
+Use a random forest model to predict the sales price, `Sale_Price`. Use the default parameters and report the 10-fold cross-validation RMSE (square root of mean squared error).
+
+::: {.callout-note title="Solution"}
+```{r}
+set.seed(221)
+fold = sample(rep(1:10, length=100))
+results = vector("list", 10)
+rf_mse = 0
+
+for(j in 1:10){
+  val = which(fold == j) 
+  train = which(fold != j)
+  train_data = slice(ames, train)
+  test_data = slice(ames, val)
+  
+  rf_model <- ranger(Sale_Price ~ ., data = train_data)
+  rf_pred <- predict(rf_model, test_data)
+  rf_mse = rf_mse + mean((rf_pred$predictions - test_data$Sale_Price)^2)
+}
+
+sqrt(rf_mse/10)
+```
+:::
+
+## c. Random Forest Tuning
+
+Now we will vary the tuning parameters of `mtry` and `min.bucket` to see what effect they have on performance.
+
+-   Use a range of reasonable `mtry` and `min.bucket` values.
+    -   The valid `mtry` values are $\{1,2, \ldots, p\}$ where $p$ is the number of predictor variables. However the default value of `mtry = sqrt(p) =` `r sqrt(ncol(ames)-1) %>% floor()` is usually close to optimal, so you may want to focus your search around those values.
+    -   The default `min.bucket=1` will grow deep trees. This will usually work best if there are enough trees. But try some values larger and see how it impacts predictive performance.
+    -   Set `num.trees=1000`, which is larger than the default of 500.
+-   Use 5 times repeated out-of-bag (OOB) to assess performance. That is, run random forest 5 times for each tuning set, calculate the OOB MSE each time and use the average for the MSE associated with the tuning parameters.
+-   Use a single plot to show the average MSE as a function of `mtry` and `min.bucket`.
+-   Report the best tuning parameter combination.
+-   Note: random forest is a stochastic model; it will be different every time it runs due to the bootstrap sampling and random selection of features to consider for splitting. Set the random seed to control the uncertainty associated with the stochasticity.
+-   Hint: If you use the `ranger` package, the `prediction.error` element in the output is the OOB MSE.
+
+::: {.callout-note title="Solution"}
+```{r}
+set.seed(551)
+results <- tibble()
+
+for(i in 1:16){
+  for(j in 1:10){
+    mtry = i
+    min.bucket = j
+    oob_mse = 0
+    for(x in 1:5){
+      rf_model <- ranger(Sale_Price ~ ., data = ames, 
+                         mtry = mtry, min.bucket = min.bucket, 
+                         num.trees = 1000)
+      oob_mse = oob_mse + rf_model$prediction.error
+    }
+    newres = tibble(oob_mse = oob_mse/5, mtry = i, min.bucket = j)
+    results <- rbind(results, newres)
+  }
+}
+
+ggplot(results, aes(x=mtry,y=oob_mse,fill=factor(min.bucket)))+ geom_bar(stat="identity",position="dodge")
+results[which.min(results$oob_mse),]
+```
+
+The best tuning parameter combination from the selected ranges, given by OOB MSE, is mtry = 15 and min.bucket = 1; however, while it is clear from the graph that min.bucket = 1 is optimal for any given mtry, the suboptimality for any mtry beyond mtry = 6 is mostly negligible.
+:::

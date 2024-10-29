@@ -1,0 +1,50 @@
+---
+title: "ClassAssignment8"
+author: "Ben Pelczynski"
+date: "2024-07-25"
+output: html_document
+---
+
+```{r}
+library(tidyverse)
+library(ggcorrplot)
+library(car)
+credit_data <- read.csv("credit_data.csv")
+```
+
+
+```{r}
+cor_mat <- cor(credit_data[2:7])
+ggcorrplot(cor_mat, lab=TRUE, type="lower")
+```
+
+Based on this matrix plot, there are issues of multicollinearity with Limit and Rating specifically having a 1-to-1 correlation (much greater than the threshold of 0.8).
+```{r}
+model <- lm(Balance~Income+Limit+Rating+Cards+Age+Education, data = credit_data)
+vif(model)
+```
+
+Based on this VIF statement, we will rebuild the model without Rating, the variable with the highest VIF.
+```{r}
+model <- lm(Balance~Income+Limit+Cards+Age+Education, data = credit_data)
+vif(model)
+```
+
+All VIFs fall into acceptable parameters in the the rebuilt model.
+
+```{r}
+new_data <- data.frame(Income = c(175, 48, 100, 134, 89), 
+                       Limit = c(9000, 2500, 5500, 10000, 7800), 
+                       Cards = c(2, 4, 7, 1, 6), 
+                       Age = c(33, 44, 68, 50, 100), 
+                       Education = c(18, 13, 15, 17, 19))
+predict(model, newdata = new_data, interval = "prediction", level = .95)
+```
+
+We can say with a 95% level of confidence that a Balance, given the reasonable values I inserted, would fall between the lwr and upr limits given by the prediction model. For example, a 68-year old with 7 cards, a credit limit of 5500, an income of \$100k, and an education level of 15, would have a balance between \$63.21 and \$715.61.
+```{r}
+predict(model, newdata = new_data, interval = "confidence", level = .95)
+
+```
+
+We can say with a 95% level of confidence that the mean Balance of population, given the reasonable values I inserted, would fall between the lwr and upr limits given by the prediction model. For example, the population of a 68-year olds with 7 cards, a credit limit of 5500, an income of \$100k, and an education level of 15, would have an average balance between \$326.64 and \$452.18.

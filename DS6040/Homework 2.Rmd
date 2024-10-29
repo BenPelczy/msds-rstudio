@@ -1,0 +1,261 @@
+---
+title: "Homework 2: Prior and Data"
+author: "Ben Pelczynski"
+date: "2024-10-05"
+output: html_document
+---
+
+```{r}
+library(tidyverse) 
+wine_data <- read.csv("whitewine-training-ds6040.csv")
+head(wine_data)
+```
+
+# Part 1
+
+```{r}
+ggplot(wine_data) + geom_density(aes(x=citric.acid), color="gold") + geom_density(aes(x=pH), color="purple") + geom_vline(xintercept = mean(wine_data$citric.acid), color="red") + geom_vline(xintercept = median(wine_data$citric.acid), color="red", linetype = 2) + geom_vline(xintercept = mean(wine_data$pH), color="blue") + geom_vline(xintercept = median(wine_data$pH), color="blue", linetype = 2)
+mean(wine_data$citric.acid)
+mean(wine_data$pH)
+```
+
+For both predictors, the density plots do appear to be slightly right skewed. This is demonstrated by the fact that the means and medians of the predictors are to the right of their modes. It is also worth noting that both predictors have their means very close to one another, and very close to 0.
+
+### 1.
+
+```{r}
+#Normal likelihood with known variance
+n = nrow(wine_data)
+acidM <- mean(wine_data$citric.acid)
+pHM <- mean(wine_data$pH)
+acidV <- var(wine_data$citric.acid)
+pHV <- var(wine_data$pH)
+
+#Uninformative prior will be N(0, 100^2)
+UPM <- 0
+UPV <- 100**2
+
+uninf_acid_post <- tibble(mean = (UPM/UPV + sum(wine_data$citric.acid)/acidV)/(1/UPV + n/acidV), 
+                          var = 1/(1/UPV + n/acidV))
+uninf_pH_post <- tibble(mean = (UPM/UPV + sum(wine_data$pH)/pHV)/(1/UPV + n/pHV), 
+                          var = 1/(1/UPV + n/pHV))
+inf_acid_post <- tibble(mean = (acidM/acidV + sum(wine_data$citric.acid)/acidV)/(1/acidV + n/acidV), 
+                          var = 1/(1/acidV + n/acidV))
+inf_pH_post <- tibble(mean = (pHM/pHV + sum(wine_data$pH)/pHV)/(1/pHV + n/pHV), 
+                          var = 1/(1/pHV + n/pHV))
+uninf_acid_post
+inf_acid_post
+
+uninf_pH_post
+inf_pH_post
+```
+
+### 2.
+
+Though very small, there is some difference between the posteriors using uninformative priors, and posteriors using informative priors, suggesting that hyperparameter choices do have a slight impact on the posterior distributions. Furthermore, while the posterior means have a greater difference between the variable choice than they do between the hyperparameter choice, the difference in variance between an uninformed posterior and an informed posterior is greater than the difference between posteriors of different variables. This indicates that it is possible to chose "bad" hyperparameters, as inferring and using incorrect informative priors can skew the posterior (or at least its variance) in a way that observed data cannot completely recover.
+
+### 1.
+
+```{r}
+#Exponential likelihood
+n = nrow(wine_data)
+
+
+#Uninformative prior will be Gamma(0.0001, 0.0001)
+UPA <- 0.0001
+UPB <- 0.0001
+
+acidA <-(mean(wine_data$citric.acid)**2)/var(wine_data$citric.acid)
+acidB <- mean(wine_data$citric.acid)/var(wine_data$citric.acid)
+pHA <- (mean(wine_data$pH)**2)/var(wine_data$pH)
+pHB <- mean(wine_data$pH)/var(wine_data$pH)
+
+uninf_acid_post <- tibble(alpha = UPA + n, 
+                          beta = UPB + sum(wine_data$citric.acid))
+uninf_pH_post <- tibble(alpha = UPA + n, 
+                          beta = UPB + sum(wine_data$pH))
+inf_acid_post <- tibble(alpha = acidA + n, 
+                          beta = acidB + sum(wine_data$citric.acid))
+inf_pH_post <- tibble(alpha = pHA + n, 
+                          beta = pHB + sum(wine_data$pH))
+uninf_acid_post
+inf_acid_post
+uninf_pH_post
+inf_pH_post
+```
+
+### 2.
+
+In this case, $\beta$ is essentially equal to the given prior, and while $\alpha$ is mostly determined by $n$, since $n$ is constant across all parameters any variation to $\alpha$ is determined by the prior. Therefore, what prior is chosen (and whether that prior is informative or non-informative) is vital to determining the posterior.
+
+### 3.
+
+```{r}
+uninf_acid_post <- uninf_acid_post %>% mutate(mean = uninf_acid_post$alpha/uninf_acid_post$beta, 
+                          var = uninf_acid_post$alpha/(uninf_acid_post$beta**2))
+uninf_pH_post <- uninf_pH_post %>% mutate(mean = uninf_pH_post$alpha/uninf_pH_post$beta, 
+                          var = uninf_pH_post$alpha/(uninf_pH_post$beta**2))
+inf_acid_post <- inf_acid_post %>% mutate(mean = inf_acid_post$alpha/inf_acid_post$beta, 
+                          var = inf_acid_post$alpha/(inf_acid_post$beta**2))
+inf_pH_post <- inf_pH_post %>% mutate(mean = inf_pH_post$alpha/inf_pH_post$beta, 
+                          var = inf_pH_post$alpha/(inf_pH_post$beta**2))
+
+uninf_acid_post
+inf_acid_post
+uninf_pH_post
+inf_pH_post
+```
+
+The mean and variance of the Gamma distribution posterior is vastly different from the mean and variance of the Normal distribution posterior, because the Gamma distribution posterior has a different formula and places much greater weight on different parameters (e.g. $n$).
+
+# Part 2
+
+### 1.
+
+Given the posterior distribution formula $Dirichlet(\alpha + \pmb{n})$, where $\alpha$ is a vector of numbers applied to each category, the best way to interpret $\alpha$ is the weight given to each category.
+
+### 2.
+
+```{r}
+library(dirmult)
+n <- nrow(wine_data)
+
+UA <- c(1, 1, 1)
+IA <- c(nrow(filter(wine_data, wine_quality == 'A'))/n, 
+        nrow(filter(wine_data, wine_quality == 'C'))/n, 
+        nrow(filter(wine_data, wine_quality == 'F'))/n)
+qual_count <- c(nrow(filter(wine_data, wine_quality == 'A')), 
+                nrow(filter(wine_data, wine_quality == 'C')), 
+                nrow(filter(wine_data, wine_quality == 'F'))) 
+
+uninf_dich <- data.frame(rdirichlet(1000, UA + qual_count)) %>% 
+  rename(A = 'X1', C = 'X2', F = 'X3')
+inf_dich <- data.frame(rdirichlet(1000, IA + qual_count)) %>% 
+  rename(A = 'X1', C = 'X2', F = 'X3')
+
+head(uninf_dich)
+head(inf_dich)
+```
+
+### 3.
+
+```{r}
+uninf_dich_box <- pivot_longer(uninf_dich, cols = c(A, C, F))
+ggplot(data = uninf_dich_box, aes(x=name, y=value)) + geom_boxplot() + ggtitle("Uninformative Priors") + xlab("wine_quality") + ylab("Posterior Value")
+
+inf_dich_box <- pivot_longer(inf_dich, cols = c(A, C, F))
+ggplot(data = inf_dich_box, aes(x=name, y=value)) + geom_boxplot() + ggtitle("Informative Priors") + xlab("wine_quality") + ylab("Posterior Value")
+```
+
+### 4.
+
+The difference between uninformative and informative priors is very small, and overall the distribution of the wine_quality groups is nearly identical, but comparing the box plots side-by-side we can distinctly see that the variance of the posterior values within the group is slightly tighter with informative priors than it is with uninformative priors. This suggests that informative priors gives a more well-defined posterior distribution.
+
+# Part 3
+
+### 1.
+
+```{r}
+A_wine <- filter(wine_data, wine_quality == 'A')
+F_wine <- filter(wine_data, wine_quality == 'F')
+
+nA = nrow(A_wine)
+nF = nrow(F_wine)
+varA <- var(A_wine$alcohol)
+varF <- var(F_wine$alcohol)
+meanA <- mean(A_wine$alcohol)
+meanF <- mean(F_wine$alcohol)
+
+#Uninformative prior will be N(0, 100^2)
+UPM <- 0
+UPV <- 100**2
+```
+
+### 2.
+
+```{r}
+uninf_A_post <- tibble(mean = (UPM/UPV + sum(A_wine$alcohol)/varA)/(1/UPV + nA/varA), 
+                          var = 1/(1/UPV + nA/varA))
+uninf_F_post <- tibble(mean = (UPM/UPV + sum(F_wine$alcohol)/varF)/(1/UPV + nF/varF), 
+                          var = 1/(1/UPV + nF/varF))
+inf_A_post <- tibble(mean = (meanA/varA + sum(A_wine$alcohol)/varA)/(1/varA + nA/varA), 
+                          var = 1/(1/varA + nA/varA))
+inf_F_post <- tibble(mean = (meanF/varF + sum(F_wine$alcohol)/varF)/(1/varF + nF/varF), 
+                          var = 1/(1/varF + nF/varF))
+uninf_A_post
+inf_A_post
+
+uninf_F_post
+inf_F_post
+```
+
+### 3.
+
+```{r}
+uninf_dif_post <- tibble(mean = uninf_A_post$mean - uninf_F_post$mean, var = uninf_A_post$var + uninf_F_post$var)
+inf_dif_post <-  tibble(mean = inf_A_post$mean - inf_F_post$mean, var = inf_A_post$var + inf_F_post$var)
+
+uninf_dif_post
+inf_dif_post
+```
+
+### 4.
+
+```{r}
+uninf_HDI <- tibble(lower = qnorm(0.025, mean = uninf_dif_post$mean, sd = uninf_dif_post$var),
+                   upper = qnorm(0.975, mean = uninf_dif_post$mean, sd = uninf_dif_post$var))
+inf_HDI <- tibble(lower = qnorm(0.025, mean = inf_dif_post$mean, sd = inf_dif_post$var),
+                   upper = qnorm(0.975, mean = inf_dif_post$mean, sd = inf_dif_post$var))
+
+uninf_HDI
+inf_HDI
+```
+
+This interval is relatively small, suggesting that there is not much variance in the difference in alcohol quantity between A-grade wines and F-grade wines; in other words, the difference in alcohol quantity is clearly defined and consistent across the observations. Therefore, as different grades of wine have clearly different alcohol quantities, we can consider the difference in alcohol content to be significant. While this is true for both the uninformative and informative prior, the bounds of the informative prior are slightly tighter (and thus more significant), which is consistent with the behavior observed in the earlier boxplots.
+
+# Extra Credit
+
+### 1.
+
+```{r}
+library(rstan)
+rstan_options(auto_write = TRUE)
+
+uninf_dat_list = list(nA = nA, A_wine = A_wine$alcohol, nF = nF, F_wine = F_wine$alcohol)
+inf_dat_list = list(nA = nA, A_wine = A_wine$alcohol, nF = nF, F_wine = F_wine$alcohol,
+                      pA_mu = meanA, pA_sigma = varA, pF_mu = meanF, pF_sigma = varF)
+
+uninf_results = stan(
+  file = "H2EC_UnInf.stan", 
+  data = uninf_dat_list)
+summary(uninf_results)$summary
+
+inf_results = stan(
+  file = "H2EC_Inf.stan", 
+  data = inf_dat_list)
+summary(inf_results)$summary
+```
+
+### 2.
+
+```{r}
+uninf_post <- data.frame(extract(uninf_results))
+inf_post <- data.frame(extract(inf_results))
+diff_post <- tibble(uninf_mean = uninf_post$diff_mu, inf_mean = inf_post$diff_mu) %>% 
+  rename(uninformed = 'uninf_mean', informed = 'inf_mean')
+
+diff_box <- pivot_longer(diff_post, cols = c(uninformed, informed))
+
+ggplot(data = diff_box, aes(x=name, y=value)) + geom_boxplot() + xlab("Prior") + ylab("Posterial Difference Mean")
+```
+
+### 3.
+
+```{r}
+mean(diff_post$uninformed)
+mean(diff_post$informed)
+sd(diff_post$uninformed)
+sd(diff_post$informed)
+```
+
+The posterior distributions of the differences in the means seems to be slightly larger than those with known variance, though otherwise the models seem largely similar. However, the effect of uninformative versus informative priors (where the bounds of the informative prior are slightly tighter than that of the uninformative prior) is consistent between both models.

@@ -1,0 +1,70 @@
+---
+title: "ClassAssignment10"
+author: "Ben Pelczynski"
+date: "2024-08-01"
+output: html_document
+---
+
+```{r}
+library(tidyverse)
+library(MASS)
+library(caret)
+library(car)
+library(broom)
+life_data <- read.csv("expectancy.csv")
+life_data4 <- dplyr::select(life_data,Life.expectancy, Status, Adult.Mortality,
+infant.deaths,HIV.AIDS,BMI, GDP,Schooling)%>%
+na.omit()
+```
+
+```{r}
+inimodel <- lm(Life.expectancy~., data=life_data4)
+summary(inimodel)
+```
+```{r}
+aic <- stepAIC(inimodel, direction = "both")
+vif(aic)
+```
+
+```{r}
+goodmodel <- lm(Life.expectancy~Status + Adult.Mortality + HIV.AIDS + Schooling, data=life_data4)
+summary(goodmodel)
+```
+
+```{r}
+control <- trainControl(method = "cv", number = 10)
+cvmodel <- train(Life.expectancy~Status + Adult.Mortality + HIV.AIDS + Schooling, method="lm", trControl= control, data=life_data4)
+print(cvmodel$results$RMSE)
+```
+
+```{r}
+pred <- predict(goodmodel, life_data4[1,])
+life_data4[1,]$Life.expectancy - pred
+```
+
+
+```{r}
+diagnostics <- goodmodel %>%
+  augment(data=life_data4)
+newdata <- filter(diagnostics, .cooksd<=4/nrow(life_data4))[-c(1, 10:15)]
+newdata
+```
+
+
+```{r}
+goodmodel2 <- lm(Life.expectancy~Status + Adult.Mortality + HIV.AIDS + Schooling, data=newdata)
+summary(goodmodel2)
+```
+
+```{r}
+cv2model <- train(Life.expectancy~Status + Adult.Mortality + HIV.AIDS + Schooling, method="lm", trControl= control, data=newdata)
+cv2model$results$RMSE
+```
+
+
+```{r}
+pred <- predict(goodmodel2, newdata[1,])
+newdata[1,]$Life.expectancy - pred
+```
+
+In this case the residual on the prediction sample with the updated model is actually higher than it was with the original model: this demonstrates that although the model might be better overall (as seen by the 10-fold cv RMSE), individual datapoints may be less accurate.

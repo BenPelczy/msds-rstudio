@@ -1,0 +1,56 @@
+---
+title: "ClassAssignment12"
+author: "Ben Pelczynski"
+date: "2024-08-05"
+output: html_document
+---
+
+```{r}
+library(tidyverse)
+library(pls)
+base <- drop_na(read.csv("Baseball.csv"))
+```
+
+PCR is preferable over OLS regression in this case because there are a large number of predictors, and thus a high risk of multicollinearity with OLS.
+
+```{r}
+pca <- princomp(base[-c(1,15,16,21)], cor=T, fix_sign = T)
+
+biplot(pca)
+```
+
+
+```{r}
+pcareg <- pcr(Salary~., data=base[-c(1,15,16,21)],scale=T)
+summary(pcareg)
+```
+
+
+```{r}
+pca_data <- data.frame(Salary = base$Salary, Scores=pca$scores)
+pca_linr <- lm(Salary~Scores.Comp.1+Scores.Comp.2+Scores.Comp.3, data = pca_data)
+summary(pca_linr)
+```
+
+The $R^2$ value is 0.4909, and the adjusted $R^2$ value is 0.485.
+
+```{r}
+pca_data <- data.frame(Salary = base$Salary, Scores=pca$scores)
+pca_linr <- lm(Salary~Scores.Comp.1+Scores.Comp.2+Scores.Comp.3+Scores.Comp.4+Scores.Comp.5+Scores.Comp.6+Scores.Comp.7+Scores.Comp.8+Scores.Comp.9+Scores.Comp.10, data = pca_data)
+summary(pca_linr)
+```
+
+The $R^2$ value and the adjusted $R^2$ value are both 0.9994.
+
+```{r}
+new_dat=base[-c(1,15,16,21)][c(1,2),]
+predict(pcareg, new_dat, ncomp=3)
+```
+
+
+```{r}
+new_dat=base[-c(1,15,16,21)][c(1,2),]
+predict(pcareg, new_dat, ncomp=10)
+```
+
+Unlike PCR, Lasso regression can perform feature selection by setting their coefficients equal to 0, which is useful if there are multiple unhelpful features in the dataset.
