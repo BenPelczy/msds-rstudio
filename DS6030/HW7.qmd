@@ -36,40 +36,68 @@ You are to make at least one official entry in the [House Prices: Advanced Regre
 
 Note: Check out the [Kaggle notebooks](https://www.kaggle.com/docs/notebooks) which let you make submissions directly from the notebook. Its very similar to using Rivanna's OnDemand in that you can make a RMarkdown/Jupyter notebook or R/Python scrips that run on the cloud. Free CPU (4 cores, 30GB RAM) - amazing! Let your laptops cool off after all their hard work this semester.
 
+**Team name: Ben Pelczynski**
+
+**Score: 0.13411**
+
+**Leaderboard Position: 1249**
+
 ```{r}
 home_train <- read.csv("train.csv")
 home_test <- read.csv("test.csv")
 ```
 
 ```{r}
-n = 200
+X = makeX(home_train %>% select(-SalePrice), home_test, na.impute = TRUE)
+
+home_train <- data.frame(X$x) %>% mutate(SalePrice = home_train$SalePrice)
+home_test <- data.frame(X$xtest)
+```
+
+```{r}
+n = 365
 p = n / nrow(home_train)
 home_split = initial_split(home_train, prop = 1 - p)
 ```
 
 ```{r}
 library(ranger)
+
 set.seed(1500)
-rf_model = ranger(SalePrice ~ ., data = as.data.frame(training(home_split), na.rm=TRUE))
-rf_pred = predict(g1, testing(home_split))$predictions
+rf_model = ranger(SalePrice ~ ., data = training(home_split))
+rf_pred = predict(rf_model, testing(home_split))$predictions
 ```
 
 ```{r}
-
-X = makeX(train = training(home_split) %>% select(-SalePrice),
-          test = testing(data_split) %>% select(-SalePrice),
-)
 set.seed(1500)
-glm_model = cv.glmnet(X$x, training(home_split)$SalePrice)
-glm_pred = predict(glm_mode, X$xtest, s = "lambda.min") 
+glm_model1 = cv.glmnet(as.matrix(training(home_split)[,!names(training(home_split)) %in% c("SalePrice")]), training(home_split)$SalePrice, alpha=0)
+glm_pred1 = predict(glm_model1, as.matrix(testing(home_split)[,!names(testing(home_split)) %in% c("SalePrice")]), s = "lambda.min")
 ```
 
 ```{r}
-
+set.seed(1500)
+glm_model2 = cv.glmnet(as.matrix(training(home_split)[,!names(training(home_split)) %in% c("SalePrice")]), training(home_split)$SalePrice, alpha=1)
+glm_pred2 = predict(glm_model2, as.matrix(testing(home_split)[,!names(testing(home_split)) %in% c("SalePrice")]), s = "lambda.min")
 ```
 
 ```{r}
+stack_data = testing(home_split) %>% mutate(rf_pred, glm_pred1 = data.frame(glm_pred1)$lambda.min, glm_pred2 = data.frame(glm_pred2)$lambda.min)
+stack_model = lm(SalePrice ~ rf_pred + glm_pred1 + glm_pred2, data = stack_data)
+summary(stack_model)
+```
 
+```{r}
+rf_pred = predict(rf_model, home_test)$predictions
+glm_pred1 = predict(glm_model1, as.matrix(home_test), s = "lambda.min")
+glm_pred2 = predict(glm_model2, as.matrix(home_test), s = "lambda.min")
+
+stack_data_final = data.frame(rf_pred, glm_pred1 = data.frame(glm_pred1)$lambda.min, glm_pred2 = data.frame(glm_pred2)$lambda.min)
+final_pred = data.frame(home_test$Id, predict(stack_model, stack_data_final))
+```
+
+```{r}
+final_pred <- final_pred %>% rename(Id = 'home_test.Id', SalePrice = 'predict.stack_model..stack_data_final.')
+write.csv(final_pred, "pelczynski_benton_final.csv", row.names = FALSE)
 ```
 
 ```{r}

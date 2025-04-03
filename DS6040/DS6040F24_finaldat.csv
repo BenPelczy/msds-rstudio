@@ -1,0 +1,4201 @@
+user_id,week,day_of_week,time_of_day,gender,age,nationality,MinPerBlock
+1,1,Sunday,Morning,Male,42,Carthaginian,112
+1,1,Sunday,Midday,Male,42,Carthaginian,95
+1,1,Sunday,Evening,Male,42,Carthaginian,98
+1,1,Monday,Morning,Male,42,Carthaginian,0
+1,1,Monday,Midday,Male,42,Carthaginian,0
+1,1,Monday,Evening,Male,42,Carthaginian,129
+1,1,Tuesday,Morning,Male,42,Carthaginian,136
+1,1,Tuesday,Midday,Male,42,Carthaginian,0
+1,1,Tuesday,Evening,Male,42,Carthaginian,108
+1,1,Wednesday,Morning,Male,42,Carthaginian,78
+1,1,Wednesday,Midday,Male,42,Carthaginian,0
+1,1,Wednesday,Evening,Male,42,Carthaginian,0
+1,1,Thursday,Morning,Male,42,Carthaginian,144
+1,1,Thursday,Midday,Male,42,Carthaginian,104
+1,1,Thursday,Evening,Male,42,Carthaginian,110
+1,1,Friday,Morning,Male,42,Carthaginian,190
+1,1,Friday,Midday,Male,42,Carthaginian,229
+1,1,Friday,Evening,Male,42,Carthaginian,150
+1,1,Saturday,Morning,Male,42,Carthaginian,146
+1,1,Saturday,Midday,Male,42,Carthaginian,196
+1,1,Saturday,Evening,Male,42,Carthaginian,170
+1,2,Sunday,Morning,Male,42,Carthaginian,70
+1,2,Sunday,Midday,Male,42,Carthaginian,0
+1,2,Sunday,Evening,Male,42,Carthaginian,0
+1,2,Monday,Morning,Male,42,Carthaginian,0
+1,2,Monday,Midday,Male,42,Carthaginian,0
+1,2,Monday,Evening,Male,42,Carthaginian,129
+1,2,Tuesday,Morning,Male,42,Carthaginian,65
+1,2,Tuesday,Midday,Male,42,Carthaginian,91
+1,2,Tuesday,Evening,Male,42,Carthaginian,123
+1,2,Wednesday,Morning,Male,42,Carthaginian,75
+1,2,Wednesday,Midday,Male,42,Carthaginian,119
+1,2,Wednesday,Evening,Male,42,Carthaginian,0
+1,2,Thursday,Morning,Male,42,Carthaginian,131
+1,2,Thursday,Midday,Male,42,Carthaginian,104
+1,2,Thursday,Evening,Male,42,Carthaginian,89
+1,2,Friday,Morning,Male,42,Carthaginian,217
+1,2,Friday,Midday,Male,42,Carthaginian,119
+1,2,Friday,Evening,Male,42,Carthaginian,183
+1,2,Saturday,Morning,Male,42,Carthaginian,206
+1,2,Saturday,Midday,Male,42,Carthaginian,230
+1,2,Saturday,Evening,Male,42,Carthaginian,73
+2,1,Sunday,Morning,Female,69,Carthaginian,219
+2,1,Sunday,Midday,Female,69,Carthaginian,0
+2,1,Sunday,Evening,Female,69,Carthaginian,0
+2,1,Monday,Morning,Female,69,Carthaginian,0
+2,1,Monday,Midday,Female,69,Carthaginian,261
+2,1,Monday,Evening,Female,69,Carthaginian,326
+2,1,Tuesday,Morning,Female,69,Carthaginian,0
+2,1,Tuesday,Midday,Female,69,Carthaginian,151
+2,1,Tuesday,Evening,Female,69,Carthaginian,111
+2,1,Wednesday,Morning,Female,69,Carthaginian,183
+2,1,Wednesday,Midday,Female,69,Carthaginian,217
+2,1,Wednesday,Evening,Female,69,Carthaginian,0
+2,1,Thursday,Morning,Female,69,Carthaginian,0
+2,1,Thursday,Midday,Female,69,Carthaginian,124
+2,1,Thursday,Evening,Female,69,Carthaginian,73
+2,1,Friday,Morning,Female,69,Carthaginian,406
+2,1,Friday,Midday,Female,69,Carthaginian,377
+2,1,Friday,Evening,Female,69,Carthaginian,164
+2,1,Saturday,Morning,Female,69,Carthaginian,135
+2,1,Saturday,Midday,Female,69,Carthaginian,252
+2,1,Saturday,Evening,Female,69,Carthaginian,236
+2,2,Sunday,Morning,Female,69,Carthaginian,0
+2,2,Sunday,Midday,Female,69,Carthaginian,158
+2,2,Sunday,Evening,Female,69,Carthaginian,147
+2,2,Monday,Morning,Female,69,Carthaginian,0
+2,2,Monday,Midday,Female,69,Carthaginian,251
+2,2,Monday,Evening,Female,69,Carthaginian,162
+2,2,Tuesday,Morning,Female,69,Carthaginian,133
+2,2,Tuesday,Midday,Female,69,Carthaginian,0
+2,2,Tuesday,Evening,Female,69,Carthaginian,242
+2,2,Wednesday,Morning,Female,69,Carthaginian,212
+2,2,Wednesday,Midday,Female,69,Carthaginian,0
+2,2,Wednesday,Evening,Female,69,Carthaginian,140
+2,2,Thursday,Morning,Female,69,Carthaginian,0
+2,2,Thursday,Midday,Female,69,Carthaginian,0
+2,2,Thursday,Evening,Female,69,Carthaginian,0
+2,2,Friday,Morning,Female,69,Carthaginian,0
+2,2,Friday,Midday,Female,69,Carthaginian,168
+2,2,Friday,Evening,Female,69,Carthaginian,194
+2,2,Saturday,Morning,Female,69,Carthaginian,279
+2,2,Saturday,Midday,Female,69,Carthaginian,197
+2,2,Saturday,Evening,Female,69,Carthaginian,0
+3,1,Sunday,Morning,Male,39,First Nations,138
+3,1,Sunday,Midday,Male,39,First Nations,0
+3,1,Sunday,Evening,Male,39,First Nations,124
+3,1,Monday,Morning,Male,39,First Nations,0
+3,1,Monday,Midday,Male,39,First Nations,0
+3,1,Monday,Evening,Male,39,First Nations,124
+3,1,Tuesday,Morning,Male,39,First Nations,0
+3,1,Tuesday,Midday,Male,39,First Nations,207
+3,1,Tuesday,Evening,Male,39,First Nations,146
+3,1,Wednesday,Morning,Male,39,First Nations,0
+3,1,Wednesday,Midday,Male,39,First Nations,83
+3,1,Wednesday,Evening,Male,39,First Nations,0
+3,1,Thursday,Morning,Male,39,First Nations,0
+3,1,Thursday,Midday,Male,39,First Nations,0
+3,1,Thursday,Evening,Male,39,First Nations,50
+3,1,Friday,Morning,Male,39,First Nations,176
+3,1,Friday,Midday,Male,39,First Nations,260
+3,1,Friday,Evening,Male,39,First Nations,121
+3,1,Saturday,Morning,Male,39,First Nations,0
+3,1,Saturday,Midday,Male,39,First Nations,120
+3,1,Saturday,Evening,Male,39,First Nations,0
+3,2,Sunday,Morning,Male,39,First Nations,0
+3,2,Sunday,Midday,Male,39,First Nations,59
+3,2,Sunday,Evening,Male,39,First Nations,59
+3,2,Monday,Morning,Male,39,First Nations,174
+3,2,Monday,Midday,Male,39,First Nations,0
+3,2,Monday,Evening,Male,39,First Nations,0
+3,2,Tuesday,Morning,Male,39,First Nations,181
+3,2,Tuesday,Midday,Male,39,First Nations,196
+3,2,Tuesday,Evening,Male,39,First Nations,0
+3,2,Wednesday,Morning,Male,39,First Nations,67
+3,2,Wednesday,Midday,Male,39,First Nations,67
+3,2,Wednesday,Evening,Male,39,First Nations,0
+3,2,Thursday,Morning,Male,39,First Nations,0
+3,2,Thursday,Midday,Male,39,First Nations,0
+3,2,Thursday,Evening,Male,39,First Nations,94
+3,2,Friday,Morning,Male,39,First Nations,0
+3,2,Friday,Midday,Male,39,First Nations,186
+3,2,Friday,Evening,Male,39,First Nations,168
+3,2,Saturday,Morning,Male,39,First Nations,192
+3,2,Saturday,Midday,Male,39,First Nations,0
+3,2,Saturday,Evening,Male,39,First Nations,134
+4,1,Sunday,Morning,Female,106,Roman,178
+4,1,Sunday,Midday,Female,106,Roman,270
+4,1,Sunday,Evening,Female,106,Roman,196
+4,1,Monday,Morning,Female,106,Roman,239
+4,1,Monday,Midday,Female,106,Roman,232
+4,1,Monday,Evening,Female,106,Roman,151
+4,1,Tuesday,Morning,Female,106,Roman,192
+4,1,Tuesday,Midday,Female,106,Roman,233
+4,1,Tuesday,Evening,Female,106,Roman,216
+4,1,Wednesday,Morning,Female,106,Roman,283
+4,1,Wednesday,Midday,Female,106,Roman,108
+4,1,Wednesday,Evening,Female,106,Roman,145
+4,1,Thursday,Morning,Female,106,Roman,191
+4,1,Thursday,Midday,Female,106,Roman,224
+4,1,Thursday,Evening,Female,106,Roman,308
+4,1,Friday,Morning,Female,106,Roman,0
+4,1,Friday,Midday,Female,106,Roman,313
+4,1,Friday,Evening,Female,106,Roman,292
+4,1,Saturday,Morning,Female,106,Roman,244
+4,1,Saturday,Midday,Female,106,Roman,357
+4,1,Saturday,Evening,Female,106,Roman,204
+4,2,Sunday,Morning,Female,106,Roman,176
+4,2,Sunday,Midday,Female,106,Roman,176
+4,2,Sunday,Evening,Female,106,Roman,221
+4,2,Monday,Morning,Female,106,Roman,310
+4,2,Monday,Midday,Female,106,Roman,0
+4,2,Monday,Evening,Female,106,Roman,273
+4,2,Tuesday,Morning,Female,106,Roman,240
+4,2,Tuesday,Midday,Female,106,Roman,338
+4,2,Tuesday,Evening,Female,106,Roman,337
+4,2,Wednesday,Morning,Female,106,Roman,182
+4,2,Wednesday,Midday,Female,106,Roman,0
+4,2,Wednesday,Evening,Female,106,Roman,0
+4,2,Thursday,Morning,Female,106,Roman,0
+4,2,Thursday,Midday,Female,106,Roman,0
+4,2,Thursday,Evening,Female,106,Roman,0
+4,2,Friday,Morning,Female,106,Roman,299
+4,2,Friday,Midday,Female,106,Roman,0
+4,2,Friday,Evening,Female,106,Roman,217
+4,2,Saturday,Morning,Female,106,Roman,334
+4,2,Saturday,Midday,Female,106,Roman,243
+4,2,Saturday,Evening,Female,106,Roman,252
+5,1,Sunday,Morning,Female,49,Carthaginian,145
+5,1,Sunday,Midday,Female,49,Carthaginian,0
+5,1,Sunday,Evening,Female,49,Carthaginian,246
+5,1,Monday,Morning,Female,49,Carthaginian,0
+5,1,Monday,Midday,Female,49,Carthaginian,124
+5,1,Monday,Evening,Female,49,Carthaginian,154
+5,1,Tuesday,Morning,Female,49,Carthaginian,0
+5,1,Tuesday,Midday,Female,49,Carthaginian,98
+5,1,Tuesday,Evening,Female,49,Carthaginian,185
+5,1,Wednesday,Morning,Female,49,Carthaginian,0
+5,1,Wednesday,Midday,Female,49,Carthaginian,76
+5,1,Wednesday,Evening,Female,49,Carthaginian,156
+5,1,Thursday,Morning,Female,49,Carthaginian,129
+5,1,Thursday,Midday,Female,49,Carthaginian,164
+5,1,Thursday,Evening,Female,49,Carthaginian,180
+5,1,Friday,Morning,Female,49,Carthaginian,151
+5,1,Friday,Midday,Female,49,Carthaginian,0
+5,1,Friday,Evening,Female,49,Carthaginian,270
+5,1,Saturday,Morning,Female,49,Carthaginian,164
+5,1,Saturday,Midday,Female,49,Carthaginian,229
+5,1,Saturday,Evening,Female,49,Carthaginian,200
+5,2,Sunday,Morning,Female,49,Carthaginian,0
+5,2,Sunday,Midday,Female,49,Carthaginian,182
+5,2,Sunday,Evening,Female,49,Carthaginian,193
+5,2,Monday,Morning,Female,49,Carthaginian,129
+5,2,Monday,Midday,Female,49,Carthaginian,0
+5,2,Monday,Evening,Female,49,Carthaginian,339
+5,2,Tuesday,Morning,Female,49,Carthaginian,0
+5,2,Tuesday,Midday,Female,49,Carthaginian,0
+5,2,Tuesday,Evening,Female,49,Carthaginian,174
+5,2,Wednesday,Morning,Female,49,Carthaginian,0
+5,2,Wednesday,Midday,Female,49,Carthaginian,127
+5,2,Wednesday,Evening,Female,49,Carthaginian,126
+5,2,Thursday,Morning,Female,49,Carthaginian,0
+5,2,Thursday,Midday,Female,49,Carthaginian,110
+5,2,Thursday,Evening,Female,49,Carthaginian,0
+5,2,Friday,Morning,Female,49,Carthaginian,191
+5,2,Friday,Midday,Female,49,Carthaginian,246
+5,2,Friday,Evening,Female,49,Carthaginian,232
+5,2,Saturday,Morning,Female,49,Carthaginian,258
+5,2,Saturday,Midday,Female,49,Carthaginian,283
+5,2,Saturday,Evening,Female,49,Carthaginian,0
+6,1,Sunday,Morning,Male,42,Atlantian,165
+6,1,Sunday,Midday,Male,42,Atlantian,131
+6,1,Sunday,Evening,Male,42,Atlantian,113
+6,1,Monday,Morning,Male,42,Atlantian,0
+6,1,Monday,Midday,Male,42,Atlantian,0
+6,1,Monday,Evening,Male,42,Atlantian,119
+6,1,Tuesday,Morning,Male,42,Atlantian,259
+6,1,Tuesday,Midday,Male,42,Atlantian,126
+6,1,Tuesday,Evening,Male,42,Atlantian,108
+6,1,Wednesday,Morning,Male,42,Atlantian,0
+6,1,Wednesday,Midday,Male,42,Atlantian,157
+6,1,Wednesday,Evening,Male,42,Atlantian,0
+6,1,Thursday,Morning,Male,42,Atlantian,76
+6,1,Thursday,Midday,Male,42,Atlantian,58
+6,1,Thursday,Evening,Male,42,Atlantian,0
+6,1,Friday,Morning,Male,42,Atlantian,0
+6,1,Friday,Midday,Male,42,Atlantian,247
+6,1,Friday,Evening,Male,42,Atlantian,216
+6,1,Saturday,Morning,Male,42,Atlantian,164
+6,1,Saturday,Midday,Male,42,Atlantian,253
+6,1,Saturday,Evening,Male,42,Atlantian,184
+6,2,Sunday,Morning,Male,42,Atlantian,156
+6,2,Sunday,Midday,Male,42,Atlantian,0
+6,2,Sunday,Evening,Male,42,Atlantian,140
+6,2,Monday,Morning,Male,42,Atlantian,187
+6,2,Monday,Midday,Male,42,Atlantian,138
+6,2,Monday,Evening,Male,42,Atlantian,0
+6,2,Tuesday,Morning,Male,42,Atlantian,219
+6,2,Tuesday,Midday,Male,42,Atlantian,88
+6,2,Tuesday,Evening,Male,42,Atlantian,0
+6,2,Wednesday,Morning,Male,42,Atlantian,166
+6,2,Wednesday,Midday,Male,42,Atlantian,207
+6,2,Wednesday,Evening,Male,42,Atlantian,103
+6,2,Thursday,Morning,Male,42,Atlantian,207
+6,2,Thursday,Midday,Male,42,Atlantian,121
+6,2,Thursday,Evening,Male,42,Atlantian,158
+6,2,Friday,Morning,Male,42,Atlantian,386
+6,2,Friday,Midday,Male,42,Atlantian,164
+6,2,Friday,Evening,Male,42,Atlantian,230
+6,2,Saturday,Morning,Male,42,Atlantian,168
+6,2,Saturday,Midday,Male,42,Atlantian,70
+6,2,Saturday,Evening,Male,42,Atlantian,136
+7,1,Sunday,Morning,Female,104,Holy Roman,263
+7,1,Sunday,Midday,Female,104,Holy Roman,153
+7,1,Sunday,Evening,Female,104,Holy Roman,0
+7,1,Monday,Morning,Female,104,Holy Roman,301
+7,1,Monday,Midday,Female,104,Holy Roman,125
+7,1,Monday,Evening,Female,104,Holy Roman,0
+7,1,Tuesday,Morning,Female,104,Holy Roman,0
+7,1,Tuesday,Midday,Female,104,Holy Roman,134
+7,1,Tuesday,Evening,Female,104,Holy Roman,0
+7,1,Wednesday,Morning,Female,104,Holy Roman,231
+7,1,Wednesday,Midday,Female,104,Holy Roman,0
+7,1,Wednesday,Evening,Female,104,Holy Roman,0
+7,1,Thursday,Morning,Female,104,Holy Roman,0
+7,1,Thursday,Midday,Female,104,Holy Roman,0
+7,1,Thursday,Evening,Female,104,Holy Roman,0
+7,1,Friday,Morning,Female,104,Holy Roman,190
+7,1,Friday,Midday,Female,104,Holy Roman,260
+7,1,Friday,Evening,Female,104,Holy Roman,277
+7,1,Saturday,Morning,Female,104,Holy Roman,184
+7,1,Saturday,Midday,Female,104,Holy Roman,473
+7,1,Saturday,Evening,Female,104,Holy Roman,0
+7,2,Sunday,Morning,Female,104,Holy Roman,217
+7,2,Sunday,Midday,Female,104,Holy Roman,0
+7,2,Sunday,Evening,Female,104,Holy Roman,0
+7,2,Monday,Morning,Female,104,Holy Roman,244
+7,2,Monday,Midday,Female,104,Holy Roman,0
+7,2,Monday,Evening,Female,104,Holy Roman,268
+7,2,Tuesday,Morning,Female,104,Holy Roman,133
+7,2,Tuesday,Midday,Female,104,Holy Roman,373
+7,2,Tuesday,Evening,Female,104,Holy Roman,375
+7,2,Wednesday,Morning,Female,104,Holy Roman,118
+7,2,Wednesday,Midday,Female,104,Holy Roman,0
+7,2,Wednesday,Evening,Female,104,Holy Roman,0
+7,2,Thursday,Morning,Female,104,Holy Roman,323
+7,2,Thursday,Midday,Female,104,Holy Roman,0
+7,2,Thursday,Evening,Female,104,Holy Roman,257
+7,2,Friday,Morning,Female,104,Holy Roman,138
+7,2,Friday,Midday,Female,104,Holy Roman,0
+7,2,Friday,Evening,Female,104,Holy Roman,307
+7,2,Saturday,Morning,Female,104,Holy Roman,0
+7,2,Saturday,Midday,Female,104,Holy Roman,291
+7,2,Saturday,Evening,Female,104,Holy Roman,398
+8,1,Sunday,Morning,Female,52,First Nations,0
+8,1,Sunday,Midday,Female,52,First Nations,149
+8,1,Sunday,Evening,Female,52,First Nations,0
+8,1,Monday,Morning,Female,52,First Nations,0
+8,1,Monday,Midday,Female,52,First Nations,245
+8,1,Monday,Evening,Female,52,First Nations,131
+8,1,Tuesday,Morning,Female,52,First Nations,189
+8,1,Tuesday,Midday,Female,52,First Nations,0
+8,1,Tuesday,Evening,Female,52,First Nations,0
+8,1,Wednesday,Morning,Female,52,First Nations,0
+8,1,Wednesday,Midday,Female,52,First Nations,156
+8,1,Wednesday,Evening,Female,52,First Nations,138
+8,1,Thursday,Morning,Female,52,First Nations,0
+8,1,Thursday,Midday,Female,52,First Nations,123
+8,1,Thursday,Evening,Female,52,First Nations,0
+8,1,Friday,Morning,Female,52,First Nations,164
+8,1,Friday,Midday,Female,52,First Nations,117
+8,1,Friday,Evening,Female,52,First Nations,232
+8,1,Saturday,Morning,Female,52,First Nations,290
+8,1,Saturday,Midday,Female,52,First Nations,282
+8,1,Saturday,Evening,Female,52,First Nations,221
+8,2,Sunday,Morning,Female,52,First Nations,0
+8,2,Sunday,Midday,Female,52,First Nations,0
+8,2,Sunday,Evening,Female,52,First Nations,0
+8,2,Monday,Morning,Female,52,First Nations,0
+8,2,Monday,Midday,Female,52,First Nations,0
+8,2,Monday,Evening,Female,52,First Nations,127
+8,2,Tuesday,Morning,Female,52,First Nations,0
+8,2,Tuesday,Midday,Female,52,First Nations,0
+8,2,Tuesday,Evening,Female,52,First Nations,0
+8,2,Wednesday,Morning,Female,52,First Nations,0
+8,2,Wednesday,Midday,Female,52,First Nations,0
+8,2,Wednesday,Evening,Female,52,First Nations,0
+8,2,Thursday,Morning,Female,52,First Nations,124
+8,2,Thursday,Midday,Female,52,First Nations,0
+8,2,Thursday,Evening,Female,52,First Nations,156
+8,2,Friday,Morning,Female,52,First Nations,360
+8,2,Friday,Midday,Female,52,First Nations,279
+8,2,Friday,Evening,Female,52,First Nations,373
+8,2,Saturday,Morning,Female,52,First Nations,195
+8,2,Saturday,Midday,Female,52,First Nations,293
+8,2,Saturday,Evening,Female,52,First Nations,0
+9,1,Sunday,Morning,Female,57,Holy Roman,130
+9,1,Sunday,Midday,Female,57,Holy Roman,123
+9,1,Sunday,Evening,Female,57,Holy Roman,126
+9,1,Monday,Morning,Female,57,Holy Roman,187
+9,1,Monday,Midday,Female,57,Holy Roman,176
+9,1,Monday,Evening,Female,57,Holy Roman,195
+9,1,Tuesday,Morning,Female,57,Holy Roman,249
+9,1,Tuesday,Midday,Female,57,Holy Roman,193
+9,1,Tuesday,Evening,Female,57,Holy Roman,179
+9,1,Wednesday,Morning,Female,57,Holy Roman,231
+9,1,Wednesday,Midday,Female,57,Holy Roman,223
+9,1,Wednesday,Evening,Female,57,Holy Roman,92
+9,1,Thursday,Morning,Female,57,Holy Roman,162
+9,1,Thursday,Midday,Female,57,Holy Roman,144
+9,1,Thursday,Evening,Female,57,Holy Roman,377
+9,1,Friday,Morning,Female,57,Holy Roman,241
+9,1,Friday,Midday,Female,57,Holy Roman,153
+9,1,Friday,Evening,Female,57,Holy Roman,261
+9,1,Saturday,Morning,Female,57,Holy Roman,162
+9,1,Saturday,Midday,Female,57,Holy Roman,184
+9,1,Saturday,Evening,Female,57,Holy Roman,283
+9,2,Sunday,Morning,Female,57,Holy Roman,85
+9,2,Sunday,Midday,Female,57,Holy Roman,172
+9,2,Sunday,Evening,Female,57,Holy Roman,189
+9,2,Monday,Morning,Female,57,Holy Roman,113
+9,2,Monday,Midday,Female,57,Holy Roman,366
+9,2,Monday,Evening,Female,57,Holy Roman,161
+9,2,Tuesday,Morning,Female,57,Holy Roman,246
+9,2,Tuesday,Midday,Female,57,Holy Roman,151
+9,2,Tuesday,Evening,Female,57,Holy Roman,165
+9,2,Wednesday,Morning,Female,57,Holy Roman,160
+9,2,Wednesday,Midday,Female,57,Holy Roman,265
+9,2,Wednesday,Evening,Female,57,Holy Roman,158
+9,2,Thursday,Morning,Female,57,Holy Roman,84
+9,2,Thursday,Midday,Female,57,Holy Roman,205
+9,2,Thursday,Evening,Female,57,Holy Roman,58
+9,2,Friday,Morning,Female,57,Holy Roman,347
+9,2,Friday,Midday,Female,57,Holy Roman,142
+9,2,Friday,Evening,Female,57,Holy Roman,131
+9,2,Saturday,Morning,Female,57,Holy Roman,187
+9,2,Saturday,Midday,Female,57,Holy Roman,141
+9,2,Saturday,Evening,Female,57,Holy Roman,353
+10,1,Sunday,Morning,Male,47,Carthaginian,171
+10,1,Sunday,Midday,Male,47,Carthaginian,0
+10,1,Sunday,Evening,Male,47,Carthaginian,126
+10,1,Monday,Morning,Male,47,Carthaginian,0
+10,1,Monday,Midday,Male,47,Carthaginian,0
+10,1,Monday,Evening,Male,47,Carthaginian,55
+10,1,Tuesday,Morning,Male,47,Carthaginian,142
+10,1,Tuesday,Midday,Male,47,Carthaginian,134
+10,1,Tuesday,Evening,Male,47,Carthaginian,139
+10,1,Wednesday,Morning,Male,47,Carthaginian,100
+10,1,Wednesday,Midday,Male,47,Carthaginian,73
+10,1,Wednesday,Evening,Male,47,Carthaginian,112
+10,1,Thursday,Morning,Male,47,Carthaginian,112
+10,1,Thursday,Midday,Male,47,Carthaginian,58
+10,1,Thursday,Evening,Male,47,Carthaginian,0
+10,1,Friday,Morning,Male,47,Carthaginian,127
+10,1,Friday,Midday,Male,47,Carthaginian,0
+10,1,Friday,Evening,Male,47,Carthaginian,173
+10,1,Saturday,Morning,Male,47,Carthaginian,181
+10,1,Saturday,Midday,Male,47,Carthaginian,112
+10,1,Saturday,Evening,Male,47,Carthaginian,0
+10,2,Sunday,Morning,Male,47,Carthaginian,147
+10,2,Sunday,Midday,Male,47,Carthaginian,130
+10,2,Sunday,Evening,Male,47,Carthaginian,115
+10,2,Monday,Morning,Male,47,Carthaginian,191
+10,2,Monday,Midday,Male,47,Carthaginian,159
+10,2,Monday,Evening,Male,47,Carthaginian,0
+10,2,Tuesday,Morning,Male,47,Carthaginian,252
+10,2,Tuesday,Midday,Male,47,Carthaginian,76
+10,2,Tuesday,Evening,Male,47,Carthaginian,140
+10,2,Wednesday,Morning,Male,47,Carthaginian,106
+10,2,Wednesday,Midday,Male,47,Carthaginian,67
+10,2,Wednesday,Evening,Male,47,Carthaginian,0
+10,2,Thursday,Morning,Male,47,Carthaginian,192
+10,2,Thursday,Midday,Male,47,Carthaginian,142
+10,2,Thursday,Evening,Male,47,Carthaginian,98
+10,2,Friday,Morning,Male,47,Carthaginian,201
+10,2,Friday,Midday,Male,47,Carthaginian,202
+10,2,Friday,Evening,Male,47,Carthaginian,0
+10,2,Saturday,Morning,Male,47,Carthaginian,234
+10,2,Saturday,Midday,Male,47,Carthaginian,199
+10,2,Saturday,Evening,Male,47,Carthaginian,149
+11,1,Sunday,Morning,Female,29,Carthaginian,133
+11,1,Sunday,Midday,Female,29,Carthaginian,87
+11,1,Sunday,Evening,Female,29,Carthaginian,0
+11,1,Monday,Morning,Female,29,Carthaginian,145
+11,1,Monday,Midday,Female,29,Carthaginian,57
+11,1,Monday,Evening,Female,29,Carthaginian,155
+11,1,Tuesday,Morning,Female,29,Carthaginian,0
+11,1,Tuesday,Midday,Female,29,Carthaginian,0
+11,1,Tuesday,Evening,Female,29,Carthaginian,0
+11,1,Wednesday,Morning,Female,29,Carthaginian,0
+11,1,Wednesday,Midday,Female,29,Carthaginian,0
+11,1,Wednesday,Evening,Female,29,Carthaginian,109
+11,1,Thursday,Morning,Female,29,Carthaginian,0
+11,1,Thursday,Midday,Female,29,Carthaginian,0
+11,1,Thursday,Evening,Female,29,Carthaginian,0
+11,1,Friday,Morning,Female,29,Carthaginian,127
+11,1,Friday,Midday,Female,29,Carthaginian,142
+11,1,Friday,Evening,Female,29,Carthaginian,196
+11,1,Saturday,Morning,Female,29,Carthaginian,0
+11,1,Saturday,Midday,Female,29,Carthaginian,271
+11,1,Saturday,Evening,Female,29,Carthaginian,118
+11,2,Sunday,Morning,Female,29,Carthaginian,26
+11,2,Sunday,Midday,Female,29,Carthaginian,0
+11,2,Sunday,Evening,Female,29,Carthaginian,64
+11,2,Monday,Morning,Female,29,Carthaginian,0
+11,2,Monday,Midday,Female,29,Carthaginian,139
+11,2,Monday,Evening,Female,29,Carthaginian,0
+11,2,Tuesday,Morning,Female,29,Carthaginian,147
+11,2,Tuesday,Midday,Female,29,Carthaginian,0
+11,2,Tuesday,Evening,Female,29,Carthaginian,98
+11,2,Wednesday,Morning,Female,29,Carthaginian,115
+11,2,Wednesday,Midday,Female,29,Carthaginian,92
+11,2,Wednesday,Evening,Female,29,Carthaginian,0
+11,2,Thursday,Morning,Female,29,Carthaginian,0
+11,2,Thursday,Midday,Female,29,Carthaginian,0
+11,2,Thursday,Evening,Female,29,Carthaginian,0
+11,2,Friday,Morning,Female,29,Carthaginian,164
+11,2,Friday,Midday,Female,29,Carthaginian,183
+11,2,Friday,Evening,Female,29,Carthaginian,138
+11,2,Saturday,Morning,Female,29,Carthaginian,172
+11,2,Saturday,Midday,Female,29,Carthaginian,93
+11,2,Saturday,Evening,Female,29,Carthaginian,0
+12,1,Sunday,Morning,Male,48,Carthaginian,130
+12,1,Sunday,Midday,Male,48,Carthaginian,89
+12,1,Sunday,Evening,Male,48,Carthaginian,0
+12,1,Monday,Morning,Male,48,Carthaginian,99
+12,1,Monday,Midday,Male,48,Carthaginian,122
+12,1,Monday,Evening,Male,48,Carthaginian,218
+12,1,Tuesday,Morning,Male,48,Carthaginian,166
+12,1,Tuesday,Midday,Male,48,Carthaginian,0
+12,1,Tuesday,Evening,Male,48,Carthaginian,0
+12,1,Wednesday,Morning,Male,48,Carthaginian,92
+12,1,Wednesday,Midday,Male,48,Carthaginian,0
+12,1,Wednesday,Evening,Male,48,Carthaginian,121
+12,1,Thursday,Morning,Male,48,Carthaginian,0
+12,1,Thursday,Midday,Male,48,Carthaginian,0
+12,1,Thursday,Evening,Male,48,Carthaginian,0
+12,1,Friday,Morning,Male,48,Carthaginian,162
+12,1,Friday,Midday,Male,48,Carthaginian,106
+12,1,Friday,Evening,Male,48,Carthaginian,86
+12,1,Saturday,Morning,Male,48,Carthaginian,145
+12,1,Saturday,Midday,Male,48,Carthaginian,105
+12,1,Saturday,Evening,Male,48,Carthaginian,125
+12,2,Sunday,Morning,Male,48,Carthaginian,98
+12,2,Sunday,Midday,Male,48,Carthaginian,0
+12,2,Sunday,Evening,Male,48,Carthaginian,77
+12,2,Monday,Morning,Male,48,Carthaginian,68
+12,2,Monday,Midday,Male,48,Carthaginian,0
+12,2,Monday,Evening,Male,48,Carthaginian,0
+12,2,Tuesday,Morning,Male,48,Carthaginian,0
+12,2,Tuesday,Midday,Male,48,Carthaginian,92
+12,2,Tuesday,Evening,Male,48,Carthaginian,125
+12,2,Wednesday,Morning,Male,48,Carthaginian,0
+12,2,Wednesday,Midday,Male,48,Carthaginian,0
+12,2,Wednesday,Evening,Male,48,Carthaginian,0
+12,2,Thursday,Morning,Male,48,Carthaginian,0
+12,2,Thursday,Midday,Male,48,Carthaginian,108
+12,2,Thursday,Evening,Male,48,Carthaginian,84
+12,2,Friday,Morning,Male,48,Carthaginian,116
+12,2,Friday,Midday,Male,48,Carthaginian,153
+12,2,Friday,Evening,Male,48,Carthaginian,179
+12,2,Saturday,Morning,Male,48,Carthaginian,102
+12,2,Saturday,Midday,Male,48,Carthaginian,209
+12,2,Saturday,Evening,Male,48,Carthaginian,179
+13,1,Sunday,Morning,Female,47,Carthaginian,217
+13,1,Sunday,Midday,Female,47,Carthaginian,109
+13,1,Sunday,Evening,Female,47,Carthaginian,110
+13,1,Monday,Morning,Female,47,Carthaginian,198
+13,1,Monday,Midday,Female,47,Carthaginian,132
+13,1,Monday,Evening,Female,47,Carthaginian,125
+13,1,Tuesday,Morning,Female,47,Carthaginian,241
+13,1,Tuesday,Midday,Female,47,Carthaginian,157
+13,1,Tuesday,Evening,Female,47,Carthaginian,245
+13,1,Wednesday,Morning,Female,47,Carthaginian,103
+13,1,Wednesday,Midday,Female,47,Carthaginian,161
+13,1,Wednesday,Evening,Female,47,Carthaginian,176
+13,1,Thursday,Morning,Female,47,Carthaginian,84
+13,1,Thursday,Midday,Female,47,Carthaginian,184
+13,1,Thursday,Evening,Female,47,Carthaginian,126
+13,1,Friday,Morning,Female,47,Carthaginian,193
+13,1,Friday,Midday,Female,47,Carthaginian,404
+13,1,Friday,Evening,Female,47,Carthaginian,114
+13,1,Saturday,Morning,Female,47,Carthaginian,324
+13,1,Saturday,Midday,Female,47,Carthaginian,179
+13,1,Saturday,Evening,Female,47,Carthaginian,328
+13,2,Sunday,Morning,Female,47,Carthaginian,86
+13,2,Sunday,Midday,Female,47,Carthaginian,111
+13,2,Sunday,Evening,Female,47,Carthaginian,155
+13,2,Monday,Morning,Female,47,Carthaginian,186
+13,2,Monday,Midday,Female,47,Carthaginian,78
+13,2,Monday,Evening,Female,47,Carthaginian,165
+13,2,Tuesday,Morning,Female,47,Carthaginian,245
+13,2,Tuesday,Midday,Female,47,Carthaginian,150
+13,2,Tuesday,Evening,Female,47,Carthaginian,227
+13,2,Wednesday,Morning,Female,47,Carthaginian,154
+13,2,Wednesday,Midday,Female,47,Carthaginian,80
+13,2,Wednesday,Evening,Female,47,Carthaginian,136
+13,2,Thursday,Morning,Female,47,Carthaginian,163
+13,2,Thursday,Midday,Female,47,Carthaginian,109
+13,2,Thursday,Evening,Female,47,Carthaginian,230
+13,2,Friday,Morning,Female,47,Carthaginian,198
+13,2,Friday,Midday,Female,47,Carthaginian,111
+13,2,Friday,Evening,Female,47,Carthaginian,188
+13,2,Saturday,Morning,Female,47,Carthaginian,151
+13,2,Saturday,Midday,Female,47,Carthaginian,240
+13,2,Saturday,Evening,Female,47,Carthaginian,207
+14,1,Sunday,Morning,Female,81,Atlantian,0
+14,1,Sunday,Midday,Female,81,Atlantian,138
+14,1,Sunday,Evening,Female,81,Atlantian,213
+14,1,Monday,Morning,Female,81,Atlantian,218
+14,1,Monday,Midday,Female,81,Atlantian,274
+14,1,Monday,Evening,Female,81,Atlantian,350
+14,1,Tuesday,Morning,Female,81,Atlantian,0
+14,1,Tuesday,Midday,Female,81,Atlantian,0
+14,1,Tuesday,Evening,Female,81,Atlantian,228
+14,1,Wednesday,Morning,Female,81,Atlantian,0
+14,1,Wednesday,Midday,Female,81,Atlantian,0
+14,1,Wednesday,Evening,Female,81,Atlantian,0
+14,1,Thursday,Morning,Female,81,Atlantian,0
+14,1,Thursday,Midday,Female,81,Atlantian,297
+14,1,Thursday,Evening,Female,81,Atlantian,265
+14,1,Friday,Morning,Female,81,Atlantian,0
+14,1,Friday,Midday,Female,81,Atlantian,0
+14,1,Friday,Evening,Female,81,Atlantian,224
+14,1,Saturday,Morning,Female,81,Atlantian,359
+14,1,Saturday,Midday,Female,81,Atlantian,213
+14,1,Saturday,Evening,Female,81,Atlantian,527
+14,2,Sunday,Morning,Female,81,Atlantian,0
+14,2,Sunday,Midday,Female,81,Atlantian,0
+14,2,Sunday,Evening,Female,81,Atlantian,192
+14,2,Monday,Morning,Female,81,Atlantian,0
+14,2,Monday,Midday,Female,81,Atlantian,0
+14,2,Monday,Evening,Female,81,Atlantian,0
+14,2,Tuesday,Morning,Female,81,Atlantian,0
+14,2,Tuesday,Midday,Female,81,Atlantian,0
+14,2,Tuesday,Evening,Female,81,Atlantian,249
+14,2,Wednesday,Morning,Female,81,Atlantian,0
+14,2,Wednesday,Midday,Female,81,Atlantian,119
+14,2,Wednesday,Evening,Female,81,Atlantian,0
+14,2,Thursday,Morning,Female,81,Atlantian,0
+14,2,Thursday,Midday,Female,81,Atlantian,196
+14,2,Thursday,Evening,Female,81,Atlantian,0
+14,2,Friday,Morning,Female,81,Atlantian,226
+14,2,Friday,Midday,Female,81,Atlantian,0
+14,2,Friday,Evening,Female,81,Atlantian,151
+14,2,Saturday,Morning,Female,81,Atlantian,0
+14,2,Saturday,Midday,Female,81,Atlantian,143
+14,2,Saturday,Evening,Female,81,Atlantian,270
+15,1,Sunday,Morning,Male,116,First Nations,341
+15,1,Sunday,Midday,Male,116,First Nations,108
+15,1,Sunday,Evening,Male,116,First Nations,345
+15,1,Monday,Morning,Male,116,First Nations,381
+15,1,Monday,Midday,Male,116,First Nations,276
+15,1,Monday,Evening,Male,116,First Nations,241
+15,1,Tuesday,Morning,Male,116,First Nations,563
+15,1,Tuesday,Midday,Male,116,First Nations,349
+15,1,Tuesday,Evening,Male,116,First Nations,562
+15,1,Wednesday,Morning,Male,116,First Nations,427
+15,1,Wednesday,Midday,Male,116,First Nations,140
+15,1,Wednesday,Evening,Male,116,First Nations,188
+15,1,Thursday,Morning,Male,116,First Nations,318
+15,1,Thursday,Midday,Male,116,First Nations,198
+15,1,Thursday,Evening,Male,116,First Nations,168
+15,1,Friday,Morning,Male,116,First Nations,424
+15,1,Friday,Midday,Male,116,First Nations,385
+15,1,Friday,Evening,Male,116,First Nations,369
+15,1,Saturday,Morning,Male,116,First Nations,204
+15,1,Saturday,Midday,Male,116,First Nations,334
+15,1,Saturday,Evening,Male,116,First Nations,405
+15,2,Sunday,Morning,Male,116,First Nations,319
+15,2,Sunday,Midday,Male,116,First Nations,238
+15,2,Sunday,Evening,Male,116,First Nations,246
+15,2,Monday,Morning,Male,116,First Nations,374
+15,2,Monday,Midday,Male,116,First Nations,194
+15,2,Monday,Evening,Male,116,First Nations,373
+15,2,Tuesday,Morning,Male,116,First Nations,433
+15,2,Tuesday,Midday,Male,116,First Nations,397
+15,2,Tuesday,Evening,Male,116,First Nations,165
+15,2,Wednesday,Morning,Male,116,First Nations,634
+15,2,Wednesday,Midday,Male,116,First Nations,334
+15,2,Wednesday,Evening,Male,116,First Nations,307
+15,2,Thursday,Morning,Male,116,First Nations,348
+15,2,Thursday,Midday,Male,116,First Nations,247
+15,2,Thursday,Evening,Male,116,First Nations,250
+15,2,Friday,Morning,Male,116,First Nations,377
+15,2,Friday,Midday,Male,116,First Nations,380
+15,2,Friday,Evening,Male,116,First Nations,153
+15,2,Saturday,Morning,Male,116,First Nations,670
+15,2,Saturday,Midday,Male,116,First Nations,137
+15,2,Saturday,Evening,Male,116,First Nations,286
+16,1,Sunday,Morning,Female,31,Atlantian,0
+16,1,Sunday,Midday,Female,31,Atlantian,0
+16,1,Sunday,Evening,Female,31,Atlantian,0
+16,1,Monday,Morning,Female,31,Atlantian,249
+16,1,Monday,Midday,Female,31,Atlantian,0
+16,1,Monday,Evening,Female,31,Atlantian,0
+16,1,Tuesday,Morning,Female,31,Atlantian,135
+16,1,Tuesday,Midday,Female,31,Atlantian,135
+16,1,Tuesday,Evening,Female,31,Atlantian,146
+16,1,Wednesday,Morning,Female,31,Atlantian,123
+16,1,Wednesday,Midday,Female,31,Atlantian,0
+16,1,Wednesday,Evening,Female,31,Atlantian,204
+16,1,Thursday,Morning,Female,31,Atlantian,0
+16,1,Thursday,Midday,Female,31,Atlantian,0
+16,1,Thursday,Evening,Female,31,Atlantian,0
+16,1,Friday,Morning,Female,31,Atlantian,367
+16,1,Friday,Midday,Female,31,Atlantian,192
+16,1,Friday,Evening,Female,31,Atlantian,257
+16,1,Saturday,Morning,Female,31,Atlantian,0
+16,1,Saturday,Midday,Female,31,Atlantian,0
+16,1,Saturday,Evening,Female,31,Atlantian,299
+16,2,Sunday,Morning,Female,31,Atlantian,0
+16,2,Sunday,Midday,Female,31,Atlantian,0
+16,2,Sunday,Evening,Female,31,Atlantian,0
+16,2,Monday,Morning,Female,31,Atlantian,0
+16,2,Monday,Midday,Female,31,Atlantian,0
+16,2,Monday,Evening,Female,31,Atlantian,162
+16,2,Tuesday,Morning,Female,31,Atlantian,0
+16,2,Tuesday,Midday,Female,31,Atlantian,0
+16,2,Tuesday,Evening,Female,31,Atlantian,0
+16,2,Wednesday,Morning,Female,31,Atlantian,152
+16,2,Wednesday,Midday,Female,31,Atlantian,175
+16,2,Wednesday,Evening,Female,31,Atlantian,0
+16,2,Thursday,Morning,Female,31,Atlantian,0
+16,2,Thursday,Midday,Female,31,Atlantian,0
+16,2,Thursday,Evening,Female,31,Atlantian,0
+16,2,Friday,Morning,Female,31,Atlantian,129
+16,2,Friday,Midday,Female,31,Atlantian,180
+16,2,Friday,Evening,Female,31,Atlantian,185
+16,2,Saturday,Morning,Female,31,Atlantian,106
+16,2,Saturday,Midday,Female,31,Atlantian,213
+16,2,Saturday,Evening,Female,31,Atlantian,191
+17,1,Sunday,Morning,Male,110,First Nations,150
+17,1,Sunday,Midday,Male,110,First Nations,295
+17,1,Sunday,Evening,Male,110,First Nations,117
+17,1,Monday,Morning,Male,110,First Nations,347
+17,1,Monday,Midday,Male,110,First Nations,135
+17,1,Monday,Evening,Male,110,First Nations,345
+17,1,Tuesday,Morning,Male,110,First Nations,215
+17,1,Tuesday,Midday,Male,110,First Nations,481
+17,1,Tuesday,Evening,Male,110,First Nations,193
+17,1,Wednesday,Morning,Male,110,First Nations,239
+17,1,Wednesday,Midday,Male,110,First Nations,353
+17,1,Wednesday,Evening,Male,110,First Nations,196
+17,1,Thursday,Morning,Male,110,First Nations,203
+17,1,Thursday,Midday,Male,110,First Nations,198
+17,1,Thursday,Evening,Male,110,First Nations,207
+17,1,Friday,Morning,Male,110,First Nations,298
+17,1,Friday,Midday,Male,110,First Nations,346
+17,1,Friday,Evening,Male,110,First Nations,344
+17,1,Saturday,Morning,Male,110,First Nations,377
+17,1,Saturday,Midday,Male,110,First Nations,282
+17,1,Saturday,Evening,Male,110,First Nations,185
+17,2,Sunday,Morning,Male,110,First Nations,205
+17,2,Sunday,Midday,Male,110,First Nations,196
+17,2,Sunday,Evening,Male,110,First Nations,118
+17,2,Monday,Morning,Male,110,First Nations,150
+17,2,Monday,Midday,Male,110,First Nations,294
+17,2,Monday,Evening,Male,110,First Nations,377
+17,2,Tuesday,Morning,Male,110,First Nations,253
+17,2,Tuesday,Midday,Male,110,First Nations,468
+17,2,Tuesday,Evening,Male,110,First Nations,245
+17,2,Wednesday,Morning,Male,110,First Nations,220
+17,2,Wednesday,Midday,Male,110,First Nations,219
+17,2,Wednesday,Evening,Male,110,First Nations,131
+17,2,Thursday,Morning,Male,110,First Nations,471
+17,2,Thursday,Midday,Male,110,First Nations,318
+17,2,Thursday,Evening,Male,110,First Nations,250
+17,2,Friday,Morning,Male,110,First Nations,297
+17,2,Friday,Midday,Male,110,First Nations,229
+17,2,Friday,Evening,Male,110,First Nations,292
+17,2,Saturday,Morning,Male,110,First Nations,338
+17,2,Saturday,Midday,Male,110,First Nations,264
+17,2,Saturday,Evening,Male,110,First Nations,197
+18,1,Sunday,Morning,Male,113,Carthaginian,189
+18,1,Sunday,Midday,Male,113,Carthaginian,245
+18,1,Sunday,Evening,Male,113,Carthaginian,101
+18,1,Monday,Morning,Male,113,Carthaginian,224
+18,1,Monday,Midday,Male,113,Carthaginian,0
+18,1,Monday,Evening,Male,113,Carthaginian,276
+18,1,Tuesday,Morning,Male,113,Carthaginian,277
+18,1,Tuesday,Midday,Male,113,Carthaginian,333
+18,1,Tuesday,Evening,Male,113,Carthaginian,0
+18,1,Wednesday,Morning,Male,113,Carthaginian,236
+18,1,Wednesday,Midday,Male,113,Carthaginian,172
+18,1,Wednesday,Evening,Male,113,Carthaginian,0
+18,1,Thursday,Morning,Male,113,Carthaginian,148
+18,1,Thursday,Midday,Male,113,Carthaginian,91
+18,1,Thursday,Evening,Male,113,Carthaginian,276
+18,1,Friday,Morning,Male,113,Carthaginian,418
+18,1,Friday,Midday,Male,113,Carthaginian,352
+18,1,Friday,Evening,Male,113,Carthaginian,129
+18,1,Saturday,Morning,Male,113,Carthaginian,562
+18,1,Saturday,Midday,Male,113,Carthaginian,244
+18,1,Saturday,Evening,Male,113,Carthaginian,181
+18,2,Sunday,Morning,Male,113,Carthaginian,240
+18,2,Sunday,Midday,Male,113,Carthaginian,250
+18,2,Sunday,Evening,Male,113,Carthaginian,216
+18,2,Monday,Morning,Male,113,Carthaginian,0
+18,2,Monday,Midday,Male,113,Carthaginian,337
+18,2,Monday,Evening,Male,113,Carthaginian,264
+18,2,Tuesday,Morning,Male,113,Carthaginian,0
+18,2,Tuesday,Midday,Male,113,Carthaginian,95
+18,2,Tuesday,Evening,Male,113,Carthaginian,272
+18,2,Wednesday,Morning,Male,113,Carthaginian,323
+18,2,Wednesday,Midday,Male,113,Carthaginian,200
+18,2,Wednesday,Evening,Male,113,Carthaginian,295
+18,2,Thursday,Morning,Male,113,Carthaginian,162
+18,2,Thursday,Midday,Male,113,Carthaginian,244
+18,2,Thursday,Evening,Male,113,Carthaginian,298
+18,2,Friday,Morning,Male,113,Carthaginian,0
+18,2,Friday,Midday,Male,113,Carthaginian,545
+18,2,Friday,Evening,Male,113,Carthaginian,250
+18,2,Saturday,Morning,Male,113,Carthaginian,256
+18,2,Saturday,Midday,Male,113,Carthaginian,210
+18,2,Saturday,Evening,Male,113,Carthaginian,280
+19,1,Sunday,Morning,Male,88,Carthaginian,262
+19,1,Sunday,Midday,Male,88,Carthaginian,159
+19,1,Sunday,Evening,Male,88,Carthaginian,282
+19,1,Monday,Morning,Male,88,Carthaginian,327
+19,1,Monday,Midday,Male,88,Carthaginian,205
+19,1,Monday,Evening,Male,88,Carthaginian,148
+19,1,Tuesday,Morning,Male,88,Carthaginian,228
+19,1,Tuesday,Midday,Male,88,Carthaginian,224
+19,1,Tuesday,Evening,Male,88,Carthaginian,163
+19,1,Wednesday,Morning,Male,88,Carthaginian,221
+19,1,Wednesday,Midday,Male,88,Carthaginian,127
+19,1,Wednesday,Evening,Male,88,Carthaginian,277
+19,1,Thursday,Morning,Male,88,Carthaginian,252
+19,1,Thursday,Midday,Male,88,Carthaginian,244
+19,1,Thursday,Evening,Male,88,Carthaginian,98
+19,1,Friday,Morning,Male,88,Carthaginian,237
+19,1,Friday,Midday,Male,88,Carthaginian,161
+19,1,Friday,Evening,Male,88,Carthaginian,132
+19,1,Saturday,Morning,Male,88,Carthaginian,151
+19,1,Saturday,Midday,Male,88,Carthaginian,350
+19,1,Saturday,Evening,Male,88,Carthaginian,304
+19,2,Sunday,Morning,Male,88,Carthaginian,189
+19,2,Sunday,Midday,Male,88,Carthaginian,143
+19,2,Sunday,Evening,Male,88,Carthaginian,285
+19,2,Monday,Morning,Male,88,Carthaginian,290
+19,2,Monday,Midday,Male,88,Carthaginian,325
+19,2,Monday,Evening,Male,88,Carthaginian,282
+19,2,Tuesday,Morning,Male,88,Carthaginian,357
+19,2,Tuesday,Midday,Male,88,Carthaginian,245
+19,2,Tuesday,Evening,Male,88,Carthaginian,179
+19,2,Wednesday,Morning,Male,88,Carthaginian,208
+19,2,Wednesday,Midday,Male,88,Carthaginian,126
+19,2,Wednesday,Evening,Male,88,Carthaginian,250
+19,2,Thursday,Morning,Male,88,Carthaginian,172
+19,2,Thursday,Midday,Male,88,Carthaginian,269
+19,2,Thursday,Evening,Male,88,Carthaginian,176
+19,2,Friday,Morning,Male,88,Carthaginian,206
+19,2,Friday,Midday,Male,88,Carthaginian,323
+19,2,Friday,Evening,Male,88,Carthaginian,246
+19,2,Saturday,Morning,Male,88,Carthaginian,324
+19,2,Saturday,Midday,Male,88,Carthaginian,284
+19,2,Saturday,Evening,Male,88,Carthaginian,407
+20,1,Sunday,Morning,Female,84,Atlantian,289
+20,1,Sunday,Midday,Female,84,Atlantian,0
+20,1,Sunday,Evening,Female,84,Atlantian,0
+20,1,Monday,Morning,Female,84,Atlantian,0
+20,1,Monday,Midday,Female,84,Atlantian,249
+20,1,Monday,Evening,Female,84,Atlantian,258
+20,1,Tuesday,Morning,Female,84,Atlantian,0
+20,1,Tuesday,Midday,Female,84,Atlantian,0
+20,1,Tuesday,Evening,Female,84,Atlantian,183
+20,1,Wednesday,Morning,Female,84,Atlantian,502
+20,1,Wednesday,Midday,Female,84,Atlantian,185
+20,1,Wednesday,Evening,Female,84,Atlantian,196
+20,1,Thursday,Morning,Female,84,Atlantian,0
+20,1,Thursday,Midday,Female,84,Atlantian,0
+20,1,Thursday,Evening,Female,84,Atlantian,305
+20,1,Friday,Morning,Female,84,Atlantian,288
+20,1,Friday,Midday,Female,84,Atlantian,410
+20,1,Friday,Evening,Female,84,Atlantian,471
+20,1,Saturday,Morning,Female,84,Atlantian,390
+20,1,Saturday,Midday,Female,84,Atlantian,0
+20,1,Saturday,Evening,Female,84,Atlantian,310
+20,2,Sunday,Morning,Female,84,Atlantian,368
+20,2,Sunday,Midday,Female,84,Atlantian,0
+20,2,Sunday,Evening,Female,84,Atlantian,0
+20,2,Monday,Morning,Female,84,Atlantian,0
+20,2,Monday,Midday,Female,84,Atlantian,0
+20,2,Monday,Evening,Female,84,Atlantian,203
+20,2,Tuesday,Morning,Female,84,Atlantian,217
+20,2,Tuesday,Midday,Female,84,Atlantian,389
+20,2,Tuesday,Evening,Female,84,Atlantian,292
+20,2,Wednesday,Morning,Female,84,Atlantian,0
+20,2,Wednesday,Midday,Female,84,Atlantian,0
+20,2,Wednesday,Evening,Female,84,Atlantian,376
+20,2,Thursday,Morning,Female,84,Atlantian,0
+20,2,Thursday,Midday,Female,84,Atlantian,0
+20,2,Thursday,Evening,Female,84,Atlantian,145
+20,2,Friday,Morning,Female,84,Atlantian,0
+20,2,Friday,Midday,Female,84,Atlantian,0
+20,2,Friday,Evening,Female,84,Atlantian,357
+20,2,Saturday,Morning,Female,84,Atlantian,295
+20,2,Saturday,Midday,Female,84,Atlantian,332
+20,2,Saturday,Evening,Female,84,Atlantian,193
+21,1,Sunday,Morning,Female,40,First Nations,0
+21,1,Sunday,Midday,Female,40,First Nations,92
+21,1,Sunday,Evening,Female,40,First Nations,0
+21,1,Monday,Morning,Female,40,First Nations,168
+21,1,Monday,Midday,Female,40,First Nations,317
+21,1,Monday,Evening,Female,40,First Nations,192
+21,1,Tuesday,Morning,Female,40,First Nations,179
+21,1,Tuesday,Midday,Female,40,First Nations,198
+21,1,Tuesday,Evening,Female,40,First Nations,0
+21,1,Wednesday,Morning,Female,40,First Nations,186
+21,1,Wednesday,Midday,Female,40,First Nations,77
+21,1,Wednesday,Evening,Female,40,First Nations,149
+21,1,Thursday,Morning,Female,40,First Nations,0
+21,1,Thursday,Midday,Female,40,First Nations,198
+21,1,Thursday,Evening,Female,40,First Nations,79
+21,1,Friday,Morning,Female,40,First Nations,296
+21,1,Friday,Midday,Female,40,First Nations,289
+21,1,Friday,Evening,Female,40,First Nations,128
+21,1,Saturday,Morning,Female,40,First Nations,0
+21,1,Saturday,Midday,Female,40,First Nations,0
+21,1,Saturday,Evening,Female,40,First Nations,368
+21,2,Sunday,Morning,Female,40,First Nations,0
+21,2,Sunday,Midday,Female,40,First Nations,0
+21,2,Sunday,Evening,Female,40,First Nations,0
+21,2,Monday,Morning,Female,40,First Nations,0
+21,2,Monday,Midday,Female,40,First Nations,0
+21,2,Monday,Evening,Female,40,First Nations,247
+21,2,Tuesday,Morning,Female,40,First Nations,0
+21,2,Tuesday,Midday,Female,40,First Nations,114
+21,2,Tuesday,Evening,Female,40,First Nations,0
+21,2,Wednesday,Morning,Female,40,First Nations,0
+21,2,Wednesday,Midday,Female,40,First Nations,212
+21,2,Wednesday,Evening,Female,40,First Nations,107
+21,2,Thursday,Morning,Female,40,First Nations,78
+21,2,Thursday,Midday,Female,40,First Nations,0
+21,2,Thursday,Evening,Female,40,First Nations,172
+21,2,Friday,Morning,Female,40,First Nations,247
+21,2,Friday,Midday,Female,40,First Nations,233
+21,2,Friday,Evening,Female,40,First Nations,195
+21,2,Saturday,Morning,Female,40,First Nations,0
+21,2,Saturday,Midday,Female,40,First Nations,194
+21,2,Saturday,Evening,Female,40,First Nations,175
+22,1,Sunday,Morning,Female,96,Carthaginian,289
+22,1,Sunday,Midday,Female,96,Carthaginian,242
+22,1,Sunday,Evening,Female,96,Carthaginian,284
+22,1,Monday,Morning,Female,96,Carthaginian,0
+22,1,Monday,Midday,Female,96,Carthaginian,195
+22,1,Monday,Evening,Female,96,Carthaginian,295
+22,1,Tuesday,Morning,Female,96,Carthaginian,265
+22,1,Tuesday,Midday,Female,96,Carthaginian,256
+22,1,Tuesday,Evening,Female,96,Carthaginian,266
+22,1,Wednesday,Morning,Female,96,Carthaginian,0
+22,1,Wednesday,Midday,Female,96,Carthaginian,222
+22,1,Wednesday,Evening,Female,96,Carthaginian,306
+22,1,Thursday,Morning,Female,96,Carthaginian,194
+22,1,Thursday,Midday,Female,96,Carthaginian,242
+22,1,Thursday,Evening,Female,96,Carthaginian,326
+22,1,Friday,Morning,Female,96,Carthaginian,0
+22,1,Friday,Midday,Female,96,Carthaginian,509
+22,1,Friday,Evening,Female,96,Carthaginian,204
+22,1,Saturday,Morning,Female,96,Carthaginian,427
+22,1,Saturday,Midday,Female,96,Carthaginian,274
+22,1,Saturday,Evening,Female,96,Carthaginian,419
+22,2,Sunday,Morning,Female,96,Carthaginian,0
+22,2,Sunday,Midday,Female,96,Carthaginian,143
+22,2,Sunday,Evening,Female,96,Carthaginian,390
+22,2,Monday,Morning,Female,96,Carthaginian,0
+22,2,Monday,Midday,Female,96,Carthaginian,203
+22,2,Monday,Evening,Female,96,Carthaginian,229
+22,2,Tuesday,Morning,Female,96,Carthaginian,172
+22,2,Tuesday,Midday,Female,96,Carthaginian,0
+22,2,Tuesday,Evening,Female,96,Carthaginian,401
+22,2,Wednesday,Morning,Female,96,Carthaginian,244
+22,2,Wednesday,Midday,Female,96,Carthaginian,0
+22,2,Wednesday,Evening,Female,96,Carthaginian,260
+22,2,Thursday,Morning,Female,96,Carthaginian,0
+22,2,Thursday,Midday,Female,96,Carthaginian,183
+22,2,Thursday,Evening,Female,96,Carthaginian,0
+22,2,Friday,Morning,Female,96,Carthaginian,494
+22,2,Friday,Midday,Female,96,Carthaginian,312
+22,2,Friday,Evening,Female,96,Carthaginian,578
+22,2,Saturday,Morning,Female,96,Carthaginian,238
+22,2,Saturday,Midday,Female,96,Carthaginian,0
+22,2,Saturday,Evening,Female,96,Carthaginian,255
+23,1,Sunday,Morning,Female,102,Holy Roman,217
+23,1,Sunday,Midday,Female,102,Holy Roman,181
+23,1,Sunday,Evening,Female,102,Holy Roman,294
+23,1,Monday,Morning,Female,102,Holy Roman,348
+23,1,Monday,Midday,Female,102,Holy Roman,149
+23,1,Monday,Evening,Female,102,Holy Roman,238
+23,1,Tuesday,Morning,Female,102,Holy Roman,248
+23,1,Tuesday,Midday,Female,102,Holy Roman,340
+23,1,Tuesday,Evening,Female,102,Holy Roman,401
+23,1,Wednesday,Morning,Female,102,Holy Roman,258
+23,1,Wednesday,Midday,Female,102,Holy Roman,228
+23,1,Wednesday,Evening,Female,102,Holy Roman,0
+23,1,Thursday,Morning,Female,102,Holy Roman,223
+23,1,Thursday,Midday,Female,102,Holy Roman,383
+23,1,Thursday,Evening,Female,102,Holy Roman,242
+23,1,Friday,Morning,Female,102,Holy Roman,362
+23,1,Friday,Midday,Female,102,Holy Roman,477
+23,1,Friday,Evening,Female,102,Holy Roman,272
+23,1,Saturday,Morning,Female,102,Holy Roman,203
+23,1,Saturday,Midday,Female,102,Holy Roman,614
+23,1,Saturday,Evening,Female,102,Holy Roman,396
+23,2,Sunday,Morning,Female,102,Holy Roman,186
+23,2,Sunday,Midday,Female,102,Holy Roman,198
+23,2,Sunday,Evening,Female,102,Holy Roman,0
+23,2,Monday,Morning,Female,102,Holy Roman,230
+23,2,Monday,Midday,Female,102,Holy Roman,263
+23,2,Monday,Evening,Female,102,Holy Roman,210
+23,2,Tuesday,Morning,Female,102,Holy Roman,278
+23,2,Tuesday,Midday,Female,102,Holy Roman,353
+23,2,Tuesday,Evening,Female,102,Holy Roman,0
+23,2,Wednesday,Morning,Female,102,Holy Roman,0
+23,2,Wednesday,Midday,Female,102,Holy Roman,312
+23,2,Wednesday,Evening,Female,102,Holy Roman,215
+23,2,Thursday,Morning,Female,102,Holy Roman,322
+23,2,Thursday,Midday,Female,102,Holy Roman,242
+23,2,Thursday,Evening,Female,102,Holy Roman,236
+23,2,Friday,Morning,Female,102,Holy Roman,227
+23,2,Friday,Midday,Female,102,Holy Roman,0
+23,2,Friday,Evening,Female,102,Holy Roman,312
+23,2,Saturday,Morning,Female,102,Holy Roman,104
+23,2,Saturday,Midday,Female,102,Holy Roman,417
+23,2,Saturday,Evening,Female,102,Holy Roman,0
+24,1,Sunday,Morning,Female,54,First Nations,204
+24,1,Sunday,Midday,Female,54,First Nations,163
+24,1,Sunday,Evening,Female,54,First Nations,339
+24,1,Monday,Morning,Female,54,First Nations,162
+24,1,Monday,Midday,Female,54,First Nations,86
+24,1,Monday,Evening,Female,54,First Nations,194
+24,1,Tuesday,Morning,Female,54,First Nations,194
+24,1,Tuesday,Midday,Female,54,First Nations,207
+24,1,Tuesday,Evening,Female,54,First Nations,247
+24,1,Wednesday,Morning,Female,54,First Nations,186
+24,1,Wednesday,Midday,Female,54,First Nations,143
+24,1,Wednesday,Evening,Female,54,First Nations,248
+24,1,Thursday,Morning,Female,54,First Nations,130
+24,1,Thursday,Midday,Female,54,First Nations,229
+24,1,Thursday,Evening,Female,54,First Nations,129
+24,1,Friday,Morning,Female,54,First Nations,256
+24,1,Friday,Midday,Female,54,First Nations,190
+24,1,Friday,Evening,Female,54,First Nations,262
+24,1,Saturday,Morning,Female,54,First Nations,220
+24,1,Saturday,Midday,Female,54,First Nations,208
+24,1,Saturday,Evening,Female,54,First Nations,207
+24,2,Sunday,Morning,Female,54,First Nations,219
+24,2,Sunday,Midday,Female,54,First Nations,233
+24,2,Sunday,Evening,Female,54,First Nations,240
+24,2,Monday,Morning,Female,54,First Nations,314
+24,2,Monday,Midday,Female,54,First Nations,222
+24,2,Monday,Evening,Female,54,First Nations,120
+24,2,Tuesday,Morning,Female,54,First Nations,147
+24,2,Tuesday,Midday,Female,54,First Nations,152
+24,2,Tuesday,Evening,Female,54,First Nations,165
+24,2,Wednesday,Morning,Female,54,First Nations,81
+24,2,Wednesday,Midday,Female,54,First Nations,136
+24,2,Wednesday,Evening,Female,54,First Nations,144
+24,2,Thursday,Morning,Female,54,First Nations,160
+24,2,Thursday,Midday,Female,54,First Nations,176
+24,2,Thursday,Evening,Female,54,First Nations,176
+24,2,Friday,Morning,Female,54,First Nations,356
+24,2,Friday,Midday,Female,54,First Nations,200
+24,2,Friday,Evening,Female,54,First Nations,172
+24,2,Saturday,Morning,Female,54,First Nations,258
+24,2,Saturday,Midday,Female,54,First Nations,132
+24,2,Saturday,Evening,Female,54,First Nations,284
+25,1,Sunday,Morning,Female,25,First Nations,0
+25,1,Sunday,Midday,Female,25,First Nations,92
+25,1,Sunday,Evening,Female,25,First Nations,92
+25,1,Monday,Morning,Female,25,First Nations,169
+25,1,Monday,Midday,Female,25,First Nations,0
+25,1,Monday,Evening,Female,25,First Nations,117
+25,1,Tuesday,Morning,Female,25,First Nations,0
+25,1,Tuesday,Midday,Female,25,First Nations,0
+25,1,Tuesday,Evening,Female,25,First Nations,115
+25,1,Wednesday,Morning,Female,25,First Nations,123
+25,1,Wednesday,Midday,Female,25,First Nations,0
+25,1,Wednesday,Evening,Female,25,First Nations,0
+25,1,Thursday,Morning,Female,25,First Nations,74
+25,1,Thursday,Midday,Female,25,First Nations,106
+25,1,Thursday,Evening,Female,25,First Nations,150
+25,1,Friday,Morning,Female,25,First Nations,0
+25,1,Friday,Midday,Female,25,First Nations,0
+25,1,Friday,Evening,Female,25,First Nations,122
+25,1,Saturday,Morning,Female,25,First Nations,77
+25,1,Saturday,Midday,Female,25,First Nations,164
+25,1,Saturday,Evening,Female,25,First Nations,0
+25,2,Sunday,Morning,Female,25,First Nations,107
+25,2,Sunday,Midday,Female,25,First Nations,75
+25,2,Sunday,Evening,Female,25,First Nations,98
+25,2,Monday,Morning,Female,25,First Nations,0
+25,2,Monday,Midday,Female,25,First Nations,110
+25,2,Monday,Evening,Female,25,First Nations,121
+25,2,Tuesday,Morning,Female,25,First Nations,101
+25,2,Tuesday,Midday,Female,25,First Nations,0
+25,2,Tuesday,Evening,Female,25,First Nations,156
+25,2,Wednesday,Morning,Female,25,First Nations,198
+25,2,Wednesday,Midday,Female,25,First Nations,128
+25,2,Wednesday,Evening,Female,25,First Nations,70
+25,2,Thursday,Morning,Female,25,First Nations,152
+25,2,Thursday,Midday,Female,25,First Nations,0
+25,2,Thursday,Evening,Female,25,First Nations,183
+25,2,Friday,Morning,Female,25,First Nations,0
+25,2,Friday,Midday,Female,25,First Nations,0
+25,2,Friday,Evening,Female,25,First Nations,107
+25,2,Saturday,Morning,Female,25,First Nations,0
+25,2,Saturday,Midday,Female,25,First Nations,159
+25,2,Saturday,Evening,Female,25,First Nations,171
+26,1,Sunday,Morning,Female,68,Roman,183
+26,1,Sunday,Midday,Female,68,Roman,111
+26,1,Sunday,Evening,Female,68,Roman,172
+26,1,Monday,Morning,Female,68,Roman,0
+26,1,Monday,Midday,Female,68,Roman,335
+26,1,Monday,Evening,Female,68,Roman,141
+26,1,Tuesday,Morning,Female,68,Roman,218
+26,1,Tuesday,Midday,Female,68,Roman,0
+26,1,Tuesday,Evening,Female,68,Roman,218
+26,1,Wednesday,Morning,Female,68,Roman,114
+26,1,Wednesday,Midday,Female,68,Roman,240
+26,1,Wednesday,Evening,Female,68,Roman,0
+26,1,Thursday,Morning,Female,68,Roman,164
+26,1,Thursday,Midday,Female,68,Roman,0
+26,1,Thursday,Evening,Female,68,Roman,0
+26,1,Friday,Morning,Female,68,Roman,158
+26,1,Friday,Midday,Female,68,Roman,192
+26,1,Friday,Evening,Female,68,Roman,191
+26,1,Saturday,Morning,Female,68,Roman,269
+26,1,Saturday,Midday,Female,68,Roman,252
+26,1,Saturday,Evening,Female,68,Roman,184
+26,2,Sunday,Morning,Female,68,Roman,112
+26,2,Sunday,Midday,Female,68,Roman,0
+26,2,Sunday,Evening,Female,68,Roman,0
+26,2,Monday,Morning,Female,68,Roman,142
+26,2,Monday,Midday,Female,68,Roman,129
+26,2,Monday,Evening,Female,68,Roman,184
+26,2,Tuesday,Morning,Female,68,Roman,0
+26,2,Tuesday,Midday,Female,68,Roman,0
+26,2,Tuesday,Evening,Female,68,Roman,145
+26,2,Wednesday,Morning,Female,68,Roman,0
+26,2,Wednesday,Midday,Female,68,Roman,169
+26,2,Wednesday,Evening,Female,68,Roman,0
+26,2,Thursday,Morning,Female,68,Roman,118
+26,2,Thursday,Midday,Female,68,Roman,0
+26,2,Thursday,Evening,Female,68,Roman,0
+26,2,Friday,Morning,Female,68,Roman,229
+26,2,Friday,Midday,Female,68,Roman,129
+26,2,Friday,Evening,Female,68,Roman,196
+26,2,Saturday,Morning,Female,68,Roman,119
+26,2,Saturday,Midday,Female,68,Roman,221
+26,2,Saturday,Evening,Female,68,Roman,0
+27,1,Sunday,Morning,Female,91,Atlantian,0
+27,1,Sunday,Midday,Female,91,Atlantian,0
+27,1,Sunday,Evening,Female,91,Atlantian,139
+27,1,Monday,Morning,Female,91,Atlantian,480
+27,1,Monday,Midday,Female,91,Atlantian,0
+27,1,Monday,Evening,Female,91,Atlantian,0
+27,1,Tuesday,Morning,Female,91,Atlantian,207
+27,1,Tuesday,Midday,Female,91,Atlantian,0
+27,1,Tuesday,Evening,Female,91,Atlantian,0
+27,1,Wednesday,Morning,Female,91,Atlantian,0
+27,1,Wednesday,Midday,Female,91,Atlantian,0
+27,1,Wednesday,Evening,Female,91,Atlantian,0
+27,1,Thursday,Morning,Female,91,Atlantian,0
+27,1,Thursday,Midday,Female,91,Atlantian,0
+27,1,Thursday,Evening,Female,91,Atlantian,306
+27,1,Friday,Morning,Female,91,Atlantian,0
+27,1,Friday,Midday,Female,91,Atlantian,185
+27,1,Friday,Evening,Female,91,Atlantian,173
+27,1,Saturday,Morning,Female,91,Atlantian,0
+27,1,Saturday,Midday,Female,91,Atlantian,313
+27,1,Saturday,Evening,Female,91,Atlantian,208
+27,2,Sunday,Morning,Female,91,Atlantian,339
+27,2,Sunday,Midday,Female,91,Atlantian,264
+27,2,Sunday,Evening,Female,91,Atlantian,343
+27,2,Monday,Morning,Female,91,Atlantian,0
+27,2,Monday,Midday,Female,91,Atlantian,0
+27,2,Monday,Evening,Female,91,Atlantian,0
+27,2,Tuesday,Morning,Female,91,Atlantian,0
+27,2,Tuesday,Midday,Female,91,Atlantian,155
+27,2,Tuesday,Evening,Female,91,Atlantian,0
+27,2,Wednesday,Morning,Female,91,Atlantian,0
+27,2,Wednesday,Midday,Female,91,Atlantian,0
+27,2,Wednesday,Evening,Female,91,Atlantian,0
+27,2,Thursday,Morning,Female,91,Atlantian,0
+27,2,Thursday,Midday,Female,91,Atlantian,248
+27,2,Thursday,Evening,Female,91,Atlantian,0
+27,2,Friday,Morning,Female,91,Atlantian,0
+27,2,Friday,Midday,Female,91,Atlantian,245
+27,2,Friday,Evening,Female,91,Atlantian,153
+27,2,Saturday,Morning,Female,91,Atlantian,0
+27,2,Saturday,Midday,Female,91,Atlantian,0
+27,2,Saturday,Evening,Female,91,Atlantian,0
+28,1,Sunday,Morning,Female,67,Atlantian,0
+28,1,Sunday,Midday,Female,67,Atlantian,0
+28,1,Sunday,Evening,Female,67,Atlantian,0
+28,1,Monday,Morning,Female,67,Atlantian,0
+28,1,Monday,Midday,Female,67,Atlantian,144
+28,1,Monday,Evening,Female,67,Atlantian,0
+28,1,Tuesday,Morning,Female,67,Atlantian,188
+28,1,Tuesday,Midday,Female,67,Atlantian,0
+28,1,Tuesday,Evening,Female,67,Atlantian,0
+28,1,Wednesday,Morning,Female,67,Atlantian,0
+28,1,Wednesday,Midday,Female,67,Atlantian,231
+28,1,Wednesday,Evening,Female,67,Atlantian,408
+28,1,Thursday,Morning,Female,67,Atlantian,0
+28,1,Thursday,Midday,Female,67,Atlantian,442
+28,1,Thursday,Evening,Female,67,Atlantian,0
+28,1,Friday,Morning,Female,67,Atlantian,0
+28,1,Friday,Midday,Female,67,Atlantian,289
+28,1,Friday,Evening,Female,67,Atlantian,310
+28,1,Saturday,Morning,Female,67,Atlantian,0
+28,1,Saturday,Midday,Female,67,Atlantian,91
+28,1,Saturday,Evening,Female,67,Atlantian,265
+28,2,Sunday,Morning,Female,67,Atlantian,0
+28,2,Sunday,Midday,Female,67,Atlantian,0
+28,2,Sunday,Evening,Female,67,Atlantian,153
+28,2,Monday,Morning,Female,67,Atlantian,505
+28,2,Monday,Midday,Female,67,Atlantian,0
+28,2,Monday,Evening,Female,67,Atlantian,0
+28,2,Tuesday,Morning,Female,67,Atlantian,0
+28,2,Tuesday,Midday,Female,67,Atlantian,0
+28,2,Tuesday,Evening,Female,67,Atlantian,0
+28,2,Wednesday,Morning,Female,67,Atlantian,0
+28,2,Wednesday,Midday,Female,67,Atlantian,305
+28,2,Wednesday,Evening,Female,67,Atlantian,0
+28,2,Thursday,Morning,Female,67,Atlantian,0
+28,2,Thursday,Midday,Female,67,Atlantian,0
+28,2,Thursday,Evening,Female,67,Atlantian,134
+28,2,Friday,Morning,Female,67,Atlantian,227
+28,2,Friday,Midday,Female,67,Atlantian,0
+28,2,Friday,Evening,Female,67,Atlantian,445
+28,2,Saturday,Morning,Female,67,Atlantian,188
+28,2,Saturday,Midday,Female,67,Atlantian,0
+28,2,Saturday,Evening,Female,67,Atlantian,313
+29,1,Sunday,Morning,Male,115,Carthaginian,275
+29,1,Sunday,Midday,Male,115,Carthaginian,302
+29,1,Sunday,Evening,Male,115,Carthaginian,286
+29,1,Monday,Morning,Male,115,Carthaginian,256
+29,1,Monday,Midday,Male,115,Carthaginian,221
+29,1,Monday,Evening,Male,115,Carthaginian,449
+29,1,Tuesday,Morning,Male,115,Carthaginian,239
+29,1,Tuesday,Midday,Male,115,Carthaginian,374
+29,1,Tuesday,Evening,Male,115,Carthaginian,413
+29,1,Wednesday,Morning,Male,115,Carthaginian,114
+29,1,Wednesday,Midday,Male,115,Carthaginian,232
+29,1,Wednesday,Evening,Male,115,Carthaginian,386
+29,1,Thursday,Morning,Male,115,Carthaginian,261
+29,1,Thursday,Midday,Male,115,Carthaginian,163
+29,1,Thursday,Evening,Male,115,Carthaginian,278
+29,1,Friday,Morning,Male,115,Carthaginian,134
+29,1,Friday,Midday,Male,115,Carthaginian,380
+29,1,Friday,Evening,Male,115,Carthaginian,367
+29,1,Saturday,Morning,Male,115,Carthaginian,203
+29,1,Saturday,Midday,Male,115,Carthaginian,275
+29,1,Saturday,Evening,Male,115,Carthaginian,406
+29,2,Sunday,Morning,Male,115,Carthaginian,277
+29,2,Sunday,Midday,Male,115,Carthaginian,149
+29,2,Sunday,Evening,Male,115,Carthaginian,421
+29,2,Monday,Morning,Male,115,Carthaginian,0
+29,2,Monday,Midday,Male,115,Carthaginian,338
+29,2,Monday,Evening,Male,115,Carthaginian,147
+29,2,Tuesday,Morning,Male,115,Carthaginian,358
+29,2,Tuesday,Midday,Male,115,Carthaginian,146
+29,2,Tuesday,Evening,Male,115,Carthaginian,291
+29,2,Wednesday,Morning,Male,115,Carthaginian,184
+29,2,Wednesday,Midday,Male,115,Carthaginian,242
+29,2,Wednesday,Evening,Male,115,Carthaginian,312
+29,2,Thursday,Morning,Male,115,Carthaginian,152
+29,2,Thursday,Midday,Male,115,Carthaginian,328
+29,2,Thursday,Evening,Male,115,Carthaginian,148
+29,2,Friday,Morning,Male,115,Carthaginian,465
+29,2,Friday,Midday,Male,115,Carthaginian,0
+29,2,Friday,Evening,Male,115,Carthaginian,454
+29,2,Saturday,Morning,Male,115,Carthaginian,332
+29,2,Saturday,Midday,Male,115,Carthaginian,463
+29,2,Saturday,Evening,Male,115,Carthaginian,193
+30,1,Sunday,Morning,Male,91,Carthaginian,217
+30,1,Sunday,Midday,Male,91,Carthaginian,296
+30,1,Sunday,Evening,Male,91,Carthaginian,236
+30,1,Monday,Morning,Male,91,Carthaginian,0
+30,1,Monday,Midday,Male,91,Carthaginian,367
+30,1,Monday,Evening,Male,91,Carthaginian,0
+30,1,Tuesday,Morning,Male,91,Carthaginian,189
+30,1,Tuesday,Midday,Male,91,Carthaginian,0
+30,1,Tuesday,Evening,Male,91,Carthaginian,0
+30,1,Wednesday,Morning,Male,91,Carthaginian,145
+30,1,Wednesday,Midday,Male,91,Carthaginian,223
+30,1,Wednesday,Evening,Male,91,Carthaginian,93
+30,1,Thursday,Morning,Male,91,Carthaginian,203
+30,1,Thursday,Midday,Male,91,Carthaginian,199
+30,1,Thursday,Evening,Male,91,Carthaginian,225
+30,1,Friday,Morning,Male,91,Carthaginian,295
+30,1,Friday,Midday,Male,91,Carthaginian,499
+30,1,Friday,Evening,Male,91,Carthaginian,361
+30,1,Saturday,Morning,Male,91,Carthaginian,165
+30,1,Saturday,Midday,Male,91,Carthaginian,165
+30,1,Saturday,Evening,Male,91,Carthaginian,174
+30,2,Sunday,Morning,Male,91,Carthaginian,104
+30,2,Sunday,Midday,Male,91,Carthaginian,196
+30,2,Sunday,Evening,Male,91,Carthaginian,269
+30,2,Monday,Morning,Male,91,Carthaginian,238
+30,2,Monday,Midday,Male,91,Carthaginian,197
+30,2,Monday,Evening,Male,91,Carthaginian,378
+30,2,Tuesday,Morning,Male,91,Carthaginian,144
+30,2,Tuesday,Midday,Male,91,Carthaginian,0
+30,2,Tuesday,Evening,Male,91,Carthaginian,0
+30,2,Wednesday,Morning,Male,91,Carthaginian,107
+30,2,Wednesday,Midday,Male,91,Carthaginian,0
+30,2,Wednesday,Evening,Male,91,Carthaginian,216
+30,2,Thursday,Morning,Male,91,Carthaginian,96
+30,2,Thursday,Midday,Male,91,Carthaginian,253
+30,2,Thursday,Evening,Male,91,Carthaginian,158
+30,2,Friday,Morning,Male,91,Carthaginian,339
+30,2,Friday,Midday,Male,91,Carthaginian,0
+30,2,Friday,Evening,Male,91,Carthaginian,348
+30,2,Saturday,Morning,Male,91,Carthaginian,224
+30,2,Saturday,Midday,Male,91,Carthaginian,247
+30,2,Saturday,Evening,Male,91,Carthaginian,0
+31,1,Sunday,Morning,Female,103,Roman,268
+31,1,Sunday,Midday,Female,103,Roman,251
+31,1,Sunday,Evening,Female,103,Roman,283
+31,1,Monday,Morning,Female,103,Roman,102
+31,1,Monday,Midday,Female,103,Roman,193
+31,1,Monday,Evening,Female,103,Roman,189
+31,1,Tuesday,Morning,Female,103,Roman,145
+31,1,Tuesday,Midday,Female,103,Roman,125
+31,1,Tuesday,Evening,Female,103,Roman,214
+31,1,Wednesday,Morning,Female,103,Roman,190
+31,1,Wednesday,Midday,Female,103,Roman,215
+31,1,Wednesday,Evening,Female,103,Roman,230
+31,1,Thursday,Morning,Female,103,Roman,305
+31,1,Thursday,Midday,Female,103,Roman,227
+31,1,Thursday,Evening,Female,103,Roman,213
+31,1,Friday,Morning,Female,103,Roman,343
+31,1,Friday,Midday,Female,103,Roman,320
+31,1,Friday,Evening,Female,103,Roman,304
+31,1,Saturday,Morning,Female,103,Roman,100
+31,1,Saturday,Midday,Female,103,Roman,254
+31,1,Saturday,Evening,Female,103,Roman,174
+31,2,Sunday,Morning,Female,103,Roman,500
+31,2,Sunday,Midday,Female,103,Roman,213
+31,2,Sunday,Evening,Female,103,Roman,457
+31,2,Monday,Morning,Female,103,Roman,139
+31,2,Monday,Midday,Female,103,Roman,337
+31,2,Monday,Evening,Female,103,Roman,173
+31,2,Tuesday,Morning,Female,103,Roman,294
+31,2,Tuesday,Midday,Female,103,Roman,440
+31,2,Tuesday,Evening,Female,103,Roman,229
+31,2,Wednesday,Morning,Female,103,Roman,130
+31,2,Wednesday,Midday,Female,103,Roman,266
+31,2,Wednesday,Evening,Female,103,Roman,202
+31,2,Thursday,Morning,Female,103,Roman,121
+31,2,Thursday,Midday,Female,103,Roman,406
+31,2,Thursday,Evening,Female,103,Roman,363
+31,2,Friday,Morning,Female,103,Roman,262
+31,2,Friday,Midday,Female,103,Roman,0
+31,2,Friday,Evening,Female,103,Roman,499
+31,2,Saturday,Morning,Female,103,Roman,237
+31,2,Saturday,Midday,Female,103,Roman,342
+31,2,Saturday,Evening,Female,103,Roman,312
+32,1,Sunday,Morning,Female,93,First Nations,229
+32,1,Sunday,Midday,Female,93,First Nations,287
+32,1,Sunday,Evening,Female,93,First Nations,175
+32,1,Monday,Morning,Female,93,First Nations,258
+32,1,Monday,Midday,Female,93,First Nations,0
+32,1,Monday,Evening,Female,93,First Nations,250
+32,1,Tuesday,Morning,Female,93,First Nations,377
+32,1,Tuesday,Midday,Female,93,First Nations,0
+32,1,Tuesday,Evening,Female,93,First Nations,295
+32,1,Wednesday,Morning,Female,93,First Nations,277
+32,1,Wednesday,Midday,Female,93,First Nations,0
+32,1,Wednesday,Evening,Female,93,First Nations,187
+32,1,Thursday,Morning,Female,93,First Nations,0
+32,1,Thursday,Midday,Female,93,First Nations,0
+32,1,Thursday,Evening,Female,93,First Nations,132
+32,1,Friday,Morning,Female,93,First Nations,350
+32,1,Friday,Midday,Female,93,First Nations,327
+32,1,Friday,Evening,Female,93,First Nations,145
+32,1,Saturday,Morning,Female,93,First Nations,327
+32,1,Saturday,Midday,Female,93,First Nations,353
+32,1,Saturday,Evening,Female,93,First Nations,227
+32,2,Sunday,Morning,Female,93,First Nations,240
+32,2,Sunday,Midday,Female,93,First Nations,0
+32,2,Sunday,Evening,Female,93,First Nations,182
+32,2,Monday,Morning,Female,93,First Nations,326
+32,2,Monday,Midday,Female,93,First Nations,312
+32,2,Monday,Evening,Female,93,First Nations,277
+32,2,Tuesday,Morning,Female,93,First Nations,180
+32,2,Tuesday,Midday,Female,93,First Nations,283
+32,2,Tuesday,Evening,Female,93,First Nations,332
+32,2,Wednesday,Morning,Female,93,First Nations,0
+32,2,Wednesday,Midday,Female,93,First Nations,366
+32,2,Wednesday,Evening,Female,93,First Nations,276
+32,2,Thursday,Morning,Female,93,First Nations,0
+32,2,Thursday,Midday,Female,93,First Nations,170
+32,2,Thursday,Evening,Female,93,First Nations,0
+32,2,Friday,Morning,Female,93,First Nations,282
+32,2,Friday,Midday,Female,93,First Nations,292
+32,2,Friday,Evening,Female,93,First Nations,163
+32,2,Saturday,Morning,Female,93,First Nations,0
+32,2,Saturday,Midday,Female,93,First Nations,235
+32,2,Saturday,Evening,Female,93,First Nations,316
+33,1,Sunday,Morning,Female,101,Carthaginian,400
+33,1,Sunday,Midday,Female,101,Carthaginian,245
+33,1,Sunday,Evening,Female,101,Carthaginian,430
+33,1,Monday,Morning,Female,101,Carthaginian,314
+33,1,Monday,Midday,Female,101,Carthaginian,272
+33,1,Monday,Evening,Female,101,Carthaginian,673
+33,1,Tuesday,Morning,Female,101,Carthaginian,239
+33,1,Tuesday,Midday,Female,101,Carthaginian,180
+33,1,Tuesday,Evening,Female,101,Carthaginian,354
+33,1,Wednesday,Morning,Female,101,Carthaginian,183
+33,1,Wednesday,Midday,Female,101,Carthaginian,215
+33,1,Wednesday,Evening,Female,101,Carthaginian,256
+33,1,Thursday,Morning,Female,101,Carthaginian,197
+33,1,Thursday,Midday,Female,101,Carthaginian,287
+33,1,Thursday,Evening,Female,101,Carthaginian,234
+33,1,Friday,Morning,Female,101,Carthaginian,397
+33,1,Friday,Midday,Female,101,Carthaginian,247
+33,1,Friday,Evening,Female,101,Carthaginian,533
+33,1,Saturday,Morning,Female,101,Carthaginian,147
+33,1,Saturday,Midday,Female,101,Carthaginian,433
+33,1,Saturday,Evening,Female,101,Carthaginian,185
+33,2,Sunday,Morning,Female,101,Carthaginian,380
+33,2,Sunday,Midday,Female,101,Carthaginian,345
+33,2,Sunday,Evening,Female,101,Carthaginian,242
+33,2,Monday,Morning,Female,101,Carthaginian,234
+33,2,Monday,Midday,Female,101,Carthaginian,559
+33,2,Monday,Evening,Female,101,Carthaginian,155
+33,2,Tuesday,Morning,Female,101,Carthaginian,132
+33,2,Tuesday,Midday,Female,101,Carthaginian,175
+33,2,Tuesday,Evening,Female,101,Carthaginian,387
+33,2,Wednesday,Morning,Female,101,Carthaginian,160
+33,2,Wednesday,Midday,Female,101,Carthaginian,335
+33,2,Wednesday,Evening,Female,101,Carthaginian,201
+33,2,Thursday,Morning,Female,101,Carthaginian,177
+33,2,Thursday,Midday,Female,101,Carthaginian,279
+33,2,Thursday,Evening,Female,101,Carthaginian,182
+33,2,Friday,Morning,Female,101,Carthaginian,348
+33,2,Friday,Midday,Female,101,Carthaginian,586
+33,2,Friday,Evening,Female,101,Carthaginian,323
+33,2,Saturday,Morning,Female,101,Carthaginian,257
+33,2,Saturday,Midday,Female,101,Carthaginian,255
+33,2,Saturday,Evening,Female,101,Carthaginian,342
+34,1,Sunday,Morning,Female,63,Carthaginian,136
+34,1,Sunday,Midday,Female,63,Carthaginian,261
+34,1,Sunday,Evening,Female,63,Carthaginian,177
+34,1,Monday,Morning,Female,63,Carthaginian,165
+34,1,Monday,Midday,Female,63,Carthaginian,198
+34,1,Monday,Evening,Female,63,Carthaginian,306
+34,1,Tuesday,Morning,Female,63,Carthaginian,117
+34,1,Tuesday,Midday,Female,63,Carthaginian,177
+34,1,Tuesday,Evening,Female,63,Carthaginian,162
+34,1,Wednesday,Morning,Female,63,Carthaginian,194
+34,1,Wednesday,Midday,Female,63,Carthaginian,261
+34,1,Wednesday,Evening,Female,63,Carthaginian,171
+34,1,Thursday,Morning,Female,63,Carthaginian,256
+34,1,Thursday,Midday,Female,63,Carthaginian,207
+34,1,Thursday,Evening,Female,63,Carthaginian,115
+34,1,Friday,Morning,Female,63,Carthaginian,242
+34,1,Friday,Midday,Female,63,Carthaginian,244
+34,1,Friday,Evening,Female,63,Carthaginian,182
+34,1,Saturday,Morning,Female,63,Carthaginian,130
+34,1,Saturday,Midday,Female,63,Carthaginian,169
+34,1,Saturday,Evening,Female,63,Carthaginian,110
+34,2,Sunday,Morning,Female,63,Carthaginian,181
+34,2,Sunday,Midday,Female,63,Carthaginian,88
+34,2,Sunday,Evening,Female,63,Carthaginian,118
+34,2,Monday,Morning,Female,63,Carthaginian,196
+34,2,Monday,Midday,Female,63,Carthaginian,239
+34,2,Monday,Evening,Female,63,Carthaginian,161
+34,2,Tuesday,Morning,Female,63,Carthaginian,184
+34,2,Tuesday,Midday,Female,63,Carthaginian,306
+34,2,Tuesday,Evening,Female,63,Carthaginian,144
+34,2,Wednesday,Morning,Female,63,Carthaginian,126
+34,2,Wednesday,Midday,Female,63,Carthaginian,298
+34,2,Wednesday,Evening,Female,63,Carthaginian,222
+34,2,Thursday,Morning,Female,63,Carthaginian,285
+34,2,Thursday,Midday,Female,63,Carthaginian,195
+34,2,Thursday,Evening,Female,63,Carthaginian,248
+34,2,Friday,Morning,Female,63,Carthaginian,434
+34,2,Friday,Midday,Female,63,Carthaginian,220
+34,2,Friday,Evening,Female,63,Carthaginian,205
+34,2,Saturday,Morning,Female,63,Carthaginian,176
+34,2,Saturday,Midday,Female,63,Carthaginian,199
+34,2,Saturday,Evening,Female,63,Carthaginian,208
+35,1,Sunday,Morning,Male,34,Roman,66
+35,1,Sunday,Midday,Male,34,Roman,62
+35,1,Sunday,Evening,Male,34,Roman,66
+35,1,Monday,Morning,Male,34,Roman,102
+35,1,Monday,Midday,Male,34,Roman,95
+35,1,Monday,Evening,Male,34,Roman,121
+35,1,Tuesday,Morning,Male,34,Roman,99
+35,1,Tuesday,Midday,Male,34,Roman,69
+35,1,Tuesday,Evening,Male,34,Roman,77
+35,1,Wednesday,Morning,Male,34,Roman,0
+35,1,Wednesday,Midday,Male,34,Roman,57
+35,1,Wednesday,Evening,Male,34,Roman,34
+35,1,Thursday,Morning,Male,34,Roman,0
+35,1,Thursday,Midday,Male,34,Roman,56
+35,1,Thursday,Evening,Male,34,Roman,0
+35,1,Friday,Morning,Male,34,Roman,72
+35,1,Friday,Midday,Male,34,Roman,0
+35,1,Friday,Evening,Male,34,Roman,34
+35,1,Saturday,Morning,Male,34,Roman,132
+35,1,Saturday,Midday,Male,34,Roman,98
+35,1,Saturday,Evening,Male,34,Roman,76
+35,2,Sunday,Morning,Male,34,Roman,47
+35,2,Sunday,Midday,Male,34,Roman,0
+35,2,Sunday,Evening,Male,34,Roman,101
+35,2,Monday,Morning,Male,34,Roman,89
+35,2,Monday,Midday,Male,34,Roman,0
+35,2,Monday,Evening,Male,34,Roman,0
+35,2,Tuesday,Morning,Male,34,Roman,76
+35,2,Tuesday,Midday,Male,34,Roman,124
+35,2,Tuesday,Evening,Male,34,Roman,98
+35,2,Wednesday,Morning,Male,34,Roman,55
+35,2,Wednesday,Midday,Male,34,Roman,0
+35,2,Wednesday,Evening,Male,34,Roman,96
+35,2,Thursday,Morning,Male,34,Roman,69
+35,2,Thursday,Midday,Male,34,Roman,0
+35,2,Thursday,Evening,Male,34,Roman,0
+35,2,Friday,Morning,Male,34,Roman,174
+35,2,Friday,Midday,Male,34,Roman,153
+35,2,Friday,Evening,Male,34,Roman,98
+35,2,Saturday,Morning,Male,34,Roman,0
+35,2,Saturday,Midday,Male,34,Roman,144
+35,2,Saturday,Evening,Male,34,Roman,130
+36,1,Sunday,Morning,Male,79,Roman,152
+36,1,Sunday,Midday,Male,79,Roman,261
+36,1,Sunday,Evening,Male,79,Roman,215
+36,1,Monday,Morning,Male,79,Roman,191
+36,1,Monday,Midday,Male,79,Roman,236
+36,1,Monday,Evening,Male,79,Roman,195
+36,1,Tuesday,Morning,Male,79,Roman,151
+36,1,Tuesday,Midday,Male,79,Roman,209
+36,1,Tuesday,Evening,Male,79,Roman,159
+36,1,Wednesday,Morning,Male,79,Roman,98
+36,1,Wednesday,Midday,Male,79,Roman,132
+36,1,Wednesday,Evening,Male,79,Roman,176
+36,1,Thursday,Morning,Male,79,Roman,242
+36,1,Thursday,Midday,Male,79,Roman,225
+36,1,Thursday,Evening,Male,79,Roman,168
+36,1,Friday,Morning,Male,79,Roman,210
+36,1,Friday,Midday,Male,79,Roman,177
+36,1,Friday,Evening,Male,79,Roman,118
+36,1,Saturday,Morning,Male,79,Roman,220
+36,1,Saturday,Midday,Male,79,Roman,135
+36,1,Saturday,Evening,Male,79,Roman,186
+36,2,Sunday,Morning,Male,79,Roman,205
+36,2,Sunday,Midday,Male,79,Roman,178
+36,2,Sunday,Evening,Male,79,Roman,121
+36,2,Monday,Morning,Male,79,Roman,240
+36,2,Monday,Midday,Male,79,Roman,192
+36,2,Monday,Evening,Male,79,Roman,185
+36,2,Tuesday,Morning,Male,79,Roman,304
+36,2,Tuesday,Midday,Male,79,Roman,149
+36,2,Tuesday,Evening,Male,79,Roman,226
+36,2,Wednesday,Morning,Male,79,Roman,260
+36,2,Wednesday,Midday,Male,79,Roman,73
+36,2,Wednesday,Evening,Male,79,Roman,118
+36,2,Thursday,Morning,Male,79,Roman,191
+36,2,Thursday,Midday,Male,79,Roman,133
+36,2,Thursday,Evening,Male,79,Roman,274
+36,2,Friday,Morning,Male,79,Roman,202
+36,2,Friday,Midday,Male,79,Roman,333
+36,2,Friday,Evening,Male,79,Roman,221
+36,2,Saturday,Morning,Male,79,Roman,355
+36,2,Saturday,Midday,Male,79,Roman,194
+36,2,Saturday,Evening,Male,79,Roman,341
+37,1,Sunday,Morning,Female,63,Atlantian,0
+37,1,Sunday,Midday,Female,63,Atlantian,252
+37,1,Sunday,Evening,Female,63,Atlantian,0
+37,1,Monday,Morning,Female,63,Atlantian,0
+37,1,Monday,Midday,Female,63,Atlantian,0
+37,1,Monday,Evening,Female,63,Atlantian,185
+37,1,Tuesday,Morning,Female,63,Atlantian,247
+37,1,Tuesday,Midday,Female,63,Atlantian,0
+37,1,Tuesday,Evening,Female,63,Atlantian,150
+37,1,Wednesday,Morning,Female,63,Atlantian,157
+37,1,Wednesday,Midday,Female,63,Atlantian,89
+37,1,Wednesday,Evening,Female,63,Atlantian,167
+37,1,Thursday,Morning,Female,63,Atlantian,216
+37,1,Thursday,Midday,Female,63,Atlantian,183
+37,1,Thursday,Evening,Female,63,Atlantian,0
+37,1,Friday,Morning,Female,63,Atlantian,0
+37,1,Friday,Midday,Female,63,Atlantian,376
+37,1,Friday,Evening,Female,63,Atlantian,461
+37,1,Saturday,Morning,Female,63,Atlantian,506
+37,1,Saturday,Midday,Female,63,Atlantian,0
+37,1,Saturday,Evening,Female,63,Atlantian,134
+37,2,Sunday,Morning,Female,63,Atlantian,0
+37,2,Sunday,Midday,Female,63,Atlantian,156
+37,2,Sunday,Evening,Female,63,Atlantian,251
+37,2,Monday,Morning,Female,63,Atlantian,0
+37,2,Monday,Midday,Female,63,Atlantian,215
+37,2,Monday,Evening,Female,63,Atlantian,126
+37,2,Tuesday,Morning,Female,63,Atlantian,0
+37,2,Tuesday,Midday,Female,63,Atlantian,0
+37,2,Tuesday,Evening,Female,63,Atlantian,0
+37,2,Wednesday,Morning,Female,63,Atlantian,0
+37,2,Wednesday,Midday,Female,63,Atlantian,0
+37,2,Wednesday,Evening,Female,63,Atlantian,123
+37,2,Thursday,Morning,Female,63,Atlantian,145
+37,2,Thursday,Midday,Female,63,Atlantian,0
+37,2,Thursday,Evening,Female,63,Atlantian,0
+37,2,Friday,Morning,Female,63,Atlantian,0
+37,2,Friday,Midday,Female,63,Atlantian,352
+37,2,Friday,Evening,Female,63,Atlantian,0
+37,2,Saturday,Morning,Female,63,Atlantian,0
+37,2,Saturday,Midday,Female,63,Atlantian,223
+37,2,Saturday,Evening,Female,63,Atlantian,445
+38,1,Sunday,Morning,Male,71,Holy Roman,176
+38,1,Sunday,Midday,Male,71,Holy Roman,0
+38,1,Sunday,Evening,Male,71,Holy Roman,155
+38,1,Monday,Morning,Male,71,Holy Roman,301
+38,1,Monday,Midday,Male,71,Holy Roman,102
+38,1,Monday,Evening,Male,71,Holy Roman,332
+38,1,Tuesday,Morning,Male,71,Holy Roman,0
+38,1,Tuesday,Midday,Male,71,Holy Roman,162
+38,1,Tuesday,Evening,Male,71,Holy Roman,0
+38,1,Wednesday,Morning,Male,71,Holy Roman,0
+38,1,Wednesday,Midday,Male,71,Holy Roman,121
+38,1,Wednesday,Evening,Male,71,Holy Roman,85
+38,1,Thursday,Morning,Male,71,Holy Roman,177
+38,1,Thursday,Midday,Male,71,Holy Roman,183
+38,1,Thursday,Evening,Male,71,Holy Roman,113
+38,1,Friday,Morning,Male,71,Holy Roman,0
+38,1,Friday,Midday,Male,71,Holy Roman,285
+38,1,Friday,Evening,Male,71,Holy Roman,217
+38,1,Saturday,Morning,Male,71,Holy Roman,273
+38,1,Saturday,Midday,Male,71,Holy Roman,103
+38,1,Saturday,Evening,Male,71,Holy Roman,217
+38,2,Sunday,Morning,Male,71,Holy Roman,0
+38,2,Sunday,Midday,Male,71,Holy Roman,0
+38,2,Sunday,Evening,Male,71,Holy Roman,153
+38,2,Monday,Morning,Male,71,Holy Roman,105
+38,2,Monday,Midday,Male,71,Holy Roman,152
+38,2,Monday,Evening,Male,71,Holy Roman,211
+38,2,Tuesday,Morning,Male,71,Holy Roman,0
+38,2,Tuesday,Midday,Male,71,Holy Roman,179
+38,2,Tuesday,Evening,Male,71,Holy Roman,190
+38,2,Wednesday,Morning,Male,71,Holy Roman,0
+38,2,Wednesday,Midday,Male,71,Holy Roman,184
+38,2,Wednesday,Evening,Male,71,Holy Roman,0
+38,2,Thursday,Morning,Male,71,Holy Roman,166
+38,2,Thursday,Midday,Male,71,Holy Roman,111
+38,2,Thursday,Evening,Male,71,Holy Roman,170
+38,2,Friday,Morning,Male,71,Holy Roman,159
+38,2,Friday,Midday,Male,71,Holy Roman,67
+38,2,Friday,Evening,Male,71,Holy Roman,260
+38,2,Saturday,Morning,Male,71,Holy Roman,0
+38,2,Saturday,Midday,Male,71,Holy Roman,182
+38,2,Saturday,Evening,Male,71,Holy Roman,177
+39,1,Sunday,Morning,Male,52,First Nations,188
+39,1,Sunday,Midday,Male,52,First Nations,0
+39,1,Sunday,Evening,Male,52,First Nations,139
+39,1,Monday,Morning,Male,52,First Nations,206
+39,1,Monday,Midday,Male,52,First Nations,0
+39,1,Monday,Evening,Male,52,First Nations,236
+39,1,Tuesday,Morning,Male,52,First Nations,0
+39,1,Tuesday,Midday,Male,52,First Nations,178
+39,1,Tuesday,Evening,Male,52,First Nations,163
+39,1,Wednesday,Morning,Male,52,First Nations,95
+39,1,Wednesday,Midday,Male,52,First Nations,0
+39,1,Wednesday,Evening,Male,52,First Nations,153
+39,1,Thursday,Morning,Male,52,First Nations,166
+39,1,Thursday,Midday,Male,52,First Nations,69
+39,1,Thursday,Evening,Male,52,First Nations,0
+39,1,Friday,Morning,Male,52,First Nations,251
+39,1,Friday,Midday,Male,52,First Nations,154
+39,1,Friday,Evening,Male,52,First Nations,125
+39,1,Saturday,Morning,Male,52,First Nations,96
+39,1,Saturday,Midday,Male,52,First Nations,128
+39,1,Saturday,Evening,Male,52,First Nations,219
+39,2,Sunday,Morning,Male,52,First Nations,60
+39,2,Sunday,Midday,Male,52,First Nations,0
+39,2,Sunday,Evening,Male,52,First Nations,150
+39,2,Monday,Morning,Male,52,First Nations,144
+39,2,Monday,Midday,Male,52,First Nations,129
+39,2,Monday,Evening,Male,52,First Nations,0
+39,2,Tuesday,Morning,Male,52,First Nations,159
+39,2,Tuesday,Midday,Male,52,First Nations,0
+39,2,Tuesday,Evening,Male,52,First Nations,92
+39,2,Wednesday,Morning,Male,52,First Nations,70
+39,2,Wednesday,Midday,Male,52,First Nations,139
+39,2,Wednesday,Evening,Male,52,First Nations,0
+39,2,Thursday,Morning,Male,52,First Nations,0
+39,2,Thursday,Midday,Male,52,First Nations,0
+39,2,Thursday,Evening,Male,52,First Nations,105
+39,2,Friday,Morning,Male,52,First Nations,141
+39,2,Friday,Midday,Male,52,First Nations,142
+39,2,Friday,Evening,Male,52,First Nations,196
+39,2,Saturday,Morning,Male,52,First Nations,207
+39,2,Saturday,Midday,Male,52,First Nations,284
+39,2,Saturday,Evening,Male,52,First Nations,238
+40,1,Sunday,Morning,Male,111,Atlantian,386
+40,1,Sunday,Midday,Male,111,Atlantian,463
+40,1,Sunday,Evening,Male,111,Atlantian,340
+40,1,Monday,Morning,Male,111,Atlantian,493
+40,1,Monday,Midday,Male,111,Atlantian,452
+40,1,Monday,Evening,Male,111,Atlantian,382
+40,1,Tuesday,Morning,Male,111,Atlantian,314
+40,1,Tuesday,Midday,Male,111,Atlantian,337
+40,1,Tuesday,Evening,Male,111,Atlantian,364
+40,1,Wednesday,Morning,Male,111,Atlantian,193
+40,1,Wednesday,Midday,Male,111,Atlantian,279
+40,1,Wednesday,Evening,Male,111,Atlantian,279
+40,1,Thursday,Morning,Male,111,Atlantian,222
+40,1,Thursday,Midday,Male,111,Atlantian,331
+40,1,Thursday,Evening,Male,111,Atlantian,311
+40,1,Friday,Morning,Male,111,Atlantian,510
+40,1,Friday,Midday,Male,111,Atlantian,298
+40,1,Friday,Evening,Male,111,Atlantian,330
+40,1,Saturday,Morning,Male,111,Atlantian,260
+40,1,Saturday,Midday,Male,111,Atlantian,331
+40,1,Saturday,Evening,Male,111,Atlantian,435
+40,2,Sunday,Morning,Male,111,Atlantian,303
+40,2,Sunday,Midday,Male,111,Atlantian,305
+40,2,Sunday,Evening,Male,111,Atlantian,404
+40,2,Monday,Morning,Male,111,Atlantian,182
+40,2,Monday,Midday,Male,111,Atlantian,293
+40,2,Monday,Evening,Male,111,Atlantian,381
+40,2,Tuesday,Morning,Male,111,Atlantian,309
+40,2,Tuesday,Midday,Male,111,Atlantian,386
+40,2,Tuesday,Evening,Male,111,Atlantian,346
+40,2,Wednesday,Morning,Male,111,Atlantian,186
+40,2,Wednesday,Midday,Male,111,Atlantian,379
+40,2,Wednesday,Evening,Male,111,Atlantian,249
+40,2,Thursday,Morning,Male,111,Atlantian,199
+40,2,Thursday,Midday,Male,111,Atlantian,309
+40,2,Thursday,Evening,Male,111,Atlantian,250
+40,2,Friday,Morning,Male,111,Atlantian,318
+40,2,Friday,Midday,Male,111,Atlantian,207
+40,2,Friday,Evening,Male,111,Atlantian,490
+40,2,Saturday,Morning,Male,111,Atlantian,233
+40,2,Saturday,Midday,Male,111,Atlantian,422
+40,2,Saturday,Evening,Male,111,Atlantian,286
+41,1,Sunday,Morning,Male,96,First Nations,264
+41,1,Sunday,Midday,Male,96,First Nations,0
+41,1,Sunday,Evening,Male,96,First Nations,337
+41,1,Monday,Morning,Male,96,First Nations,258
+41,1,Monday,Midday,Male,96,First Nations,0
+41,1,Monday,Evening,Male,96,First Nations,183
+41,1,Tuesday,Morning,Male,96,First Nations,183
+41,1,Tuesday,Midday,Male,96,First Nations,369
+41,1,Tuesday,Evening,Male,96,First Nations,295
+41,1,Wednesday,Morning,Male,96,First Nations,0
+41,1,Wednesday,Midday,Male,96,First Nations,0
+41,1,Wednesday,Evening,Male,96,First Nations,163
+41,1,Thursday,Morning,Male,96,First Nations,170
+41,1,Thursday,Midday,Male,96,First Nations,133
+41,1,Thursday,Evening,Male,96,First Nations,182
+41,1,Friday,Morning,Male,96,First Nations,245
+41,1,Friday,Midday,Male,96,First Nations,216
+41,1,Friday,Evening,Male,96,First Nations,315
+41,1,Saturday,Morning,Male,96,First Nations,403
+41,1,Saturday,Midday,Male,96,First Nations,233
+41,1,Saturday,Evening,Male,96,First Nations,0
+41,2,Sunday,Morning,Male,96,First Nations,247
+41,2,Sunday,Midday,Male,96,First Nations,178
+41,2,Sunday,Evening,Male,96,First Nations,0
+41,2,Monday,Morning,Male,96,First Nations,138
+41,2,Monday,Midday,Male,96,First Nations,0
+41,2,Monday,Evening,Male,96,First Nations,191
+41,2,Tuesday,Morning,Male,96,First Nations,0
+41,2,Tuesday,Midday,Male,96,First Nations,159
+41,2,Tuesday,Evening,Male,96,First Nations,186
+41,2,Wednesday,Morning,Male,96,First Nations,0
+41,2,Wednesday,Midday,Male,96,First Nations,0
+41,2,Wednesday,Evening,Male,96,First Nations,170
+41,2,Thursday,Morning,Male,96,First Nations,0
+41,2,Thursday,Midday,Male,96,First Nations,0
+41,2,Thursday,Evening,Male,96,First Nations,134
+41,2,Friday,Morning,Male,96,First Nations,0
+41,2,Friday,Midday,Male,96,First Nations,257
+41,2,Friday,Evening,Male,96,First Nations,348
+41,2,Saturday,Morning,Male,96,First Nations,211
+41,2,Saturday,Midday,Male,96,First Nations,337
+41,2,Saturday,Evening,Male,96,First Nations,201
+42,1,Sunday,Morning,Male,41,Holy Roman,101
+42,1,Sunday,Midday,Male,41,Holy Roman,0
+42,1,Sunday,Evening,Male,41,Holy Roman,100
+42,1,Monday,Morning,Male,41,Holy Roman,0
+42,1,Monday,Midday,Male,41,Holy Roman,84
+42,1,Monday,Evening,Male,41,Holy Roman,107
+42,1,Tuesday,Morning,Male,41,Holy Roman,71
+42,1,Tuesday,Midday,Male,41,Holy Roman,0
+42,1,Tuesday,Evening,Male,41,Holy Roman,121
+42,1,Wednesday,Morning,Male,41,Holy Roman,0
+42,1,Wednesday,Midday,Male,41,Holy Roman,111
+42,1,Wednesday,Evening,Male,41,Holy Roman,0
+42,1,Thursday,Morning,Male,41,Holy Roman,0
+42,1,Thursday,Midday,Male,41,Holy Roman,81
+42,1,Thursday,Evening,Male,41,Holy Roman,143
+42,1,Friday,Morning,Male,41,Holy Roman,137
+42,1,Friday,Midday,Male,41,Holy Roman,199
+42,1,Friday,Evening,Male,41,Holy Roman,159
+42,1,Saturday,Morning,Male,41,Holy Roman,186
+42,1,Saturday,Midday,Male,41,Holy Roman,0
+42,1,Saturday,Evening,Male,41,Holy Roman,210
+42,2,Sunday,Morning,Male,41,Holy Roman,0
+42,2,Sunday,Midday,Male,41,Holy Roman,0
+42,2,Sunday,Evening,Male,41,Holy Roman,151
+42,2,Monday,Morning,Male,41,Holy Roman,109
+42,2,Monday,Midday,Male,41,Holy Roman,138
+42,2,Monday,Evening,Male,41,Holy Roman,0
+42,2,Tuesday,Morning,Male,41,Holy Roman,70
+42,2,Tuesday,Midday,Male,41,Holy Roman,0
+42,2,Tuesday,Evening,Male,41,Holy Roman,0
+42,2,Wednesday,Morning,Male,41,Holy Roman,0
+42,2,Wednesday,Midday,Male,41,Holy Roman,89
+42,2,Wednesday,Evening,Male,41,Holy Roman,0
+42,2,Thursday,Morning,Male,41,Holy Roman,101
+42,2,Thursday,Midday,Male,41,Holy Roman,130
+42,2,Thursday,Evening,Male,41,Holy Roman,57
+42,2,Friday,Morning,Male,41,Holy Roman,172
+42,2,Friday,Midday,Male,41,Holy Roman,102
+42,2,Friday,Evening,Male,41,Holy Roman,143
+42,2,Saturday,Morning,Male,41,Holy Roman,0
+42,2,Saturday,Midday,Male,41,Holy Roman,92
+42,2,Saturday,Evening,Male,41,Holy Roman,0
+43,1,Sunday,Morning,Male,104,Carthaginian,218
+43,1,Sunday,Midday,Male,104,Carthaginian,194
+43,1,Sunday,Evening,Male,104,Carthaginian,0
+43,1,Monday,Morning,Male,104,Carthaginian,343
+43,1,Monday,Midday,Male,104,Carthaginian,195
+43,1,Monday,Evening,Male,104,Carthaginian,152
+43,1,Tuesday,Morning,Male,104,Carthaginian,273
+43,1,Tuesday,Midday,Male,104,Carthaginian,262
+43,1,Tuesday,Evening,Male,104,Carthaginian,216
+43,1,Wednesday,Morning,Male,104,Carthaginian,0
+43,1,Wednesday,Midday,Male,104,Carthaginian,247
+43,1,Wednesday,Evening,Male,104,Carthaginian,261
+43,1,Thursday,Morning,Male,104,Carthaginian,0
+43,1,Thursday,Midday,Male,104,Carthaginian,108
+43,1,Thursday,Evening,Male,104,Carthaginian,199
+43,1,Friday,Morning,Male,104,Carthaginian,115
+43,1,Friday,Midday,Male,104,Carthaginian,209
+43,1,Friday,Evening,Male,104,Carthaginian,219
+43,1,Saturday,Morning,Male,104,Carthaginian,204
+43,1,Saturday,Midday,Male,104,Carthaginian,212
+43,1,Saturday,Evening,Male,104,Carthaginian,158
+43,2,Sunday,Morning,Male,104,Carthaginian,141
+43,2,Sunday,Midday,Male,104,Carthaginian,95
+43,2,Sunday,Evening,Male,104,Carthaginian,549
+43,2,Monday,Morning,Male,104,Carthaginian,0
+43,2,Monday,Midday,Male,104,Carthaginian,255
+43,2,Monday,Evening,Male,104,Carthaginian,271
+43,2,Tuesday,Morning,Male,104,Carthaginian,201
+43,2,Tuesday,Midday,Male,104,Carthaginian,309
+43,2,Tuesday,Evening,Male,104,Carthaginian,313
+43,2,Wednesday,Morning,Male,104,Carthaginian,253
+43,2,Wednesday,Midday,Male,104,Carthaginian,272
+43,2,Wednesday,Evening,Male,104,Carthaginian,310
+43,2,Thursday,Morning,Male,104,Carthaginian,223
+43,2,Thursday,Midday,Male,104,Carthaginian,210
+43,2,Thursday,Evening,Male,104,Carthaginian,377
+43,2,Friday,Morning,Male,104,Carthaginian,258
+43,2,Friday,Midday,Male,104,Carthaginian,440
+43,2,Friday,Evening,Male,104,Carthaginian,206
+43,2,Saturday,Morning,Male,104,Carthaginian,0
+43,2,Saturday,Midday,Male,104,Carthaginian,0
+43,2,Saturday,Evening,Male,104,Carthaginian,402
+44,1,Sunday,Morning,Male,24,Atlantian,0
+44,1,Sunday,Midday,Male,24,Atlantian,0
+44,1,Sunday,Evening,Male,24,Atlantian,0
+44,1,Monday,Morning,Male,24,Atlantian,142
+44,1,Monday,Midday,Male,24,Atlantian,0
+44,1,Monday,Evening,Male,24,Atlantian,164
+44,1,Tuesday,Morning,Male,24,Atlantian,0
+44,1,Tuesday,Midday,Male,24,Atlantian,0
+44,1,Tuesday,Evening,Male,24,Atlantian,0
+44,1,Wednesday,Morning,Male,24,Atlantian,0
+44,1,Wednesday,Midday,Male,24,Atlantian,106
+44,1,Wednesday,Evening,Male,24,Atlantian,0
+44,1,Thursday,Morning,Male,24,Atlantian,80
+44,1,Thursday,Midday,Male,24,Atlantian,0
+44,1,Thursday,Evening,Male,24,Atlantian,0
+44,1,Friday,Morning,Male,24,Atlantian,162
+44,1,Friday,Midday,Male,24,Atlantian,0
+44,1,Friday,Evening,Male,24,Atlantian,0
+44,1,Saturday,Morning,Male,24,Atlantian,0
+44,1,Saturday,Midday,Male,24,Atlantian,275
+44,1,Saturday,Evening,Male,24,Atlantian,88
+44,2,Sunday,Morning,Male,24,Atlantian,0
+44,2,Sunday,Midday,Male,24,Atlantian,0
+44,2,Sunday,Evening,Male,24,Atlantian,161
+44,2,Monday,Morning,Male,24,Atlantian,0
+44,2,Monday,Midday,Male,24,Atlantian,0
+44,2,Monday,Evening,Male,24,Atlantian,0
+44,2,Tuesday,Morning,Male,24,Atlantian,0
+44,2,Tuesday,Midday,Male,24,Atlantian,144
+44,2,Tuesday,Evening,Male,24,Atlantian,0
+44,2,Wednesday,Morning,Male,24,Atlantian,57
+44,2,Wednesday,Midday,Male,24,Atlantian,143
+44,2,Wednesday,Evening,Male,24,Atlantian,0
+44,2,Thursday,Morning,Male,24,Atlantian,0
+44,2,Thursday,Midday,Male,24,Atlantian,0
+44,2,Thursday,Evening,Male,24,Atlantian,0
+44,2,Friday,Morning,Male,24,Atlantian,0
+44,2,Friday,Midday,Male,24,Atlantian,0
+44,2,Friday,Evening,Male,24,Atlantian,316
+44,2,Saturday,Morning,Male,24,Atlantian,162
+44,2,Saturday,Midday,Male,24,Atlantian,175
+44,2,Saturday,Evening,Male,24,Atlantian,0
+45,1,Sunday,Morning,Male,110,Atlantian,198
+45,1,Sunday,Midday,Male,110,Atlantian,226
+45,1,Sunday,Evening,Male,110,Atlantian,179
+45,1,Monday,Morning,Male,110,Atlantian,282
+45,1,Monday,Midday,Male,110,Atlantian,249
+45,1,Monday,Evening,Male,110,Atlantian,411
+45,1,Tuesday,Morning,Male,110,Atlantian,312
+45,1,Tuesday,Midday,Male,110,Atlantian,381
+45,1,Tuesday,Evening,Male,110,Atlantian,365
+45,1,Wednesday,Morning,Male,110,Atlantian,337
+45,1,Wednesday,Midday,Male,110,Atlantian,194
+45,1,Wednesday,Evening,Male,110,Atlantian,173
+45,1,Thursday,Morning,Male,110,Atlantian,170
+45,1,Thursday,Midday,Male,110,Atlantian,315
+45,1,Thursday,Evening,Male,110,Atlantian,405
+45,1,Friday,Morning,Male,110,Atlantian,211
+45,1,Friday,Midday,Male,110,Atlantian,310
+45,1,Friday,Evening,Male,110,Atlantian,147
+45,1,Saturday,Morning,Male,110,Atlantian,320
+45,1,Saturday,Midday,Male,110,Atlantian,336
+45,1,Saturday,Evening,Male,110,Atlantian,217
+45,2,Sunday,Morning,Male,110,Atlantian,350
+45,2,Sunday,Midday,Male,110,Atlantian,343
+45,2,Sunday,Evening,Male,110,Atlantian,257
+45,2,Monday,Morning,Male,110,Atlantian,254
+45,2,Monday,Midday,Male,110,Atlantian,525
+45,2,Monday,Evening,Male,110,Atlantian,181
+45,2,Tuesday,Morning,Male,110,Atlantian,446
+45,2,Tuesday,Midday,Male,110,Atlantian,445
+45,2,Tuesday,Evening,Male,110,Atlantian,316
+45,2,Wednesday,Morning,Male,110,Atlantian,174
+45,2,Wednesday,Midday,Male,110,Atlantian,355
+45,2,Wednesday,Evening,Male,110,Atlantian,384
+45,2,Thursday,Morning,Male,110,Atlantian,313
+45,2,Thursday,Midday,Male,110,Atlantian,179
+45,2,Thursday,Evening,Male,110,Atlantian,280
+45,2,Friday,Morning,Male,110,Atlantian,487
+45,2,Friday,Midday,Male,110,Atlantian,253
+45,2,Friday,Evening,Male,110,Atlantian,238
+45,2,Saturday,Morning,Male,110,Atlantian,219
+45,2,Saturday,Midday,Male,110,Atlantian,498
+45,2,Saturday,Evening,Male,110,Atlantian,374
+46,1,Sunday,Morning,Male,96,Atlantian,0
+46,1,Sunday,Midday,Male,96,Atlantian,238
+46,1,Sunday,Evening,Male,96,Atlantian,0
+46,1,Monday,Morning,Male,96,Atlantian,0
+46,1,Monday,Midday,Male,96,Atlantian,0
+46,1,Monday,Evening,Male,96,Atlantian,0
+46,1,Tuesday,Morning,Male,96,Atlantian,328
+46,1,Tuesday,Midday,Male,96,Atlantian,0
+46,1,Tuesday,Evening,Male,96,Atlantian,0
+46,1,Wednesday,Morning,Male,96,Atlantian,164
+46,1,Wednesday,Midday,Male,96,Atlantian,212
+46,1,Wednesday,Evening,Male,96,Atlantian,197
+46,1,Thursday,Morning,Male,96,Atlantian,214
+46,1,Thursday,Midday,Male,96,Atlantian,0
+46,1,Thursday,Evening,Male,96,Atlantian,0
+46,1,Friday,Morning,Male,96,Atlantian,435
+46,1,Friday,Midday,Male,96,Atlantian,245
+46,1,Friday,Evening,Male,96,Atlantian,212
+46,1,Saturday,Morning,Male,96,Atlantian,315
+46,1,Saturday,Midday,Male,96,Atlantian,236
+46,1,Saturday,Evening,Male,96,Atlantian,0
+46,2,Sunday,Morning,Male,96,Atlantian,170
+46,2,Sunday,Midday,Male,96,Atlantian,0
+46,2,Sunday,Evening,Male,96,Atlantian,0
+46,2,Monday,Morning,Male,96,Atlantian,281
+46,2,Monday,Midday,Male,96,Atlantian,0
+46,2,Monday,Evening,Male,96,Atlantian,120
+46,2,Tuesday,Morning,Male,96,Atlantian,341
+46,2,Tuesday,Midday,Male,96,Atlantian,238
+46,2,Tuesday,Evening,Male,96,Atlantian,181
+46,2,Wednesday,Morning,Male,96,Atlantian,229
+46,2,Wednesday,Midday,Male,96,Atlantian,299
+46,2,Wednesday,Evening,Male,96,Atlantian,0
+46,2,Thursday,Morning,Male,96,Atlantian,0
+46,2,Thursday,Midday,Male,96,Atlantian,412
+46,2,Thursday,Evening,Male,96,Atlantian,281
+46,2,Friday,Morning,Male,96,Atlantian,343
+46,2,Friday,Midday,Male,96,Atlantian,281
+46,2,Friday,Evening,Male,96,Atlantian,353
+46,2,Saturday,Morning,Male,96,Atlantian,447
+46,2,Saturday,Midday,Male,96,Atlantian,311
+46,2,Saturday,Evening,Male,96,Atlantian,437
+47,1,Sunday,Morning,Male,40,Carthaginian,54
+47,1,Sunday,Midday,Male,40,Carthaginian,73
+47,1,Sunday,Evening,Male,40,Carthaginian,111
+47,1,Monday,Morning,Male,40,Carthaginian,0
+47,1,Monday,Midday,Male,40,Carthaginian,151
+47,1,Monday,Evening,Male,40,Carthaginian,141
+47,1,Tuesday,Morning,Male,40,Carthaginian,80
+47,1,Tuesday,Midday,Male,40,Carthaginian,0
+47,1,Tuesday,Evening,Male,40,Carthaginian,104
+47,1,Wednesday,Morning,Male,40,Carthaginian,88
+47,1,Wednesday,Midday,Male,40,Carthaginian,107
+47,1,Wednesday,Evening,Male,40,Carthaginian,98
+47,1,Thursday,Morning,Male,40,Carthaginian,130
+47,1,Thursday,Midday,Male,40,Carthaginian,74
+47,1,Thursday,Evening,Male,40,Carthaginian,74
+47,1,Friday,Morning,Male,40,Carthaginian,197
+47,1,Friday,Midday,Male,40,Carthaginian,86
+47,1,Friday,Evening,Male,40,Carthaginian,179
+47,1,Saturday,Morning,Male,40,Carthaginian,139
+47,1,Saturday,Midday,Male,40,Carthaginian,291
+47,1,Saturday,Evening,Male,40,Carthaginian,131
+47,2,Sunday,Morning,Male,40,Carthaginian,137
+47,2,Sunday,Midday,Male,40,Carthaginian,138
+47,2,Sunday,Evening,Male,40,Carthaginian,94
+47,2,Monday,Morning,Male,40,Carthaginian,123
+47,2,Monday,Midday,Male,40,Carthaginian,194
+47,2,Monday,Evening,Male,40,Carthaginian,117
+47,2,Tuesday,Morning,Male,40,Carthaginian,0
+47,2,Tuesday,Midday,Male,40,Carthaginian,177
+47,2,Tuesday,Evening,Male,40,Carthaginian,104
+47,2,Wednesday,Morning,Male,40,Carthaginian,91
+47,2,Wednesday,Midday,Male,40,Carthaginian,112
+47,2,Wednesday,Evening,Male,40,Carthaginian,79
+47,2,Thursday,Morning,Male,40,Carthaginian,133
+47,2,Thursday,Midday,Male,40,Carthaginian,95
+47,2,Thursday,Evening,Male,40,Carthaginian,99
+47,2,Friday,Morning,Male,40,Carthaginian,199
+47,2,Friday,Midday,Male,40,Carthaginian,174
+47,2,Friday,Evening,Male,40,Carthaginian,142
+47,2,Saturday,Morning,Male,40,Carthaginian,200
+47,2,Saturday,Midday,Male,40,Carthaginian,205
+47,2,Saturday,Evening,Male,40,Carthaginian,77
+48,1,Sunday,Morning,Male,43,Roman,95
+48,1,Sunday,Midday,Male,43,Roman,0
+48,1,Sunday,Evening,Male,43,Roman,121
+48,1,Monday,Morning,Male,43,Roman,109
+48,1,Monday,Midday,Male,43,Roman,0
+48,1,Monday,Evening,Male,43,Roman,126
+48,1,Tuesday,Morning,Male,43,Roman,162
+48,1,Tuesday,Midday,Male,43,Roman,106
+48,1,Tuesday,Evening,Male,43,Roman,145
+48,1,Wednesday,Morning,Male,43,Roman,0
+48,1,Wednesday,Midday,Male,43,Roman,90
+48,1,Wednesday,Evening,Male,43,Roman,0
+48,1,Thursday,Morning,Male,43,Roman,75
+48,1,Thursday,Midday,Male,43,Roman,0
+48,1,Thursday,Evening,Male,43,Roman,126
+48,1,Friday,Morning,Male,43,Roman,155
+48,1,Friday,Midday,Male,43,Roman,110
+48,1,Friday,Evening,Male,43,Roman,233
+48,1,Saturday,Morning,Male,43,Roman,0
+48,1,Saturday,Midday,Male,43,Roman,147
+48,1,Saturday,Evening,Male,43,Roman,96
+48,2,Sunday,Morning,Male,43,Roman,0
+48,2,Sunday,Midday,Male,43,Roman,125
+48,2,Sunday,Evening,Male,43,Roman,51
+48,2,Monday,Morning,Male,43,Roman,0
+48,2,Monday,Midday,Male,43,Roman,0
+48,2,Monday,Evening,Male,43,Roman,0
+48,2,Tuesday,Morning,Male,43,Roman,0
+48,2,Tuesday,Midday,Male,43,Roman,138
+48,2,Tuesday,Evening,Male,43,Roman,122
+48,2,Wednesday,Morning,Male,43,Roman,50
+48,2,Wednesday,Midday,Male,43,Roman,70
+48,2,Wednesday,Evening,Male,43,Roman,0
+48,2,Thursday,Morning,Male,43,Roman,87
+48,2,Thursday,Midday,Male,43,Roman,51
+48,2,Thursday,Evening,Male,43,Roman,0
+48,2,Friday,Morning,Male,43,Roman,0
+48,2,Friday,Midday,Male,43,Roman,95
+48,2,Friday,Evening,Male,43,Roman,176
+48,2,Saturday,Morning,Male,43,Roman,164
+48,2,Saturday,Midday,Male,43,Roman,62
+48,2,Saturday,Evening,Male,43,Roman,126
+49,1,Sunday,Morning,Male,119,Atlantian,409
+49,1,Sunday,Midday,Male,119,Atlantian,0
+49,1,Sunday,Evening,Male,119,Atlantian,416
+49,1,Monday,Morning,Male,119,Atlantian,300
+49,1,Monday,Midday,Male,119,Atlantian,340
+49,1,Monday,Evening,Male,119,Atlantian,295
+49,1,Tuesday,Morning,Male,119,Atlantian,0
+49,1,Tuesday,Midday,Male,119,Atlantian,0
+49,1,Tuesday,Evening,Male,119,Atlantian,0
+49,1,Wednesday,Morning,Male,119,Atlantian,303
+49,1,Wednesday,Midday,Male,119,Atlantian,298
+49,1,Wednesday,Evening,Male,119,Atlantian,376
+49,1,Thursday,Morning,Male,119,Atlantian,401
+49,1,Thursday,Midday,Male,119,Atlantian,295
+49,1,Thursday,Evening,Male,119,Atlantian,175
+49,1,Friday,Morning,Male,119,Atlantian,283
+49,1,Friday,Midday,Male,119,Atlantian,391
+49,1,Friday,Evening,Male,119,Atlantian,382
+49,1,Saturday,Morning,Male,119,Atlantian,351
+49,1,Saturday,Midday,Male,119,Atlantian,313
+49,1,Saturday,Evening,Male,119,Atlantian,559
+49,2,Sunday,Morning,Male,119,Atlantian,338
+49,2,Sunday,Midday,Male,119,Atlantian,0
+49,2,Sunday,Evening,Male,119,Atlantian,0
+49,2,Monday,Morning,Male,119,Atlantian,298
+49,2,Monday,Midday,Male,119,Atlantian,0
+49,2,Monday,Evening,Male,119,Atlantian,234
+49,2,Tuesday,Morning,Male,119,Atlantian,331
+49,2,Tuesday,Midday,Male,119,Atlantian,0
+49,2,Tuesday,Evening,Male,119,Atlantian,312
+49,2,Wednesday,Morning,Male,119,Atlantian,471
+49,2,Wednesday,Midday,Male,119,Atlantian,341
+49,2,Wednesday,Evening,Male,119,Atlantian,0
+49,2,Thursday,Morning,Male,119,Atlantian,323
+49,2,Thursday,Midday,Male,119,Atlantian,293
+49,2,Thursday,Evening,Male,119,Atlantian,318
+49,2,Friday,Morning,Male,119,Atlantian,296
+49,2,Friday,Midday,Male,119,Atlantian,248
+49,2,Friday,Evening,Male,119,Atlantian,370
+49,2,Saturday,Morning,Male,119,Atlantian,238
+49,2,Saturday,Midday,Male,119,Atlantian,420
+49,2,Saturday,Evening,Male,119,Atlantian,379
+50,1,Sunday,Morning,Female,49,First Nations,169
+50,1,Sunday,Midday,Female,49,First Nations,213
+50,1,Sunday,Evening,Female,49,First Nations,142
+50,1,Monday,Morning,Female,49,First Nations,160
+50,1,Monday,Midday,Female,49,First Nations,120
+50,1,Monday,Evening,Female,49,First Nations,168
+50,1,Tuesday,Morning,Female,49,First Nations,248
+50,1,Tuesday,Midday,Female,49,First Nations,280
+50,1,Tuesday,Evening,Female,49,First Nations,107
+50,1,Wednesday,Morning,Female,49,First Nations,156
+50,1,Wednesday,Midday,Female,49,First Nations,92
+50,1,Wednesday,Evening,Female,49,First Nations,208
+50,1,Thursday,Morning,Female,49,First Nations,144
+50,1,Thursday,Midday,Female,49,First Nations,91
+50,1,Thursday,Evening,Female,49,First Nations,76
+50,1,Friday,Morning,Female,49,First Nations,253
+50,1,Friday,Midday,Female,49,First Nations,192
+50,1,Friday,Evening,Female,49,First Nations,111
+50,1,Saturday,Morning,Female,49,First Nations,151
+50,1,Saturday,Midday,Female,49,First Nations,227
+50,1,Saturday,Evening,Female,49,First Nations,289
+50,2,Sunday,Morning,Female,49,First Nations,131
+50,2,Sunday,Midday,Female,49,First Nations,121
+50,2,Sunday,Evening,Female,49,First Nations,139
+50,2,Monday,Morning,Female,49,First Nations,132
+50,2,Monday,Midday,Female,49,First Nations,286
+50,2,Monday,Evening,Female,49,First Nations,182
+50,2,Tuesday,Morning,Female,49,First Nations,204
+50,2,Tuesday,Midday,Female,49,First Nations,219
+50,2,Tuesday,Evening,Female,49,First Nations,216
+50,2,Wednesday,Morning,Female,49,First Nations,170
+50,2,Wednesday,Midday,Female,49,First Nations,109
+50,2,Wednesday,Evening,Female,49,First Nations,144
+50,2,Thursday,Morning,Female,49,First Nations,189
+50,2,Thursday,Midday,Female,49,First Nations,108
+50,2,Thursday,Evening,Female,49,First Nations,74
+50,2,Friday,Morning,Female,49,First Nations,308
+50,2,Friday,Midday,Female,49,First Nations,147
+50,2,Friday,Evening,Female,49,First Nations,129
+50,2,Saturday,Morning,Female,49,First Nations,119
+50,2,Saturday,Midday,Female,49,First Nations,237
+50,2,Saturday,Evening,Female,49,First Nations,186
+51,1,Sunday,Morning,Male,24,First Nations,85
+51,1,Sunday,Midday,Male,24,First Nations,69
+51,1,Sunday,Evening,Male,24,First Nations,0
+51,1,Monday,Morning,Male,24,First Nations,102
+51,1,Monday,Midday,Male,24,First Nations,0
+51,1,Monday,Evening,Male,24,First Nations,45
+51,1,Tuesday,Morning,Male,24,First Nations,122
+51,1,Tuesday,Midday,Male,24,First Nations,0
+51,1,Tuesday,Evening,Male,24,First Nations,84
+51,1,Wednesday,Morning,Male,24,First Nations,0
+51,1,Wednesday,Midday,Male,24,First Nations,58
+51,1,Wednesday,Evening,Male,24,First Nations,0
+51,1,Thursday,Morning,Male,24,First Nations,0
+51,1,Thursday,Midday,Male,24,First Nations,0
+51,1,Thursday,Evening,Male,24,First Nations,136
+51,1,Friday,Morning,Male,24,First Nations,202
+51,1,Friday,Midday,Male,24,First Nations,154
+51,1,Friday,Evening,Male,24,First Nations,0
+51,1,Saturday,Morning,Male,24,First Nations,107
+51,1,Saturday,Midday,Male,24,First Nations,136
+51,1,Saturday,Evening,Male,24,First Nations,252
+51,2,Sunday,Morning,Male,24,First Nations,0
+51,2,Sunday,Midday,Male,24,First Nations,0
+51,2,Sunday,Evening,Male,24,First Nations,0
+51,2,Monday,Morning,Male,24,First Nations,0
+51,2,Monday,Midday,Male,24,First Nations,0
+51,2,Monday,Evening,Male,24,First Nations,95
+51,2,Tuesday,Morning,Male,24,First Nations,115
+51,2,Tuesday,Midday,Male,24,First Nations,0
+51,2,Tuesday,Evening,Male,24,First Nations,0
+51,2,Wednesday,Morning,Male,24,First Nations,0
+51,2,Wednesday,Midday,Male,24,First Nations,52
+51,2,Wednesday,Evening,Male,24,First Nations,0
+51,2,Thursday,Morning,Male,24,First Nations,104
+51,2,Thursday,Midday,Male,24,First Nations,89
+51,2,Thursday,Evening,Male,24,First Nations,0
+51,2,Friday,Morning,Male,24,First Nations,0
+51,2,Friday,Midday,Male,24,First Nations,0
+51,2,Friday,Evening,Male,24,First Nations,0
+51,2,Saturday,Morning,Male,24,First Nations,108
+51,2,Saturday,Midday,Male,24,First Nations,0
+51,2,Saturday,Evening,Male,24,First Nations,166
+52,1,Sunday,Morning,Male,44,Atlantian,0
+52,1,Sunday,Midday,Male,44,Atlantian,0
+52,1,Sunday,Evening,Male,44,Atlantian,0
+52,1,Monday,Morning,Male,44,Atlantian,272
+52,1,Monday,Midday,Male,44,Atlantian,0
+52,1,Monday,Evening,Male,44,Atlantian,242
+52,1,Tuesday,Morning,Male,44,Atlantian,0
+52,1,Tuesday,Midday,Male,44,Atlantian,0
+52,1,Tuesday,Evening,Male,44,Atlantian,117
+52,1,Wednesday,Morning,Male,44,Atlantian,113
+52,1,Wednesday,Midday,Male,44,Atlantian,0
+52,1,Wednesday,Evening,Male,44,Atlantian,0
+52,1,Thursday,Morning,Male,44,Atlantian,0
+52,1,Thursday,Midday,Male,44,Atlantian,120
+52,1,Thursday,Evening,Male,44,Atlantian,68
+52,1,Friday,Morning,Male,44,Atlantian,0
+52,1,Friday,Midday,Male,44,Atlantian,186
+52,1,Friday,Evening,Male,44,Atlantian,0
+52,1,Saturday,Morning,Male,44,Atlantian,126
+52,1,Saturday,Midday,Male,44,Atlantian,217
+52,1,Saturday,Evening,Male,44,Atlantian,182
+52,2,Sunday,Morning,Male,44,Atlantian,0
+52,2,Sunday,Midday,Male,44,Atlantian,83
+52,2,Sunday,Evening,Male,44,Atlantian,105
+52,2,Monday,Morning,Male,44,Atlantian,0
+52,2,Monday,Midday,Male,44,Atlantian,183
+52,2,Monday,Evening,Male,44,Atlantian,0
+52,2,Tuesday,Morning,Male,44,Atlantian,0
+52,2,Tuesday,Midday,Male,44,Atlantian,0
+52,2,Tuesday,Evening,Male,44,Atlantian,0
+52,2,Wednesday,Morning,Male,44,Atlantian,0
+52,2,Wednesday,Midday,Male,44,Atlantian,0
+52,2,Wednesday,Evening,Male,44,Atlantian,160
+52,2,Thursday,Morning,Male,44,Atlantian,125
+52,2,Thursday,Midday,Male,44,Atlantian,0
+52,2,Thursday,Evening,Male,44,Atlantian,203
+52,2,Friday,Morning,Male,44,Atlantian,0
+52,2,Friday,Midday,Male,44,Atlantian,0
+52,2,Friday,Evening,Male,44,Atlantian,248
+52,2,Saturday,Morning,Male,44,Atlantian,83
+52,2,Saturday,Midday,Male,44,Atlantian,0
+52,2,Saturday,Evening,Male,44,Atlantian,0
+53,1,Sunday,Morning,Female,59,First Nations,165
+53,1,Sunday,Midday,Female,59,First Nations,0
+53,1,Sunday,Evening,Female,59,First Nations,0
+53,1,Monday,Morning,Female,59,First Nations,226
+53,1,Monday,Midday,Female,59,First Nations,0
+53,1,Monday,Evening,Female,59,First Nations,0
+53,1,Tuesday,Morning,Female,59,First Nations,94
+53,1,Tuesday,Midday,Female,59,First Nations,216
+53,1,Tuesday,Evening,Female,59,First Nations,130
+53,1,Wednesday,Morning,Female,59,First Nations,0
+53,1,Wednesday,Midday,Female,59,First Nations,184
+53,1,Wednesday,Evening,Female,59,First Nations,148
+53,1,Thursday,Morning,Female,59,First Nations,135
+53,1,Thursday,Midday,Female,59,First Nations,0
+53,1,Thursday,Evening,Female,59,First Nations,314
+53,1,Friday,Morning,Female,59,First Nations,207
+53,1,Friday,Midday,Female,59,First Nations,0
+53,1,Friday,Evening,Female,59,First Nations,0
+53,1,Saturday,Morning,Female,59,First Nations,350
+53,1,Saturday,Midday,Female,59,First Nations,247
+53,1,Saturday,Evening,Female,59,First Nations,284
+53,2,Sunday,Morning,Female,59,First Nations,0
+53,2,Sunday,Midday,Female,59,First Nations,0
+53,2,Sunday,Evening,Female,59,First Nations,112
+53,2,Monday,Morning,Female,59,First Nations,0
+53,2,Monday,Midday,Female,59,First Nations,0
+53,2,Monday,Evening,Female,59,First Nations,183
+53,2,Tuesday,Morning,Female,59,First Nations,0
+53,2,Tuesday,Midday,Female,59,First Nations,0
+53,2,Tuesday,Evening,Female,59,First Nations,314
+53,2,Wednesday,Morning,Female,59,First Nations,0
+53,2,Wednesday,Midday,Female,59,First Nations,156
+53,2,Wednesday,Evening,Female,59,First Nations,250
+53,2,Thursday,Morning,Female,59,First Nations,0
+53,2,Thursday,Midday,Female,59,First Nations,0
+53,2,Thursday,Evening,Female,59,First Nations,258
+53,2,Friday,Morning,Female,59,First Nations,329
+53,2,Friday,Midday,Female,59,First Nations,223
+53,2,Friday,Evening,Female,59,First Nations,310
+53,2,Saturday,Morning,Female,59,First Nations,247
+53,2,Saturday,Midday,Female,59,First Nations,136
+53,2,Saturday,Evening,Female,59,First Nations,220
+54,1,Sunday,Morning,Male,22,Atlantian,0
+54,1,Sunday,Midday,Male,22,Atlantian,0
+54,1,Sunday,Evening,Male,22,Atlantian,130
+54,1,Monday,Morning,Male,22,Atlantian,0
+54,1,Monday,Midday,Male,22,Atlantian,0
+54,1,Monday,Evening,Male,22,Atlantian,117
+54,1,Tuesday,Morning,Male,22,Atlantian,0
+54,1,Tuesday,Midday,Male,22,Atlantian,99
+54,1,Tuesday,Evening,Male,22,Atlantian,0
+54,1,Wednesday,Morning,Male,22,Atlantian,0
+54,1,Wednesday,Midday,Male,22,Atlantian,171
+54,1,Wednesday,Evening,Male,22,Atlantian,0
+54,1,Thursday,Morning,Male,22,Atlantian,0
+54,1,Thursday,Midday,Male,22,Atlantian,71
+54,1,Thursday,Evening,Male,22,Atlantian,66
+54,1,Friday,Morning,Male,22,Atlantian,279
+54,1,Friday,Midday,Male,22,Atlantian,259
+54,1,Friday,Evening,Male,22,Atlantian,200
+54,1,Saturday,Morning,Male,22,Atlantian,196
+54,1,Saturday,Midday,Male,22,Atlantian,229
+54,1,Saturday,Evening,Male,22,Atlantian,248
+54,2,Sunday,Morning,Male,22,Atlantian,0
+54,2,Sunday,Midday,Male,22,Atlantian,0
+54,2,Sunday,Evening,Male,22,Atlantian,91
+54,2,Monday,Morning,Male,22,Atlantian,0
+54,2,Monday,Midday,Male,22,Atlantian,129
+54,2,Monday,Evening,Male,22,Atlantian,148
+54,2,Tuesday,Morning,Male,22,Atlantian,0
+54,2,Tuesday,Midday,Male,22,Atlantian,0
+54,2,Tuesday,Evening,Male,22,Atlantian,0
+54,2,Wednesday,Morning,Male,22,Atlantian,0
+54,2,Wednesday,Midday,Male,22,Atlantian,0
+54,2,Wednesday,Evening,Male,22,Atlantian,0
+54,2,Thursday,Morning,Male,22,Atlantian,0
+54,2,Thursday,Midday,Male,22,Atlantian,0
+54,2,Thursday,Evening,Male,22,Atlantian,0
+54,2,Friday,Morning,Male,22,Atlantian,0
+54,2,Friday,Midday,Male,22,Atlantian,0
+54,2,Friday,Evening,Male,22,Atlantian,167
+54,2,Saturday,Morning,Male,22,Atlantian,152
+54,2,Saturday,Midday,Male,22,Atlantian,0
+54,2,Saturday,Evening,Male,22,Atlantian,168
+55,1,Sunday,Morning,Female,87,Carthaginian,0
+55,1,Sunday,Midday,Female,87,Carthaginian,0
+55,1,Sunday,Evening,Female,87,Carthaginian,0
+55,1,Monday,Morning,Female,87,Carthaginian,0
+55,1,Monday,Midday,Female,87,Carthaginian,0
+55,1,Monday,Evening,Female,87,Carthaginian,0
+55,1,Tuesday,Morning,Female,87,Carthaginian,342
+55,1,Tuesday,Midday,Female,87,Carthaginian,0
+55,1,Tuesday,Evening,Female,87,Carthaginian,391
+55,1,Wednesday,Morning,Female,87,Carthaginian,0
+55,1,Wednesday,Midday,Female,87,Carthaginian,0
+55,1,Wednesday,Evening,Female,87,Carthaginian,248
+55,1,Thursday,Morning,Female,87,Carthaginian,0
+55,1,Thursday,Midday,Female,87,Carthaginian,241
+55,1,Thursday,Evening,Female,87,Carthaginian,218
+55,1,Friday,Morning,Female,87,Carthaginian,0
+55,1,Friday,Midday,Female,87,Carthaginian,181
+55,1,Friday,Evening,Female,87,Carthaginian,257
+55,1,Saturday,Morning,Female,87,Carthaginian,179
+55,1,Saturday,Midday,Female,87,Carthaginian,345
+55,1,Saturday,Evening,Female,87,Carthaginian,299
+55,2,Sunday,Morning,Female,87,Carthaginian,176
+55,2,Sunday,Midday,Female,87,Carthaginian,0
+55,2,Sunday,Evening,Female,87,Carthaginian,183
+55,2,Monday,Morning,Female,87,Carthaginian,0
+55,2,Monday,Midday,Female,87,Carthaginian,198
+55,2,Monday,Evening,Female,87,Carthaginian,231
+55,2,Tuesday,Morning,Female,87,Carthaginian,292
+55,2,Tuesday,Midday,Female,87,Carthaginian,0
+55,2,Tuesday,Evening,Female,87,Carthaginian,0
+55,2,Wednesday,Morning,Female,87,Carthaginian,0
+55,2,Wednesday,Midday,Female,87,Carthaginian,291
+55,2,Wednesday,Evening,Female,87,Carthaginian,0
+55,2,Thursday,Morning,Female,87,Carthaginian,0
+55,2,Thursday,Midday,Female,87,Carthaginian,0
+55,2,Thursday,Evening,Female,87,Carthaginian,116
+55,2,Friday,Morning,Female,87,Carthaginian,292
+55,2,Friday,Midday,Female,87,Carthaginian,0
+55,2,Friday,Evening,Female,87,Carthaginian,0
+55,2,Saturday,Morning,Female,87,Carthaginian,238
+55,2,Saturday,Midday,Female,87,Carthaginian,336
+55,2,Saturday,Evening,Female,87,Carthaginian,254
+56,1,Sunday,Morning,Male,33,First Nations,62
+56,1,Sunday,Midday,Male,33,First Nations,94
+56,1,Sunday,Evening,Male,33,First Nations,135
+56,1,Monday,Morning,Male,33,First Nations,141
+56,1,Monday,Midday,Male,33,First Nations,140
+56,1,Monday,Evening,Male,33,First Nations,122
+56,1,Tuesday,Morning,Male,33,First Nations,95
+56,1,Tuesday,Midday,Male,33,First Nations,97
+56,1,Tuesday,Evening,Male,33,First Nations,104
+56,1,Wednesday,Morning,Male,33,First Nations,95
+56,1,Wednesday,Midday,Male,33,First Nations,70
+56,1,Wednesday,Evening,Male,33,First Nations,111
+56,1,Thursday,Morning,Male,33,First Nations,0
+56,1,Thursday,Midday,Male,33,First Nations,63
+56,1,Thursday,Evening,Male,33,First Nations,88
+56,1,Friday,Morning,Male,33,First Nations,158
+56,1,Friday,Midday,Male,33,First Nations,101
+56,1,Friday,Evening,Male,33,First Nations,305
+56,1,Saturday,Morning,Male,33,First Nations,200
+56,1,Saturday,Midday,Male,33,First Nations,150
+56,1,Saturday,Evening,Male,33,First Nations,0
+56,2,Sunday,Morning,Male,33,First Nations,162
+56,2,Sunday,Midday,Male,33,First Nations,119
+56,2,Sunday,Evening,Male,33,First Nations,76
+56,2,Monday,Morning,Male,33,First Nations,114
+56,2,Monday,Midday,Male,33,First Nations,194
+56,2,Monday,Evening,Male,33,First Nations,98
+56,2,Tuesday,Morning,Male,33,First Nations,0
+56,2,Tuesday,Midday,Male,33,First Nations,84
+56,2,Tuesday,Evening,Male,33,First Nations,152
+56,2,Wednesday,Morning,Male,33,First Nations,87
+56,2,Wednesday,Midday,Male,33,First Nations,64
+56,2,Wednesday,Evening,Male,33,First Nations,124
+56,2,Thursday,Morning,Male,33,First Nations,117
+56,2,Thursday,Midday,Male,33,First Nations,109
+56,2,Thursday,Evening,Male,33,First Nations,103
+56,2,Friday,Morning,Male,33,First Nations,81
+56,2,Friday,Midday,Male,33,First Nations,113
+56,2,Friday,Evening,Male,33,First Nations,0
+56,2,Saturday,Morning,Male,33,First Nations,122
+56,2,Saturday,Midday,Male,33,First Nations,161
+56,2,Saturday,Evening,Male,33,First Nations,0
+57,1,Sunday,Morning,Male,41,Roman,81
+57,1,Sunday,Midday,Male,41,Roman,35
+57,1,Sunday,Evening,Male,41,Roman,67
+57,1,Monday,Morning,Male,41,Roman,144
+57,1,Monday,Midday,Male,41,Roman,288
+57,1,Monday,Evening,Male,41,Roman,107
+57,1,Tuesday,Morning,Male,41,Roman,0
+57,1,Tuesday,Midday,Male,41,Roman,78
+57,1,Tuesday,Evening,Male,41,Roman,155
+57,1,Wednesday,Morning,Male,41,Roman,77
+57,1,Wednesday,Midday,Male,41,Roman,74
+57,1,Wednesday,Evening,Male,41,Roman,70
+57,1,Thursday,Morning,Male,41,Roman,91
+57,1,Thursday,Midday,Male,41,Roman,119
+57,1,Thursday,Evening,Male,41,Roman,88
+57,1,Friday,Morning,Male,41,Roman,175
+57,1,Friday,Midday,Male,41,Roman,149
+57,1,Friday,Evening,Male,41,Roman,165
+57,1,Saturday,Morning,Male,41,Roman,220
+57,1,Saturday,Midday,Male,41,Roman,135
+57,1,Saturday,Evening,Male,41,Roman,0
+57,2,Sunday,Morning,Male,41,Roman,130
+57,2,Sunday,Midday,Male,41,Roman,0
+57,2,Sunday,Evening,Male,41,Roman,0
+57,2,Monday,Morning,Male,41,Roman,0
+57,2,Monday,Midday,Male,41,Roman,165
+57,2,Monday,Evening,Male,41,Roman,105
+57,2,Tuesday,Morning,Male,41,Roman,145
+57,2,Tuesday,Midday,Male,41,Roman,136
+57,2,Tuesday,Evening,Male,41,Roman,118
+57,2,Wednesday,Morning,Male,41,Roman,53
+57,2,Wednesday,Midday,Male,41,Roman,141
+57,2,Wednesday,Evening,Male,41,Roman,100
+57,2,Thursday,Morning,Male,41,Roman,77
+57,2,Thursday,Midday,Male,41,Roman,87
+57,2,Thursday,Evening,Male,41,Roman,56
+57,2,Friday,Morning,Male,41,Roman,147
+57,2,Friday,Midday,Male,41,Roman,108
+57,2,Friday,Evening,Male,41,Roman,197
+57,2,Saturday,Morning,Male,41,Roman,164
+57,2,Saturday,Midday,Male,41,Roman,186
+57,2,Saturday,Evening,Male,41,Roman,0
+58,1,Sunday,Morning,Female,49,Carthaginian,209
+58,1,Sunday,Midday,Female,49,Carthaginian,199
+58,1,Sunday,Evening,Female,49,Carthaginian,196
+58,1,Monday,Morning,Female,49,Carthaginian,112
+58,1,Monday,Midday,Female,49,Carthaginian,148
+58,1,Monday,Evening,Female,49,Carthaginian,149
+58,1,Tuesday,Morning,Female,49,Carthaginian,78
+58,1,Tuesday,Midday,Female,49,Carthaginian,126
+58,1,Tuesday,Evening,Female,49,Carthaginian,268
+58,1,Wednesday,Morning,Female,49,Carthaginian,121
+58,1,Wednesday,Midday,Female,49,Carthaginian,73
+58,1,Wednesday,Evening,Female,49,Carthaginian,97
+58,1,Thursday,Morning,Female,49,Carthaginian,118
+58,1,Thursday,Midday,Female,49,Carthaginian,208
+58,1,Thursday,Evening,Female,49,Carthaginian,169
+58,1,Friday,Morning,Female,49,Carthaginian,142
+58,1,Friday,Midday,Female,49,Carthaginian,163
+58,1,Friday,Evening,Female,49,Carthaginian,173
+58,1,Saturday,Morning,Female,49,Carthaginian,289
+58,1,Saturday,Midday,Female,49,Carthaginian,224
+58,1,Saturday,Evening,Female,49,Carthaginian,179
+58,2,Sunday,Morning,Female,49,Carthaginian,121
+58,2,Sunday,Midday,Female,49,Carthaginian,114
+58,2,Sunday,Evening,Female,49,Carthaginian,125
+58,2,Monday,Morning,Female,49,Carthaginian,114
+58,2,Monday,Midday,Female,49,Carthaginian,78
+58,2,Monday,Evening,Female,49,Carthaginian,165
+58,2,Tuesday,Morning,Female,49,Carthaginian,160
+58,2,Tuesday,Midday,Female,49,Carthaginian,268
+58,2,Tuesday,Evening,Female,49,Carthaginian,172
+58,2,Wednesday,Morning,Female,49,Carthaginian,93
+58,2,Wednesday,Midday,Female,49,Carthaginian,230
+58,2,Wednesday,Evening,Female,49,Carthaginian,241
+58,2,Thursday,Morning,Female,49,Carthaginian,254
+58,2,Thursday,Midday,Female,49,Carthaginian,129
+58,2,Thursday,Evening,Female,49,Carthaginian,169
+58,2,Friday,Morning,Female,49,Carthaginian,193
+58,2,Friday,Midday,Female,49,Carthaginian,150
+58,2,Friday,Evening,Female,49,Carthaginian,130
+58,2,Saturday,Morning,Female,49,Carthaginian,169
+58,2,Saturday,Midday,Female,49,Carthaginian,152
+58,2,Saturday,Evening,Female,49,Carthaginian,194
+59,1,Sunday,Morning,Female,38,Holy Roman,0
+59,1,Sunday,Midday,Female,38,Holy Roman,82
+59,1,Sunday,Evening,Female,38,Holy Roman,135
+59,1,Monday,Morning,Female,38,Holy Roman,0
+59,1,Monday,Midday,Female,38,Holy Roman,162
+59,1,Monday,Evening,Female,38,Holy Roman,119
+59,1,Tuesday,Morning,Female,38,Holy Roman,0
+59,1,Tuesday,Midday,Female,38,Holy Roman,138
+59,1,Tuesday,Evening,Female,38,Holy Roman,0
+59,1,Wednesday,Morning,Female,38,Holy Roman,0
+59,1,Wednesday,Midday,Female,38,Holy Roman,0
+59,1,Wednesday,Evening,Female,38,Holy Roman,0
+59,1,Thursday,Morning,Female,38,Holy Roman,130
+59,1,Thursday,Midday,Female,38,Holy Roman,0
+59,1,Thursday,Evening,Female,38,Holy Roman,0
+59,1,Friday,Morning,Female,38,Holy Roman,0
+59,1,Friday,Midday,Female,38,Holy Roman,143
+59,1,Friday,Evening,Female,38,Holy Roman,200
+59,1,Saturday,Morning,Female,38,Holy Roman,138
+59,1,Saturday,Midday,Female,38,Holy Roman,0
+59,1,Saturday,Evening,Female,38,Holy Roman,0
+59,2,Sunday,Morning,Female,38,Holy Roman,0
+59,2,Sunday,Midday,Female,38,Holy Roman,0
+59,2,Sunday,Evening,Female,38,Holy Roman,0
+59,2,Monday,Morning,Female,38,Holy Roman,0
+59,2,Monday,Midday,Female,38,Holy Roman,0
+59,2,Monday,Evening,Female,38,Holy Roman,0
+59,2,Tuesday,Morning,Female,38,Holy Roman,207
+59,2,Tuesday,Midday,Female,38,Holy Roman,0
+59,2,Tuesday,Evening,Female,38,Holy Roman,78
+59,2,Wednesday,Morning,Female,38,Holy Roman,121
+59,2,Wednesday,Midday,Female,38,Holy Roman,0
+59,2,Wednesday,Evening,Female,38,Holy Roman,0
+59,2,Thursday,Morning,Female,38,Holy Roman,133
+59,2,Thursday,Midday,Female,38,Holy Roman,131
+59,2,Thursday,Evening,Female,38,Holy Roman,94
+59,2,Friday,Morning,Female,38,Holy Roman,154
+59,2,Friday,Midday,Female,38,Holy Roman,220
+59,2,Friday,Evening,Female,38,Holy Roman,259
+59,2,Saturday,Morning,Female,38,Holy Roman,261
+59,2,Saturday,Midday,Female,38,Holy Roman,130
+59,2,Saturday,Evening,Female,38,Holy Roman,194
+60,1,Sunday,Morning,Male,72,Carthaginian,213
+60,1,Sunday,Midday,Male,72,Carthaginian,0
+60,1,Sunday,Evening,Male,72,Carthaginian,186
+60,1,Monday,Morning,Male,72,Carthaginian,183
+60,1,Monday,Midday,Male,72,Carthaginian,0
+60,1,Monday,Evening,Male,72,Carthaginian,153
+60,1,Tuesday,Morning,Male,72,Carthaginian,266
+60,1,Tuesday,Midday,Male,72,Carthaginian,114
+60,1,Tuesday,Evening,Male,72,Carthaginian,162
+60,1,Wednesday,Morning,Male,72,Carthaginian,79
+60,1,Wednesday,Midday,Male,72,Carthaginian,202
+60,1,Wednesday,Evening,Male,72,Carthaginian,172
+60,1,Thursday,Morning,Male,72,Carthaginian,162
+60,1,Thursday,Midday,Male,72,Carthaginian,199
+60,1,Thursday,Evening,Male,72,Carthaginian,0
+60,1,Friday,Morning,Male,72,Carthaginian,193
+60,1,Friday,Midday,Male,72,Carthaginian,206
+60,1,Friday,Evening,Male,72,Carthaginian,123
+60,1,Saturday,Morning,Male,72,Carthaginian,236
+60,1,Saturday,Midday,Male,72,Carthaginian,317
+60,1,Saturday,Evening,Male,72,Carthaginian,178
+60,2,Sunday,Morning,Male,72,Carthaginian,168
+60,2,Sunday,Midday,Male,72,Carthaginian,233
+60,2,Sunday,Evening,Male,72,Carthaginian,119
+60,2,Monday,Morning,Male,72,Carthaginian,0
+60,2,Monday,Midday,Male,72,Carthaginian,0
+60,2,Monday,Evening,Male,72,Carthaginian,118
+60,2,Tuesday,Morning,Male,72,Carthaginian,276
+60,2,Tuesday,Midday,Male,72,Carthaginian,203
+60,2,Tuesday,Evening,Male,72,Carthaginian,240
+60,2,Wednesday,Morning,Male,72,Carthaginian,141
+60,2,Wednesday,Midday,Male,72,Carthaginian,199
+60,2,Wednesday,Evening,Male,72,Carthaginian,112
+60,2,Thursday,Morning,Male,72,Carthaginian,190
+60,2,Thursday,Midday,Male,72,Carthaginian,206
+60,2,Thursday,Evening,Male,72,Carthaginian,157
+60,2,Friday,Morning,Male,72,Carthaginian,139
+60,2,Friday,Midday,Male,72,Carthaginian,361
+60,2,Friday,Evening,Male,72,Carthaginian,205
+60,2,Saturday,Morning,Male,72,Carthaginian,229
+60,2,Saturday,Midday,Male,72,Carthaginian,362
+60,2,Saturday,Evening,Male,72,Carthaginian,277
+61,1,Sunday,Morning,Female,92,First Nations,280
+61,1,Sunday,Midday,Female,92,First Nations,168
+61,1,Sunday,Evening,Female,92,First Nations,374
+61,1,Monday,Morning,Female,92,First Nations,0
+61,1,Monday,Midday,Female,92,First Nations,0
+61,1,Monday,Evening,Female,92,First Nations,351
+61,1,Tuesday,Morning,Female,92,First Nations,349
+61,1,Tuesday,Midday,Female,92,First Nations,179
+61,1,Tuesday,Evening,Female,92,First Nations,0
+61,1,Wednesday,Morning,Female,92,First Nations,0
+61,1,Wednesday,Midday,Female,92,First Nations,144
+61,1,Wednesday,Evening,Female,92,First Nations,0
+61,1,Thursday,Morning,Female,92,First Nations,0
+61,1,Thursday,Midday,Female,92,First Nations,201
+61,1,Thursday,Evening,Female,92,First Nations,0
+61,1,Friday,Morning,Female,92,First Nations,0
+61,1,Friday,Midday,Female,92,First Nations,125
+61,1,Friday,Evening,Female,92,First Nations,284
+61,1,Saturday,Morning,Female,92,First Nations,0
+61,1,Saturday,Midday,Female,92,First Nations,337
+61,1,Saturday,Evening,Female,92,First Nations,174
+61,2,Sunday,Morning,Female,92,First Nations,170
+61,2,Sunday,Midday,Female,92,First Nations,0
+61,2,Sunday,Evening,Female,92,First Nations,0
+61,2,Monday,Morning,Female,92,First Nations,243
+61,2,Monday,Midday,Female,92,First Nations,401
+61,2,Monday,Evening,Female,92,First Nations,356
+61,2,Tuesday,Morning,Female,92,First Nations,0
+61,2,Tuesday,Midday,Female,92,First Nations,0
+61,2,Tuesday,Evening,Female,92,First Nations,0
+61,2,Wednesday,Morning,Female,92,First Nations,187
+61,2,Wednesday,Midday,Female,92,First Nations,0
+61,2,Wednesday,Evening,Female,92,First Nations,181
+61,2,Thursday,Morning,Female,92,First Nations,215
+61,2,Thursday,Midday,Female,92,First Nations,0
+61,2,Thursday,Evening,Female,92,First Nations,456
+61,2,Friday,Morning,Female,92,First Nations,285
+61,2,Friday,Midday,Female,92,First Nations,0
+61,2,Friday,Evening,Female,92,First Nations,272
+61,2,Saturday,Morning,Female,92,First Nations,0
+61,2,Saturday,Midday,Female,92,First Nations,366
+61,2,Saturday,Evening,Female,92,First Nations,211
+62,1,Sunday,Morning,Male,53,Atlantian,0
+62,1,Sunday,Midday,Male,53,Atlantian,0
+62,1,Sunday,Evening,Male,53,Atlantian,156
+62,1,Monday,Morning,Male,53,Atlantian,0
+62,1,Monday,Midday,Male,53,Atlantian,0
+62,1,Monday,Evening,Male,53,Atlantian,0
+62,1,Tuesday,Morning,Male,53,Atlantian,0
+62,1,Tuesday,Midday,Male,53,Atlantian,0
+62,1,Tuesday,Evening,Male,53,Atlantian,0
+62,1,Wednesday,Morning,Male,53,Atlantian,230
+62,1,Wednesday,Midday,Male,53,Atlantian,0
+62,1,Wednesday,Evening,Male,53,Atlantian,0
+62,1,Thursday,Morning,Male,53,Atlantian,205
+62,1,Thursday,Midday,Male,53,Atlantian,0
+62,1,Thursday,Evening,Male,53,Atlantian,0
+62,1,Friday,Morning,Male,53,Atlantian,0
+62,1,Friday,Midday,Male,53,Atlantian,0
+62,1,Friday,Evening,Male,53,Atlantian,0
+62,1,Saturday,Morning,Male,53,Atlantian,190
+62,1,Saturday,Midday,Male,53,Atlantian,0
+62,1,Saturday,Evening,Male,53,Atlantian,0
+62,2,Sunday,Morning,Male,53,Atlantian,290
+62,2,Sunday,Midday,Male,53,Atlantian,232
+62,2,Sunday,Evening,Male,53,Atlantian,127
+62,2,Monday,Morning,Male,53,Atlantian,163
+62,2,Monday,Midday,Male,53,Atlantian,0
+62,2,Monday,Evening,Male,53,Atlantian,141
+62,2,Tuesday,Morning,Male,53,Atlantian,0
+62,2,Tuesday,Midday,Male,53,Atlantian,0
+62,2,Tuesday,Evening,Male,53,Atlantian,0
+62,2,Wednesday,Morning,Male,53,Atlantian,0
+62,2,Wednesday,Midday,Male,53,Atlantian,0
+62,2,Wednesday,Evening,Male,53,Atlantian,0
+62,2,Thursday,Morning,Male,53,Atlantian,165
+62,2,Thursday,Midday,Male,53,Atlantian,0
+62,2,Thursday,Evening,Male,53,Atlantian,86
+62,2,Friday,Morning,Male,53,Atlantian,186
+62,2,Friday,Midday,Male,53,Atlantian,216
+62,2,Friday,Evening,Male,53,Atlantian,0
+62,2,Saturday,Morning,Male,53,Atlantian,0
+62,2,Saturday,Midday,Male,53,Atlantian,172
+62,2,Saturday,Evening,Male,53,Atlantian,147
+63,1,Sunday,Morning,Male,100,Holy Roman,204
+63,1,Sunday,Midday,Male,100,Holy Roman,229
+63,1,Sunday,Evening,Male,100,Holy Roman,171
+63,1,Monday,Morning,Male,100,Holy Roman,264
+63,1,Monday,Midday,Male,100,Holy Roman,220
+63,1,Monday,Evening,Male,100,Holy Roman,299
+63,1,Tuesday,Morning,Male,100,Holy Roman,312
+63,1,Tuesday,Midday,Male,100,Holy Roman,218
+63,1,Tuesday,Evening,Male,100,Holy Roman,282
+63,1,Wednesday,Morning,Male,100,Holy Roman,188
+63,1,Wednesday,Midday,Male,100,Holy Roman,230
+63,1,Wednesday,Evening,Male,100,Holy Roman,118
+63,1,Thursday,Morning,Male,100,Holy Roman,164
+63,1,Thursday,Midday,Male,100,Holy Roman,221
+63,1,Thursday,Evening,Male,100,Holy Roman,199
+63,1,Friday,Morning,Male,100,Holy Roman,116
+63,1,Friday,Midday,Male,100,Holy Roman,349
+63,1,Friday,Evening,Male,100,Holy Roman,172
+63,1,Saturday,Morning,Male,100,Holy Roman,399
+63,1,Saturday,Midday,Male,100,Holy Roman,366
+63,1,Saturday,Evening,Male,100,Holy Roman,194
+63,2,Sunday,Morning,Male,100,Holy Roman,230
+63,2,Sunday,Midday,Male,100,Holy Roman,172
+63,2,Sunday,Evening,Male,100,Holy Roman,191
+63,2,Monday,Morning,Male,100,Holy Roman,211
+63,2,Monday,Midday,Male,100,Holy Roman,139
+63,2,Monday,Evening,Male,100,Holy Roman,210
+63,2,Tuesday,Morning,Male,100,Holy Roman,307
+63,2,Tuesday,Midday,Male,100,Holy Roman,137
+63,2,Tuesday,Evening,Male,100,Holy Roman,160
+63,2,Wednesday,Morning,Male,100,Holy Roman,282
+63,2,Wednesday,Midday,Male,100,Holy Roman,347
+63,2,Wednesday,Evening,Male,100,Holy Roman,267
+63,2,Thursday,Morning,Male,100,Holy Roman,330
+63,2,Thursday,Midday,Male,100,Holy Roman,239
+63,2,Thursday,Evening,Male,100,Holy Roman,193
+63,2,Friday,Morning,Male,100,Holy Roman,248
+63,2,Friday,Midday,Male,100,Holy Roman,308
+63,2,Friday,Evening,Male,100,Holy Roman,297
+63,2,Saturday,Morning,Male,100,Holy Roman,465
+63,2,Saturday,Midday,Male,100,Holy Roman,254
+63,2,Saturday,Evening,Male,100,Holy Roman,383
+64,1,Sunday,Morning,Male,106,First Nations,323
+64,1,Sunday,Midday,Male,106,First Nations,318
+64,1,Sunday,Evening,Male,106,First Nations,280
+64,1,Monday,Morning,Male,106,First Nations,338
+64,1,Monday,Midday,Male,106,First Nations,306
+64,1,Monday,Evening,Male,106,First Nations,180
+64,1,Tuesday,Morning,Male,106,First Nations,250
+64,1,Tuesday,Midday,Male,106,First Nations,278
+64,1,Tuesday,Evening,Male,106,First Nations,181
+64,1,Wednesday,Morning,Male,106,First Nations,229
+64,1,Wednesday,Midday,Male,106,First Nations,152
+64,1,Wednesday,Evening,Male,106,First Nations,310
+64,1,Thursday,Morning,Male,106,First Nations,360
+64,1,Thursday,Midday,Male,106,First Nations,173
+64,1,Thursday,Evening,Male,106,First Nations,414
+64,1,Friday,Morning,Male,106,First Nations,301
+64,1,Friday,Midday,Male,106,First Nations,288
+64,1,Friday,Evening,Male,106,First Nations,513
+64,1,Saturday,Morning,Male,106,First Nations,227
+64,1,Saturday,Midday,Male,106,First Nations,310
+64,1,Saturday,Evening,Male,106,First Nations,371
+64,2,Sunday,Morning,Male,106,First Nations,231
+64,2,Sunday,Midday,Male,106,First Nations,249
+64,2,Sunday,Evening,Male,106,First Nations,187
+64,2,Monday,Morning,Male,106,First Nations,392
+64,2,Monday,Midday,Male,106,First Nations,174
+64,2,Monday,Evening,Male,106,First Nations,367
+64,2,Tuesday,Morning,Male,106,First Nations,223
+64,2,Tuesday,Midday,Male,106,First Nations,123
+64,2,Tuesday,Evening,Male,106,First Nations,262
+64,2,Wednesday,Morning,Male,106,First Nations,283
+64,2,Wednesday,Midday,Male,106,First Nations,231
+64,2,Wednesday,Evening,Male,106,First Nations,286
+64,2,Thursday,Morning,Male,106,First Nations,277
+64,2,Thursday,Midday,Male,106,First Nations,273
+64,2,Thursday,Evening,Male,106,First Nations,172
+64,2,Friday,Morning,Male,106,First Nations,161
+64,2,Friday,Midday,Male,106,First Nations,269
+64,2,Friday,Evening,Male,106,First Nations,283
+64,2,Saturday,Morning,Male,106,First Nations,265
+64,2,Saturday,Midday,Male,106,First Nations,577
+64,2,Saturday,Evening,Male,106,First Nations,276
+65,1,Sunday,Morning,Female,56,Carthaginian,176
+65,1,Sunday,Midday,Female,56,Carthaginian,219
+65,1,Sunday,Evening,Female,56,Carthaginian,257
+65,1,Monday,Morning,Female,56,Carthaginian,0
+65,1,Monday,Midday,Female,56,Carthaginian,157
+65,1,Monday,Evening,Female,56,Carthaginian,187
+65,1,Tuesday,Morning,Female,56,Carthaginian,118
+65,1,Tuesday,Midday,Female,56,Carthaginian,294
+65,1,Tuesday,Evening,Female,56,Carthaginian,248
+65,1,Wednesday,Morning,Female,56,Carthaginian,92
+65,1,Wednesday,Midday,Female,56,Carthaginian,182
+65,1,Wednesday,Evening,Female,56,Carthaginian,0
+65,1,Thursday,Morning,Female,56,Carthaginian,122
+65,1,Thursday,Midday,Female,56,Carthaginian,0
+65,1,Thursday,Evening,Female,56,Carthaginian,0
+65,1,Friday,Morning,Female,56,Carthaginian,184
+65,1,Friday,Midday,Female,56,Carthaginian,268
+65,1,Friday,Evening,Female,56,Carthaginian,168
+65,1,Saturday,Morning,Female,56,Carthaginian,0
+65,1,Saturday,Midday,Female,56,Carthaginian,154
+65,1,Saturday,Evening,Female,56,Carthaginian,201
+65,2,Sunday,Morning,Female,56,Carthaginian,142
+65,2,Sunday,Midday,Female,56,Carthaginian,129
+65,2,Sunday,Evening,Female,56,Carthaginian,0
+65,2,Monday,Morning,Female,56,Carthaginian,205
+65,2,Monday,Midday,Female,56,Carthaginian,0
+65,2,Monday,Evening,Female,56,Carthaginian,105
+65,2,Tuesday,Morning,Female,56,Carthaginian,0
+65,2,Tuesday,Midday,Female,56,Carthaginian,0
+65,2,Tuesday,Evening,Female,56,Carthaginian,113
+65,2,Wednesday,Morning,Female,56,Carthaginian,0
+65,2,Wednesday,Midday,Female,56,Carthaginian,0
+65,2,Wednesday,Evening,Female,56,Carthaginian,0
+65,2,Thursday,Morning,Female,56,Carthaginian,0
+65,2,Thursday,Midday,Female,56,Carthaginian,0
+65,2,Thursday,Evening,Female,56,Carthaginian,144
+65,2,Friday,Morning,Female,56,Carthaginian,439
+65,2,Friday,Midday,Female,56,Carthaginian,209
+65,2,Friday,Evening,Female,56,Carthaginian,193
+65,2,Saturday,Morning,Female,56,Carthaginian,192
+65,2,Saturday,Midday,Female,56,Carthaginian,199
+65,2,Saturday,Evening,Female,56,Carthaginian,251
+66,1,Sunday,Morning,Male,71,Atlantian,0
+66,1,Sunday,Midday,Male,71,Atlantian,162
+66,1,Sunday,Evening,Male,71,Atlantian,95
+66,1,Monday,Morning,Male,71,Atlantian,337
+66,1,Monday,Midday,Male,71,Atlantian,0
+66,1,Monday,Evening,Male,71,Atlantian,0
+66,1,Tuesday,Morning,Male,71,Atlantian,0
+66,1,Tuesday,Midday,Male,71,Atlantian,0
+66,1,Tuesday,Evening,Male,71,Atlantian,297
+66,1,Wednesday,Morning,Male,71,Atlantian,149
+66,1,Wednesday,Midday,Male,71,Atlantian,117
+66,1,Wednesday,Evening,Male,71,Atlantian,162
+66,1,Thursday,Morning,Male,71,Atlantian,0
+66,1,Thursday,Midday,Male,71,Atlantian,163
+66,1,Thursday,Evening,Male,71,Atlantian,0
+66,1,Friday,Morning,Male,71,Atlantian,159
+66,1,Friday,Midday,Male,71,Atlantian,0
+66,1,Friday,Evening,Male,71,Atlantian,189
+66,1,Saturday,Morning,Male,71,Atlantian,242
+66,1,Saturday,Midday,Male,71,Atlantian,329
+66,1,Saturday,Evening,Male,71,Atlantian,264
+66,2,Sunday,Morning,Male,71,Atlantian,0
+66,2,Sunday,Midday,Male,71,Atlantian,0
+66,2,Sunday,Evening,Male,71,Atlantian,133
+66,2,Monday,Morning,Male,71,Atlantian,210
+66,2,Monday,Midday,Male,71,Atlantian,0
+66,2,Monday,Evening,Male,71,Atlantian,166
+66,2,Tuesday,Morning,Male,71,Atlantian,0
+66,2,Tuesday,Midday,Male,71,Atlantian,167
+66,2,Tuesday,Evening,Male,71,Atlantian,199
+66,2,Wednesday,Morning,Male,71,Atlantian,130
+66,2,Wednesday,Midday,Male,71,Atlantian,0
+66,2,Wednesday,Evening,Male,71,Atlantian,288
+66,2,Thursday,Morning,Male,71,Atlantian,288
+66,2,Thursday,Midday,Male,71,Atlantian,0
+66,2,Thursday,Evening,Male,71,Atlantian,0
+66,2,Friday,Morning,Male,71,Atlantian,210
+66,2,Friday,Midday,Male,71,Atlantian,0
+66,2,Friday,Evening,Male,71,Atlantian,322
+66,2,Saturday,Morning,Male,71,Atlantian,232
+66,2,Saturday,Midday,Male,71,Atlantian,262
+66,2,Saturday,Evening,Male,71,Atlantian,258
+67,1,Sunday,Morning,Female,107,Carthaginian,169
+67,1,Sunday,Midday,Female,107,Carthaginian,314
+67,1,Sunday,Evening,Female,107,Carthaginian,278
+67,1,Monday,Morning,Female,107,Carthaginian,364
+67,1,Monday,Midday,Female,107,Carthaginian,288
+67,1,Monday,Evening,Female,107,Carthaginian,380
+67,1,Tuesday,Morning,Female,107,Carthaginian,357
+67,1,Tuesday,Midday,Female,107,Carthaginian,252
+67,1,Tuesday,Evening,Female,107,Carthaginian,184
+67,1,Wednesday,Morning,Female,107,Carthaginian,385
+67,1,Wednesday,Midday,Female,107,Carthaginian,163
+67,1,Wednesday,Evening,Female,107,Carthaginian,383
+67,1,Thursday,Morning,Female,107,Carthaginian,127
+67,1,Thursday,Midday,Female,107,Carthaginian,279
+67,1,Thursday,Evening,Female,107,Carthaginian,289
+67,1,Friday,Morning,Female,107,Carthaginian,360
+67,1,Friday,Midday,Female,107,Carthaginian,437
+67,1,Friday,Evening,Female,107,Carthaginian,269
+67,1,Saturday,Morning,Female,107,Carthaginian,270
+67,1,Saturday,Midday,Female,107,Carthaginian,311
+67,1,Saturday,Evening,Female,107,Carthaginian,217
+67,2,Sunday,Morning,Female,107,Carthaginian,396
+67,2,Sunday,Midday,Female,107,Carthaginian,239
+67,2,Sunday,Evening,Female,107,Carthaginian,129
+67,2,Monday,Morning,Female,107,Carthaginian,368
+67,2,Monday,Midday,Female,107,Carthaginian,172
+67,2,Monday,Evening,Female,107,Carthaginian,354
+67,2,Tuesday,Morning,Female,107,Carthaginian,277
+67,2,Tuesday,Midday,Female,107,Carthaginian,310
+67,2,Tuesday,Evening,Female,107,Carthaginian,465
+67,2,Wednesday,Morning,Female,107,Carthaginian,236
+67,2,Wednesday,Midday,Female,107,Carthaginian,265
+67,2,Wednesday,Evening,Female,107,Carthaginian,194
+67,2,Thursday,Morning,Female,107,Carthaginian,188
+67,2,Thursday,Midday,Female,107,Carthaginian,401
+67,2,Thursday,Evening,Female,107,Carthaginian,294
+67,2,Friday,Morning,Female,107,Carthaginian,289
+67,2,Friday,Midday,Female,107,Carthaginian,212
+67,2,Friday,Evening,Female,107,Carthaginian,516
+67,2,Saturday,Morning,Female,107,Carthaginian,495
+67,2,Saturday,Midday,Female,107,Carthaginian,214
+67,2,Saturday,Evening,Female,107,Carthaginian,340
+68,1,Sunday,Morning,Female,26,Atlantian,0
+68,1,Sunday,Midday,Female,26,Atlantian,0
+68,1,Sunday,Evening,Female,26,Atlantian,0
+68,1,Monday,Morning,Female,26,Atlantian,0
+68,1,Monday,Midday,Female,26,Atlantian,0
+68,1,Monday,Evening,Female,26,Atlantian,0
+68,1,Tuesday,Morning,Female,26,Atlantian,182
+68,1,Tuesday,Midday,Female,26,Atlantian,0
+68,1,Tuesday,Evening,Female,26,Atlantian,0
+68,1,Wednesday,Morning,Female,26,Atlantian,0
+68,1,Wednesday,Midday,Female,26,Atlantian,0
+68,1,Wednesday,Evening,Female,26,Atlantian,0
+68,1,Thursday,Morning,Female,26,Atlantian,0
+68,1,Thursday,Midday,Female,26,Atlantian,0
+68,1,Thursday,Evening,Female,26,Atlantian,0
+68,1,Friday,Morning,Female,26,Atlantian,136
+68,1,Friday,Midday,Female,26,Atlantian,0
+68,1,Friday,Evening,Female,26,Atlantian,0
+68,1,Saturday,Morning,Female,26,Atlantian,256
+68,1,Saturday,Midday,Female,26,Atlantian,278
+68,1,Saturday,Evening,Female,26,Atlantian,203
+68,2,Sunday,Morning,Female,26,Atlantian,122
+68,2,Sunday,Midday,Female,26,Atlantian,0
+68,2,Sunday,Evening,Female,26,Atlantian,0
+68,2,Monday,Morning,Female,26,Atlantian,0
+68,2,Monday,Midday,Female,26,Atlantian,176
+68,2,Monday,Evening,Female,26,Atlantian,124
+68,2,Tuesday,Morning,Female,26,Atlantian,0
+68,2,Tuesday,Midday,Female,26,Atlantian,0
+68,2,Tuesday,Evening,Female,26,Atlantian,0
+68,2,Wednesday,Morning,Female,26,Atlantian,0
+68,2,Wednesday,Midday,Female,26,Atlantian,0
+68,2,Wednesday,Evening,Female,26,Atlantian,0
+68,2,Thursday,Morning,Female,26,Atlantian,180
+68,2,Thursday,Midday,Female,26,Atlantian,0
+68,2,Thursday,Evening,Female,26,Atlantian,0
+68,2,Friday,Morning,Female,26,Atlantian,0
+68,2,Friday,Midday,Female,26,Atlantian,0
+68,2,Friday,Evening,Female,26,Atlantian,349
+68,2,Saturday,Morning,Female,26,Atlantian,200
+68,2,Saturday,Midday,Female,26,Atlantian,216
+68,2,Saturday,Evening,Female,26,Atlantian,0
+69,1,Sunday,Morning,Female,88,Holy Roman,0
+69,1,Sunday,Midday,Female,88,Holy Roman,0
+69,1,Sunday,Evening,Female,88,Holy Roman,0
+69,1,Monday,Morning,Female,88,Holy Roman,102
+69,1,Monday,Midday,Female,88,Holy Roman,352
+69,1,Monday,Evening,Female,88,Holy Roman,151
+69,1,Tuesday,Morning,Female,88,Holy Roman,442
+69,1,Tuesday,Midday,Female,88,Holy Roman,320
+69,1,Tuesday,Evening,Female,88,Holy Roman,0
+69,1,Wednesday,Morning,Female,88,Holy Roman,311
+69,1,Wednesday,Midday,Female,88,Holy Roman,0
+69,1,Wednesday,Evening,Female,88,Holy Roman,163
+69,1,Thursday,Morning,Female,88,Holy Roman,249
+69,1,Thursday,Midday,Female,88,Holy Roman,249
+69,1,Thursday,Evening,Female,88,Holy Roman,307
+69,1,Friday,Morning,Female,88,Holy Roman,0
+69,1,Friday,Midday,Female,88,Holy Roman,0
+69,1,Friday,Evening,Female,88,Holy Roman,309
+69,1,Saturday,Morning,Female,88,Holy Roman,259
+69,1,Saturday,Midday,Female,88,Holy Roman,142
+69,1,Saturday,Evening,Female,88,Holy Roman,318
+69,2,Sunday,Morning,Female,88,Holy Roman,291
+69,2,Sunday,Midday,Female,88,Holy Roman,0
+69,2,Sunday,Evening,Female,88,Holy Roman,0
+69,2,Monday,Morning,Female,88,Holy Roman,340
+69,2,Monday,Midday,Female,88,Holy Roman,0
+69,2,Monday,Evening,Female,88,Holy Roman,0
+69,2,Tuesday,Morning,Female,88,Holy Roman,0
+69,2,Tuesday,Midday,Female,88,Holy Roman,217
+69,2,Tuesday,Evening,Female,88,Holy Roman,0
+69,2,Wednesday,Morning,Female,88,Holy Roman,0
+69,2,Wednesday,Midday,Female,88,Holy Roman,0
+69,2,Wednesday,Evening,Female,88,Holy Roman,289
+69,2,Thursday,Morning,Female,88,Holy Roman,0
+69,2,Thursday,Midday,Female,88,Holy Roman,63
+69,2,Thursday,Evening,Female,88,Holy Roman,215
+69,2,Friday,Morning,Female,88,Holy Roman,0
+69,2,Friday,Midday,Female,88,Holy Roman,290
+69,2,Friday,Evening,Female,88,Holy Roman,0
+69,2,Saturday,Morning,Female,88,Holy Roman,251
+69,2,Saturday,Midday,Female,88,Holy Roman,250
+69,2,Saturday,Evening,Female,88,Holy Roman,364
+70,1,Sunday,Morning,Male,115,Roman,193
+70,1,Sunday,Midday,Male,115,Roman,179
+70,1,Sunday,Evening,Male,115,Roman,236
+70,1,Monday,Morning,Male,115,Roman,0
+70,1,Monday,Midday,Male,115,Roman,0
+70,1,Monday,Evening,Male,115,Roman,297
+70,1,Tuesday,Morning,Male,115,Roman,160
+70,1,Tuesday,Midday,Male,115,Roman,332
+70,1,Tuesday,Evening,Male,115,Roman,164
+70,1,Wednesday,Morning,Male,115,Roman,338
+70,1,Wednesday,Midday,Male,115,Roman,478
+70,1,Wednesday,Evening,Male,115,Roman,0
+70,1,Thursday,Morning,Male,115,Roman,205
+70,1,Thursday,Midday,Male,115,Roman,0
+70,1,Thursday,Evening,Male,115,Roman,366
+70,1,Friday,Morning,Male,115,Roman,234
+70,1,Friday,Midday,Male,115,Roman,0
+70,1,Friday,Evening,Male,115,Roman,272
+70,1,Saturday,Morning,Male,115,Roman,256
+70,1,Saturday,Midday,Male,115,Roman,453
+70,1,Saturday,Evening,Male,115,Roman,246
+70,2,Sunday,Morning,Male,115,Roman,296
+70,2,Sunday,Midday,Male,115,Roman,85
+70,2,Sunday,Evening,Male,115,Roman,340
+70,2,Monday,Morning,Male,115,Roman,348
+70,2,Monday,Midday,Male,115,Roman,0
+70,2,Monday,Evening,Male,115,Roman,387
+70,2,Tuesday,Morning,Male,115,Roman,316
+70,2,Tuesday,Midday,Male,115,Roman,292
+70,2,Tuesday,Evening,Male,115,Roman,147
+70,2,Wednesday,Morning,Male,115,Roman,279
+70,2,Wednesday,Midday,Male,115,Roman,384
+70,2,Wednesday,Evening,Male,115,Roman,326
+70,2,Thursday,Morning,Male,115,Roman,306
+70,2,Thursday,Midday,Male,115,Roman,372
+70,2,Thursday,Evening,Male,115,Roman,320
+70,2,Friday,Morning,Male,115,Roman,272
+70,2,Friday,Midday,Male,115,Roman,376
+70,2,Friday,Evening,Male,115,Roman,267
+70,2,Saturday,Morning,Male,115,Roman,0
+70,2,Saturday,Midday,Male,115,Roman,282
+70,2,Saturday,Evening,Male,115,Roman,156
+71,1,Sunday,Morning,Female,65,Atlantian,208
+71,1,Sunday,Midday,Female,65,Atlantian,313
+71,1,Sunday,Evening,Female,65,Atlantian,0
+71,1,Monday,Morning,Female,65,Atlantian,0
+71,1,Monday,Midday,Female,65,Atlantian,0
+71,1,Monday,Evening,Female,65,Atlantian,0
+71,1,Tuesday,Morning,Female,65,Atlantian,0
+71,1,Tuesday,Midday,Female,65,Atlantian,0
+71,1,Tuesday,Evening,Female,65,Atlantian,0
+71,1,Wednesday,Morning,Female,65,Atlantian,0
+71,1,Wednesday,Midday,Female,65,Atlantian,0
+71,1,Wednesday,Evening,Female,65,Atlantian,214
+71,1,Thursday,Morning,Female,65,Atlantian,0
+71,1,Thursday,Midday,Female,65,Atlantian,0
+71,1,Thursday,Evening,Female,65,Atlantian,222
+71,1,Friday,Morning,Female,65,Atlantian,230
+71,1,Friday,Midday,Female,65,Atlantian,0
+71,1,Friday,Evening,Female,65,Atlantian,0
+71,1,Saturday,Morning,Female,65,Atlantian,0
+71,1,Saturday,Midday,Female,65,Atlantian,0
+71,1,Saturday,Evening,Female,65,Atlantian,213
+71,2,Sunday,Morning,Female,65,Atlantian,0
+71,2,Sunday,Midday,Female,65,Atlantian,0
+71,2,Sunday,Evening,Female,65,Atlantian,119
+71,2,Monday,Morning,Female,65,Atlantian,0
+71,2,Monday,Midday,Female,65,Atlantian,0
+71,2,Monday,Evening,Female,65,Atlantian,0
+71,2,Tuesday,Morning,Female,65,Atlantian,0
+71,2,Tuesday,Midday,Female,65,Atlantian,269
+71,2,Tuesday,Evening,Female,65,Atlantian,0
+71,2,Wednesday,Morning,Female,65,Atlantian,0
+71,2,Wednesday,Midday,Female,65,Atlantian,0
+71,2,Wednesday,Evening,Female,65,Atlantian,0
+71,2,Thursday,Morning,Female,65,Atlantian,0
+71,2,Thursday,Midday,Female,65,Atlantian,0
+71,2,Thursday,Evening,Female,65,Atlantian,90
+71,2,Friday,Morning,Female,65,Atlantian,238
+71,2,Friday,Midday,Female,65,Atlantian,252
+71,2,Friday,Evening,Female,65,Atlantian,0
+71,2,Saturday,Morning,Female,65,Atlantian,0
+71,2,Saturday,Midday,Female,65,Atlantian,0
+71,2,Saturday,Evening,Female,65,Atlantian,516
+72,1,Sunday,Morning,Female,94,Atlantian,0
+72,1,Sunday,Midday,Female,94,Atlantian,0
+72,1,Sunday,Evening,Female,94,Atlantian,0
+72,1,Monday,Morning,Female,94,Atlantian,0
+72,1,Monday,Midday,Female,94,Atlantian,374
+72,1,Monday,Evening,Female,94,Atlantian,383
+72,1,Tuesday,Morning,Female,94,Atlantian,0
+72,1,Tuesday,Midday,Female,94,Atlantian,0
+72,1,Tuesday,Evening,Female,94,Atlantian,346
+72,1,Wednesday,Morning,Female,94,Atlantian,194
+72,1,Wednesday,Midday,Female,94,Atlantian,238
+72,1,Wednesday,Evening,Female,94,Atlantian,309
+72,1,Thursday,Morning,Female,94,Atlantian,0
+72,1,Thursday,Midday,Female,94,Atlantian,0
+72,1,Thursday,Evening,Female,94,Atlantian,344
+72,1,Friday,Morning,Female,94,Atlantian,0
+72,1,Friday,Midday,Female,94,Atlantian,0
+72,1,Friday,Evening,Female,94,Atlantian,0
+72,1,Saturday,Morning,Female,94,Atlantian,383
+72,1,Saturday,Midday,Female,94,Atlantian,350
+72,1,Saturday,Evening,Female,94,Atlantian,246
+72,2,Sunday,Morning,Female,94,Atlantian,0
+72,2,Sunday,Midday,Female,94,Atlantian,286
+72,2,Sunday,Evening,Female,94,Atlantian,367
+72,2,Monday,Morning,Female,94,Atlantian,0
+72,2,Monday,Midday,Female,94,Atlantian,295
+72,2,Monday,Evening,Female,94,Atlantian,285
+72,2,Tuesday,Morning,Female,94,Atlantian,113
+72,2,Tuesday,Midday,Female,94,Atlantian,0
+72,2,Tuesday,Evening,Female,94,Atlantian,0
+72,2,Wednesday,Morning,Female,94,Atlantian,0
+72,2,Wednesday,Midday,Female,94,Atlantian,0
+72,2,Wednesday,Evening,Female,94,Atlantian,181
+72,2,Thursday,Morning,Female,94,Atlantian,254
+72,2,Thursday,Midday,Female,94,Atlantian,0
+72,2,Thursday,Evening,Female,94,Atlantian,185
+72,2,Friday,Morning,Female,94,Atlantian,362
+72,2,Friday,Midday,Female,94,Atlantian,444
+72,2,Friday,Evening,Female,94,Atlantian,464
+72,2,Saturday,Morning,Female,94,Atlantian,434
+72,2,Saturday,Midday,Female,94,Atlantian,0
+72,2,Saturday,Evening,Female,94,Atlantian,380
+73,1,Sunday,Morning,Female,100,First Nations,369
+73,1,Sunday,Midday,Female,100,First Nations,366
+73,1,Sunday,Evening,Female,100,First Nations,283
+73,1,Monday,Morning,Female,100,First Nations,0
+73,1,Monday,Midday,Female,100,First Nations,359
+73,1,Monday,Evening,Female,100,First Nations,392
+73,1,Tuesday,Morning,Female,100,First Nations,0
+73,1,Tuesday,Midday,Female,100,First Nations,330
+73,1,Tuesday,Evening,Female,100,First Nations,379
+73,1,Wednesday,Morning,Female,100,First Nations,248
+73,1,Wednesday,Midday,Female,100,First Nations,444
+73,1,Wednesday,Evening,Female,100,First Nations,211
+73,1,Thursday,Morning,Female,100,First Nations,271
+73,1,Thursday,Midday,Female,100,First Nations,182
+73,1,Thursday,Evening,Female,100,First Nations,0
+73,1,Friday,Morning,Female,100,First Nations,250
+73,1,Friday,Midday,Female,100,First Nations,251
+73,1,Friday,Evening,Female,100,First Nations,235
+73,1,Saturday,Morning,Female,100,First Nations,400
+73,1,Saturday,Midday,Female,100,First Nations,283
+73,1,Saturday,Evening,Female,100,First Nations,0
+73,2,Sunday,Morning,Female,100,First Nations,254
+73,2,Sunday,Midday,Female,100,First Nations,321
+73,2,Sunday,Evening,Female,100,First Nations,443
+73,2,Monday,Morning,Female,100,First Nations,249
+73,2,Monday,Midday,Female,100,First Nations,258
+73,2,Monday,Evening,Female,100,First Nations,261
+73,2,Tuesday,Morning,Female,100,First Nations,0
+73,2,Tuesday,Midday,Female,100,First Nations,210
+73,2,Tuesday,Evening,Female,100,First Nations,302
+73,2,Wednesday,Morning,Female,100,First Nations,186
+73,2,Wednesday,Midday,Female,100,First Nations,550
+73,2,Wednesday,Evening,Female,100,First Nations,246
+73,2,Thursday,Morning,Female,100,First Nations,130
+73,2,Thursday,Midday,Female,100,First Nations,0
+73,2,Thursday,Evening,Female,100,First Nations,0
+73,2,Friday,Morning,Female,100,First Nations,612
+73,2,Friday,Midday,Female,100,First Nations,120
+73,2,Friday,Evening,Female,100,First Nations,260
+73,2,Saturday,Morning,Female,100,First Nations,317
+73,2,Saturday,Midday,Female,100,First Nations,258
+73,2,Saturday,Evening,Female,100,First Nations,267
+74,1,Sunday,Morning,Male,73,Holy Roman,101
+74,1,Sunday,Midday,Male,73,Holy Roman,165
+74,1,Sunday,Evening,Male,73,Holy Roman,192
+74,1,Monday,Morning,Male,73,Holy Roman,0
+74,1,Monday,Midday,Male,73,Holy Roman,228
+74,1,Monday,Evening,Male,73,Holy Roman,0
+74,1,Tuesday,Morning,Male,73,Holy Roman,0
+74,1,Tuesday,Midday,Male,73,Holy Roman,0
+74,1,Tuesday,Evening,Male,73,Holy Roman,0
+74,1,Wednesday,Morning,Male,73,Holy Roman,146
+74,1,Wednesday,Midday,Male,73,Holy Roman,0
+74,1,Wednesday,Evening,Male,73,Holy Roman,222
+74,1,Thursday,Morning,Male,73,Holy Roman,0
+74,1,Thursday,Midday,Male,73,Holy Roman,0
+74,1,Thursday,Evening,Male,73,Holy Roman,0
+74,1,Friday,Morning,Male,73,Holy Roman,0
+74,1,Friday,Midday,Male,73,Holy Roman,0
+74,1,Friday,Evening,Male,73,Holy Roman,275
+74,1,Saturday,Morning,Male,73,Holy Roman,0
+74,1,Saturday,Midday,Male,73,Holy Roman,0
+74,1,Saturday,Evening,Male,73,Holy Roman,0
+74,2,Sunday,Morning,Male,73,Holy Roman,0
+74,2,Sunday,Midday,Male,73,Holy Roman,0
+74,2,Sunday,Evening,Male,73,Holy Roman,159
+74,2,Monday,Morning,Male,73,Holy Roman,141
+74,2,Monday,Midday,Male,73,Holy Roman,0
+74,2,Monday,Evening,Male,73,Holy Roman,138
+74,2,Tuesday,Morning,Male,73,Holy Roman,0
+74,2,Tuesday,Midday,Male,73,Holy Roman,0
+74,2,Tuesday,Evening,Male,73,Holy Roman,0
+74,2,Wednesday,Morning,Male,73,Holy Roman,268
+74,2,Wednesday,Midday,Male,73,Holy Roman,0
+74,2,Wednesday,Evening,Male,73,Holy Roman,167
+74,2,Thursday,Morning,Male,73,Holy Roman,0
+74,2,Thursday,Midday,Male,73,Holy Roman,0
+74,2,Thursday,Evening,Male,73,Holy Roman,291
+74,2,Friday,Morning,Male,73,Holy Roman,333
+74,2,Friday,Midday,Male,73,Holy Roman,0
+74,2,Friday,Evening,Male,73,Holy Roman,0
+74,2,Saturday,Morning,Male,73,Holy Roman,0
+74,2,Saturday,Midday,Male,73,Holy Roman,199
+74,2,Saturday,Evening,Male,73,Holy Roman,0
+75,1,Sunday,Morning,Male,56,First Nations,89
+75,1,Sunday,Midday,Male,56,First Nations,0
+75,1,Sunday,Evening,Male,56,First Nations,218
+75,1,Monday,Morning,Male,56,First Nations,0
+75,1,Monday,Midday,Male,56,First Nations,189
+75,1,Monday,Evening,Male,56,First Nations,131
+75,1,Tuesday,Morning,Male,56,First Nations,0
+75,1,Tuesday,Midday,Male,56,First Nations,0
+75,1,Tuesday,Evening,Male,56,First Nations,147
+75,1,Wednesday,Morning,Male,56,First Nations,0
+75,1,Wednesday,Midday,Male,56,First Nations,0
+75,1,Wednesday,Evening,Male,56,First Nations,231
+75,1,Thursday,Morning,Male,56,First Nations,112
+75,1,Thursday,Midday,Male,56,First Nations,106
+75,1,Thursday,Evening,Male,56,First Nations,135
+75,1,Friday,Morning,Male,56,First Nations,0
+75,1,Friday,Midday,Male,56,First Nations,94
+75,1,Friday,Evening,Male,56,First Nations,188
+75,1,Saturday,Morning,Male,56,First Nations,0
+75,1,Saturday,Midday,Male,56,First Nations,124
+75,1,Saturday,Evening,Male,56,First Nations,139
+75,2,Sunday,Morning,Male,56,First Nations,122
+75,2,Sunday,Midday,Male,56,First Nations,232
+75,2,Sunday,Evening,Male,56,First Nations,88
+75,2,Monday,Morning,Male,56,First Nations,132
+75,2,Monday,Midday,Male,56,First Nations,181
+75,2,Monday,Evening,Male,56,First Nations,287
+75,2,Tuesday,Morning,Male,56,First Nations,128
+75,2,Tuesday,Midday,Male,56,First Nations,0
+75,2,Tuesday,Evening,Male,56,First Nations,248
+75,2,Wednesday,Morning,Male,56,First Nations,192
+75,2,Wednesday,Midday,Male,56,First Nations,238
+75,2,Wednesday,Evening,Male,56,First Nations,221
+75,2,Thursday,Morning,Male,56,First Nations,0
+75,2,Thursday,Midday,Male,56,First Nations,0
+75,2,Thursday,Evening,Male,56,First Nations,161
+75,2,Friday,Morning,Male,56,First Nations,95
+75,2,Friday,Midday,Male,56,First Nations,113
+75,2,Friday,Evening,Male,56,First Nations,0
+75,2,Saturday,Morning,Male,56,First Nations,208
+75,2,Saturday,Midday,Male,56,First Nations,263
+75,2,Saturday,Evening,Male,56,First Nations,0
+76,1,Sunday,Morning,Male,85,Atlantian,273
+76,1,Sunday,Midday,Male,85,Atlantian,397
+76,1,Sunday,Evening,Male,85,Atlantian,275
+76,1,Monday,Morning,Male,85,Atlantian,283
+76,1,Monday,Midday,Male,85,Atlantian,245
+76,1,Monday,Evening,Male,85,Atlantian,256
+76,1,Tuesday,Morning,Male,85,Atlantian,184
+76,1,Tuesday,Midday,Male,85,Atlantian,268
+76,1,Tuesday,Evening,Male,85,Atlantian,245
+76,1,Wednesday,Morning,Male,85,Atlantian,235
+76,1,Wednesday,Midday,Male,85,Atlantian,264
+76,1,Wednesday,Evening,Male,85,Atlantian,160
+76,1,Thursday,Morning,Male,85,Atlantian,251
+76,1,Thursday,Midday,Male,85,Atlantian,227
+76,1,Thursday,Evening,Male,85,Atlantian,146
+76,1,Friday,Morning,Male,85,Atlantian,194
+76,1,Friday,Midday,Male,85,Atlantian,232
+76,1,Friday,Evening,Male,85,Atlantian,386
+76,1,Saturday,Morning,Male,85,Atlantian,229
+76,1,Saturday,Midday,Male,85,Atlantian,303
+76,1,Saturday,Evening,Male,85,Atlantian,316
+76,2,Sunday,Morning,Male,85,Atlantian,269
+76,2,Sunday,Midday,Male,85,Atlantian,390
+76,2,Sunday,Evening,Male,85,Atlantian,306
+76,2,Monday,Morning,Male,85,Atlantian,302
+76,2,Monday,Midday,Male,85,Atlantian,305
+76,2,Monday,Evening,Male,85,Atlantian,233
+76,2,Tuesday,Morning,Male,85,Atlantian,335
+76,2,Tuesday,Midday,Male,85,Atlantian,228
+76,2,Tuesday,Evening,Male,85,Atlantian,185
+76,2,Wednesday,Morning,Male,85,Atlantian,127
+76,2,Wednesday,Midday,Male,85,Atlantian,179
+76,2,Wednesday,Evening,Male,85,Atlantian,335
+76,2,Thursday,Morning,Male,85,Atlantian,266
+76,2,Thursday,Midday,Male,85,Atlantian,274
+76,2,Thursday,Evening,Male,85,Atlantian,213
+76,2,Friday,Morning,Male,85,Atlantian,252
+76,2,Friday,Midday,Male,85,Atlantian,268
+76,2,Friday,Evening,Male,85,Atlantian,216
+76,2,Saturday,Morning,Male,85,Atlantian,251
+76,2,Saturday,Midday,Male,85,Atlantian,294
+76,2,Saturday,Evening,Male,85,Atlantian,182
+77,1,Sunday,Morning,Male,18,Carthaginian,56
+77,1,Sunday,Midday,Male,18,Carthaginian,93
+77,1,Sunday,Evening,Male,18,Carthaginian,56
+77,1,Monday,Morning,Male,18,Carthaginian,103
+77,1,Monday,Midday,Male,18,Carthaginian,79
+77,1,Monday,Evening,Male,18,Carthaginian,64
+77,1,Tuesday,Morning,Male,18,Carthaginian,73
+77,1,Tuesday,Midday,Male,18,Carthaginian,76
+77,1,Tuesday,Evening,Male,18,Carthaginian,97
+77,1,Wednesday,Morning,Male,18,Carthaginian,0
+77,1,Wednesday,Midday,Male,18,Carthaginian,0
+77,1,Wednesday,Evening,Male,18,Carthaginian,78
+77,1,Thursday,Morning,Male,18,Carthaginian,55
+77,1,Thursday,Midday,Male,18,Carthaginian,0
+77,1,Thursday,Evening,Male,18,Carthaginian,0
+77,1,Friday,Morning,Male,18,Carthaginian,0
+77,1,Friday,Midday,Male,18,Carthaginian,83
+77,1,Friday,Evening,Male,18,Carthaginian,117
+77,1,Saturday,Morning,Male,18,Carthaginian,66
+77,1,Saturday,Midday,Male,18,Carthaginian,116
+77,1,Saturday,Evening,Male,18,Carthaginian,102
+77,2,Sunday,Morning,Male,18,Carthaginian,60
+77,2,Sunday,Midday,Male,18,Carthaginian,62
+77,2,Sunday,Evening,Male,18,Carthaginian,0
+77,2,Monday,Morning,Male,18,Carthaginian,111
+77,2,Monday,Midday,Male,18,Carthaginian,91
+77,2,Monday,Evening,Male,18,Carthaginian,121
+77,2,Tuesday,Morning,Male,18,Carthaginian,49
+77,2,Tuesday,Midday,Male,18,Carthaginian,53
+77,2,Tuesday,Evening,Male,18,Carthaginian,76
+77,2,Wednesday,Morning,Male,18,Carthaginian,47
+77,2,Wednesday,Midday,Male,18,Carthaginian,24
+77,2,Wednesday,Evening,Male,18,Carthaginian,111
+77,2,Thursday,Morning,Male,18,Carthaginian,40
+77,2,Thursday,Midday,Male,18,Carthaginian,64
+77,2,Thursday,Evening,Male,18,Carthaginian,31
+77,2,Friday,Morning,Male,18,Carthaginian,152
+77,2,Friday,Midday,Male,18,Carthaginian,156
+77,2,Friday,Evening,Male,18,Carthaginian,131
+77,2,Saturday,Morning,Male,18,Carthaginian,87
+77,2,Saturday,Midday,Male,18,Carthaginian,95
+77,2,Saturday,Evening,Male,18,Carthaginian,106
+78,1,Sunday,Morning,Female,57,Carthaginian,152
+78,1,Sunday,Midday,Female,57,Carthaginian,130
+78,1,Sunday,Evening,Female,57,Carthaginian,206
+78,1,Monday,Morning,Female,57,Carthaginian,224
+78,1,Monday,Midday,Female,57,Carthaginian,287
+78,1,Monday,Evening,Female,57,Carthaginian,269
+78,1,Tuesday,Morning,Female,57,Carthaginian,196
+78,1,Tuesday,Midday,Female,57,Carthaginian,294
+78,1,Tuesday,Evening,Female,57,Carthaginian,291
+78,1,Wednesday,Morning,Female,57,Carthaginian,181
+78,1,Wednesday,Midday,Female,57,Carthaginian,187
+78,1,Wednesday,Evening,Female,57,Carthaginian,127
+78,1,Thursday,Morning,Female,57,Carthaginian,43
+78,1,Thursday,Midday,Female,57,Carthaginian,129
+78,1,Thursday,Evening,Female,57,Carthaginian,155
+78,1,Friday,Morning,Female,57,Carthaginian,241
+78,1,Friday,Midday,Female,57,Carthaginian,499
+78,1,Friday,Evening,Female,57,Carthaginian,194
+78,1,Saturday,Morning,Female,57,Carthaginian,211
+78,1,Saturday,Midday,Female,57,Carthaginian,243
+78,1,Saturday,Evening,Female,57,Carthaginian,302
+78,2,Sunday,Morning,Female,57,Carthaginian,139
+78,2,Sunday,Midday,Female,57,Carthaginian,210
+78,2,Sunday,Evening,Female,57,Carthaginian,242
+78,2,Monday,Morning,Female,57,Carthaginian,250
+78,2,Monday,Midday,Female,57,Carthaginian,200
+78,2,Monday,Evening,Female,57,Carthaginian,207
+78,2,Tuesday,Morning,Female,57,Carthaginian,223
+78,2,Tuesday,Midday,Female,57,Carthaginian,201
+78,2,Tuesday,Evening,Female,57,Carthaginian,160
+78,2,Wednesday,Morning,Female,57,Carthaginian,168
+78,2,Wednesday,Midday,Female,57,Carthaginian,202
+78,2,Wednesday,Evening,Female,57,Carthaginian,203
+78,2,Thursday,Morning,Female,57,Carthaginian,82
+78,2,Thursday,Midday,Female,57,Carthaginian,72
+78,2,Thursday,Evening,Female,57,Carthaginian,138
+78,2,Friday,Morning,Female,57,Carthaginian,190
+78,2,Friday,Midday,Female,57,Carthaginian,217
+78,2,Friday,Evening,Female,57,Carthaginian,188
+78,2,Saturday,Morning,Female,57,Carthaginian,142
+78,2,Saturday,Midday,Female,57,Carthaginian,203
+78,2,Saturday,Evening,Female,57,Carthaginian,152
+79,1,Sunday,Morning,Male,47,Atlantian,0
+79,1,Sunday,Midday,Male,47,Atlantian,139
+79,1,Sunday,Evening,Male,47,Atlantian,238
+79,1,Monday,Morning,Male,47,Atlantian,0
+79,1,Monday,Midday,Male,47,Atlantian,0
+79,1,Monday,Evening,Male,47,Atlantian,234
+79,1,Tuesday,Morning,Male,47,Atlantian,0
+79,1,Tuesday,Midday,Male,47,Atlantian,0
+79,1,Tuesday,Evening,Male,47,Atlantian,0
+79,1,Wednesday,Morning,Male,47,Atlantian,0
+79,1,Wednesday,Midday,Male,47,Atlantian,0
+79,1,Wednesday,Evening,Male,47,Atlantian,0
+79,1,Thursday,Morning,Male,47,Atlantian,0
+79,1,Thursday,Midday,Male,47,Atlantian,0
+79,1,Thursday,Evening,Male,47,Atlantian,0
+79,1,Friday,Morning,Male,47,Atlantian,0
+79,1,Friday,Midday,Male,47,Atlantian,0
+79,1,Friday,Evening,Male,47,Atlantian,0
+79,1,Saturday,Morning,Male,47,Atlantian,153
+79,1,Saturday,Midday,Male,47,Atlantian,257
+79,1,Saturday,Evening,Male,47,Atlantian,105
+79,2,Sunday,Morning,Male,47,Atlantian,0
+79,2,Sunday,Midday,Male,47,Atlantian,280
+79,2,Sunday,Evening,Male,47,Atlantian,180
+79,2,Monday,Morning,Male,47,Atlantian,168
+79,2,Monday,Midday,Male,47,Atlantian,154
+79,2,Monday,Evening,Male,47,Atlantian,140
+79,2,Tuesday,Morning,Male,47,Atlantian,0
+79,2,Tuesday,Midday,Male,47,Atlantian,0
+79,2,Tuesday,Evening,Male,47,Atlantian,149
+79,2,Wednesday,Morning,Male,47,Atlantian,82
+79,2,Wednesday,Midday,Male,47,Atlantian,181
+79,2,Wednesday,Evening,Male,47,Atlantian,125
+79,2,Thursday,Morning,Male,47,Atlantian,0
+79,2,Thursday,Midday,Male,47,Atlantian,0
+79,2,Thursday,Evening,Male,47,Atlantian,0
+79,2,Friday,Morning,Male,47,Atlantian,0
+79,2,Friday,Midday,Male,47,Atlantian,0
+79,2,Friday,Evening,Male,47,Atlantian,133
+79,2,Saturday,Morning,Male,47,Atlantian,0
+79,2,Saturday,Midday,Male,47,Atlantian,277
+79,2,Saturday,Evening,Male,47,Atlantian,212
+80,1,Sunday,Morning,Male,111,Atlantian,294
+80,1,Sunday,Midday,Male,111,Atlantian,336
+80,1,Sunday,Evening,Male,111,Atlantian,146
+80,1,Monday,Morning,Male,111,Atlantian,198
+80,1,Monday,Midday,Male,111,Atlantian,234
+80,1,Monday,Evening,Male,111,Atlantian,399
+80,1,Tuesday,Morning,Male,111,Atlantian,314
+80,1,Tuesday,Midday,Male,111,Atlantian,281
+80,1,Tuesday,Evening,Male,111,Atlantian,271
+80,1,Wednesday,Morning,Male,111,Atlantian,193
+80,1,Wednesday,Midday,Male,111,Atlantian,335
+80,1,Wednesday,Evening,Male,111,Atlantian,261
+80,1,Thursday,Morning,Male,111,Atlantian,290
+80,1,Thursday,Midday,Male,111,Atlantian,242
+80,1,Thursday,Evening,Male,111,Atlantian,205
+80,1,Friday,Morning,Male,111,Atlantian,433
+80,1,Friday,Midday,Male,111,Atlantian,232
+80,1,Friday,Evening,Male,111,Atlantian,249
+80,1,Saturday,Morning,Male,111,Atlantian,286
+80,1,Saturday,Midday,Male,111,Atlantian,348
+80,1,Saturday,Evening,Male,111,Atlantian,336
+80,2,Sunday,Morning,Male,111,Atlantian,267
+80,2,Sunday,Midday,Male,111,Atlantian,266
+80,2,Sunday,Evening,Male,111,Atlantian,227
+80,2,Monday,Morning,Male,111,Atlantian,377
+80,2,Monday,Midday,Male,111,Atlantian,322
+80,2,Monday,Evening,Male,111,Atlantian,164
+80,2,Tuesday,Morning,Male,111,Atlantian,278
+80,2,Tuesday,Midday,Male,111,Atlantian,351
+80,2,Tuesday,Evening,Male,111,Atlantian,234
+80,2,Wednesday,Morning,Male,111,Atlantian,379
+80,2,Wednesday,Midday,Male,111,Atlantian,249
+80,2,Wednesday,Evening,Male,111,Atlantian,298
+80,2,Thursday,Morning,Male,111,Atlantian,301
+80,2,Thursday,Midday,Male,111,Atlantian,152
+80,2,Thursday,Evening,Male,111,Atlantian,231
+80,2,Friday,Morning,Male,111,Atlantian,374
+80,2,Friday,Midday,Male,111,Atlantian,365
+80,2,Friday,Evening,Male,111,Atlantian,292
+80,2,Saturday,Morning,Male,111,Atlantian,298
+80,2,Saturday,Midday,Male,111,Atlantian,311
+80,2,Saturday,Evening,Male,111,Atlantian,163
+81,1,Sunday,Morning,Male,106,Carthaginian,0
+81,1,Sunday,Midday,Male,106,Carthaginian,275
+81,1,Sunday,Evening,Male,106,Carthaginian,210
+81,1,Monday,Morning,Male,106,Carthaginian,353
+81,1,Monday,Midday,Male,106,Carthaginian,339
+81,1,Monday,Evening,Male,106,Carthaginian,301
+81,1,Tuesday,Morning,Male,106,Carthaginian,107
+81,1,Tuesday,Midday,Male,106,Carthaginian,348
+81,1,Tuesday,Evening,Male,106,Carthaginian,366
+81,1,Wednesday,Morning,Male,106,Carthaginian,131
+81,1,Wednesday,Midday,Male,106,Carthaginian,122
+81,1,Wednesday,Evening,Male,106,Carthaginian,221
+81,1,Thursday,Morning,Male,106,Carthaginian,190
+81,1,Thursday,Midday,Male,106,Carthaginian,0
+81,1,Thursday,Evening,Male,106,Carthaginian,169
+81,1,Friday,Morning,Male,106,Carthaginian,0
+81,1,Friday,Midday,Male,106,Carthaginian,240
+81,1,Friday,Evening,Male,106,Carthaginian,215
+81,1,Saturday,Morning,Male,106,Carthaginian,143
+81,1,Saturday,Midday,Male,106,Carthaginian,247
+81,1,Saturday,Evening,Male,106,Carthaginian,210
+81,2,Sunday,Morning,Male,106,Carthaginian,238
+81,2,Sunday,Midday,Male,106,Carthaginian,326
+81,2,Sunday,Evening,Male,106,Carthaginian,270
+81,2,Monday,Morning,Male,106,Carthaginian,301
+81,2,Monday,Midday,Male,106,Carthaginian,177
+81,2,Monday,Evening,Male,106,Carthaginian,167
+81,2,Tuesday,Morning,Male,106,Carthaginian,258
+81,2,Tuesday,Midday,Male,106,Carthaginian,169
+81,2,Tuesday,Evening,Male,106,Carthaginian,230
+81,2,Wednesday,Morning,Male,106,Carthaginian,0
+81,2,Wednesday,Midday,Male,106,Carthaginian,171
+81,2,Wednesday,Evening,Male,106,Carthaginian,267
+81,2,Thursday,Morning,Male,106,Carthaginian,0
+81,2,Thursday,Midday,Male,106,Carthaginian,278
+81,2,Thursday,Evening,Male,106,Carthaginian,327
+81,2,Friday,Morning,Male,106,Carthaginian,212
+81,2,Friday,Midday,Male,106,Carthaginian,283
+81,2,Friday,Evening,Male,106,Carthaginian,233
+81,2,Saturday,Morning,Male,106,Carthaginian,0
+81,2,Saturday,Midday,Male,106,Carthaginian,190
+81,2,Saturday,Evening,Male,106,Carthaginian,188
+82,1,Sunday,Morning,Female,33,Carthaginian,0
+82,1,Sunday,Midday,Female,33,Carthaginian,83
+82,1,Sunday,Evening,Female,33,Carthaginian,112
+82,1,Monday,Morning,Female,33,Carthaginian,88
+82,1,Monday,Midday,Female,33,Carthaginian,224
+82,1,Monday,Evening,Female,33,Carthaginian,120
+82,1,Tuesday,Morning,Female,33,Carthaginian,0
+82,1,Tuesday,Midday,Female,33,Carthaginian,71
+82,1,Tuesday,Evening,Female,33,Carthaginian,139
+82,1,Wednesday,Morning,Female,33,Carthaginian,0
+82,1,Wednesday,Midday,Female,33,Carthaginian,0
+82,1,Wednesday,Evening,Female,33,Carthaginian,144
+82,1,Thursday,Morning,Female,33,Carthaginian,137
+82,1,Thursday,Midday,Female,33,Carthaginian,110
+82,1,Thursday,Evening,Female,33,Carthaginian,127
+82,1,Friday,Morning,Female,33,Carthaginian,268
+82,1,Friday,Midday,Female,33,Carthaginian,0
+82,1,Friday,Evening,Female,33,Carthaginian,105
+82,1,Saturday,Morning,Female,33,Carthaginian,0
+82,1,Saturday,Midday,Female,33,Carthaginian,199
+82,1,Saturday,Evening,Female,33,Carthaginian,172
+82,2,Sunday,Morning,Female,33,Carthaginian,0
+82,2,Sunday,Midday,Female,33,Carthaginian,99
+82,2,Sunday,Evening,Female,33,Carthaginian,120
+82,2,Monday,Morning,Female,33,Carthaginian,132
+82,2,Monday,Midday,Female,33,Carthaginian,147
+82,2,Monday,Evening,Female,33,Carthaginian,0
+82,2,Tuesday,Morning,Female,33,Carthaginian,0
+82,2,Tuesday,Midday,Female,33,Carthaginian,93
+82,2,Tuesday,Evening,Female,33,Carthaginian,0
+82,2,Wednesday,Morning,Female,33,Carthaginian,82
+82,2,Wednesday,Midday,Female,33,Carthaginian,0
+82,2,Wednesday,Evening,Female,33,Carthaginian,323
+82,2,Thursday,Morning,Female,33,Carthaginian,0
+82,2,Thursday,Midday,Female,33,Carthaginian,78
+82,2,Thursday,Evening,Female,33,Carthaginian,182
+82,2,Friday,Morning,Female,33,Carthaginian,79
+82,2,Friday,Midday,Female,33,Carthaginian,0
+82,2,Friday,Evening,Female,33,Carthaginian,195
+82,2,Saturday,Morning,Female,33,Carthaginian,156
+82,2,Saturday,Midday,Female,33,Carthaginian,274
+82,2,Saturday,Evening,Female,33,Carthaginian,0
+83,1,Sunday,Morning,Male,105,First Nations,202
+83,1,Sunday,Midday,Male,105,First Nations,0
+83,1,Sunday,Evening,Male,105,First Nations,193
+83,1,Monday,Morning,Male,105,First Nations,0
+83,1,Monday,Midday,Male,105,First Nations,386
+83,1,Monday,Evening,Male,105,First Nations,146
+83,1,Tuesday,Morning,Male,105,First Nations,0
+83,1,Tuesday,Midday,Male,105,First Nations,0
+83,1,Tuesday,Evening,Male,105,First Nations,306
+83,1,Wednesday,Morning,Male,105,First Nations,0
+83,1,Wednesday,Midday,Male,105,First Nations,0
+83,1,Wednesday,Evening,Male,105,First Nations,0
+83,1,Thursday,Morning,Male,105,First Nations,0
+83,1,Thursday,Midday,Male,105,First Nations,0
+83,1,Thursday,Evening,Male,105,First Nations,0
+83,1,Friday,Morning,Male,105,First Nations,234
+83,1,Friday,Midday,Male,105,First Nations,367
+83,1,Friday,Evening,Male,105,First Nations,284
+83,1,Saturday,Morning,Male,105,First Nations,228
+83,1,Saturday,Midday,Male,105,First Nations,311
+83,1,Saturday,Evening,Male,105,First Nations,261
+83,2,Sunday,Morning,Male,105,First Nations,219
+83,2,Sunday,Midday,Male,105,First Nations,0
+83,2,Sunday,Evening,Male,105,First Nations,222
+83,2,Monday,Morning,Male,105,First Nations,217
+83,2,Monday,Midday,Male,105,First Nations,253
+83,2,Monday,Evening,Male,105,First Nations,0
+83,2,Tuesday,Morning,Male,105,First Nations,139
+83,2,Tuesday,Midday,Male,105,First Nations,113
+83,2,Tuesday,Evening,Male,105,First Nations,185
+83,2,Wednesday,Morning,Male,105,First Nations,259
+83,2,Wednesday,Midday,Male,105,First Nations,121
+83,2,Wednesday,Evening,Male,105,First Nations,0
+83,2,Thursday,Morning,Male,105,First Nations,243
+83,2,Thursday,Midday,Male,105,First Nations,155
+83,2,Thursday,Evening,Male,105,First Nations,351
+83,2,Friday,Morning,Male,105,First Nations,209
+83,2,Friday,Midday,Male,105,First Nations,87
+83,2,Friday,Evening,Male,105,First Nations,273
+83,2,Saturday,Morning,Male,105,First Nations,293
+83,2,Saturday,Midday,Male,105,First Nations,202
+83,2,Saturday,Evening,Male,105,First Nations,302
+84,1,Sunday,Morning,Female,71,First Nations,0
+84,1,Sunday,Midday,Female,71,First Nations,99
+84,1,Sunday,Evening,Female,71,First Nations,73
+84,1,Monday,Morning,Female,71,First Nations,0
+84,1,Monday,Midday,Female,71,First Nations,151
+84,1,Monday,Evening,Female,71,First Nations,206
+84,1,Tuesday,Morning,Female,71,First Nations,196
+84,1,Tuesday,Midday,Female,71,First Nations,262
+84,1,Tuesday,Evening,Female,71,First Nations,434
+84,1,Wednesday,Morning,Female,71,First Nations,0
+84,1,Wednesday,Midday,Female,71,First Nations,0
+84,1,Wednesday,Evening,Female,71,First Nations,174
+84,1,Thursday,Morning,Female,71,First Nations,250
+84,1,Thursday,Midday,Female,71,First Nations,0
+84,1,Thursday,Evening,Female,71,First Nations,242
+84,1,Friday,Morning,Female,71,First Nations,254
+84,1,Friday,Midday,Female,71,First Nations,321
+84,1,Friday,Evening,Female,71,First Nations,232
+84,1,Saturday,Morning,Female,71,First Nations,289
+84,1,Saturday,Midday,Female,71,First Nations,163
+84,1,Saturday,Evening,Female,71,First Nations,270
+84,2,Sunday,Morning,Female,71,First Nations,0
+84,2,Sunday,Midday,Female,71,First Nations,0
+84,2,Sunday,Evening,Female,71,First Nations,233
+84,2,Monday,Morning,Female,71,First Nations,292
+84,2,Monday,Midday,Female,71,First Nations,192
+84,2,Monday,Evening,Female,71,First Nations,279
+84,2,Tuesday,Morning,Female,71,First Nations,0
+84,2,Tuesday,Midday,Female,71,First Nations,271
+84,2,Tuesday,Evening,Female,71,First Nations,117
+84,2,Wednesday,Morning,Female,71,First Nations,176
+84,2,Wednesday,Midday,Female,71,First Nations,0
+84,2,Wednesday,Evening,Female,71,First Nations,228
+84,2,Thursday,Morning,Female,71,First Nations,289
+84,2,Thursday,Midday,Female,71,First Nations,0
+84,2,Thursday,Evening,Female,71,First Nations,0
+84,2,Friday,Morning,Female,71,First Nations,223
+84,2,Friday,Midday,Female,71,First Nations,335
+84,2,Friday,Evening,Female,71,First Nations,194
+84,2,Saturday,Morning,Female,71,First Nations,214
+84,2,Saturday,Midday,Female,71,First Nations,165
+84,2,Saturday,Evening,Female,71,First Nations,178
+85,1,Sunday,Morning,Male,92,Carthaginian,103
+85,1,Sunday,Midday,Male,92,Carthaginian,195
+85,1,Sunday,Evening,Male,92,Carthaginian,195
+85,1,Monday,Morning,Male,92,Carthaginian,0
+85,1,Monday,Midday,Male,92,Carthaginian,325
+85,1,Monday,Evening,Male,92,Carthaginian,291
+85,1,Tuesday,Morning,Male,92,Carthaginian,0
+85,1,Tuesday,Midday,Male,92,Carthaginian,161
+85,1,Tuesday,Evening,Male,92,Carthaginian,293
+85,1,Wednesday,Morning,Male,92,Carthaginian,233
+85,1,Wednesday,Midday,Male,92,Carthaginian,133
+85,1,Wednesday,Evening,Male,92,Carthaginian,234
+85,1,Thursday,Morning,Male,92,Carthaginian,364
+85,1,Thursday,Midday,Male,92,Carthaginian,284
+85,1,Thursday,Evening,Male,92,Carthaginian,241
+85,1,Friday,Morning,Male,92,Carthaginian,236
+85,1,Friday,Midday,Male,92,Carthaginian,533
+85,1,Friday,Evening,Male,92,Carthaginian,174
+85,1,Saturday,Morning,Male,92,Carthaginian,0
+85,1,Saturday,Midday,Male,92,Carthaginian,138
+85,1,Saturday,Evening,Male,92,Carthaginian,220
+85,2,Sunday,Morning,Male,92,Carthaginian,236
+85,2,Sunday,Midday,Male,92,Carthaginian,194
+85,2,Sunday,Evening,Male,92,Carthaginian,216
+85,2,Monday,Morning,Male,92,Carthaginian,144
+85,2,Monday,Midday,Male,92,Carthaginian,217
+85,2,Monday,Evening,Male,92,Carthaginian,169
+85,2,Tuesday,Morning,Male,92,Carthaginian,0
+85,2,Tuesday,Midday,Male,92,Carthaginian,178
+85,2,Tuesday,Evening,Male,92,Carthaginian,272
+85,2,Wednesday,Morning,Male,92,Carthaginian,222
+85,2,Wednesday,Midday,Male,92,Carthaginian,225
+85,2,Wednesday,Evening,Male,92,Carthaginian,240
+85,2,Thursday,Morning,Male,92,Carthaginian,330
+85,2,Thursday,Midday,Male,92,Carthaginian,0
+85,2,Thursday,Evening,Male,92,Carthaginian,380
+85,2,Friday,Morning,Male,92,Carthaginian,160
+85,2,Friday,Midday,Male,92,Carthaginian,296
+85,2,Friday,Evening,Male,92,Carthaginian,305
+85,2,Saturday,Morning,Male,92,Carthaginian,257
+85,2,Saturday,Midday,Male,92,Carthaginian,218
+85,2,Saturday,Evening,Male,92,Carthaginian,212
+86,1,Sunday,Morning,Male,65,Atlantian,232
+86,1,Sunday,Midday,Male,65,Atlantian,183
+86,1,Sunday,Evening,Male,65,Atlantian,115
+86,1,Monday,Morning,Male,65,Atlantian,0
+86,1,Monday,Midday,Male,65,Atlantian,0
+86,1,Monday,Evening,Male,65,Atlantian,0
+86,1,Tuesday,Morning,Male,65,Atlantian,0
+86,1,Tuesday,Midday,Male,65,Atlantian,150
+86,1,Tuesday,Evening,Male,65,Atlantian,0
+86,1,Wednesday,Morning,Male,65,Atlantian,169
+86,1,Wednesday,Midday,Male,65,Atlantian,0
+86,1,Wednesday,Evening,Male,65,Atlantian,0
+86,1,Thursday,Morning,Male,65,Atlantian,203
+86,1,Thursday,Midday,Male,65,Atlantian,228
+86,1,Thursday,Evening,Male,65,Atlantian,166
+86,1,Friday,Morning,Male,65,Atlantian,199
+86,1,Friday,Midday,Male,65,Atlantian,240
+86,1,Friday,Evening,Male,65,Atlantian,231
+86,1,Saturday,Morning,Male,65,Atlantian,0
+86,1,Saturday,Midday,Male,65,Atlantian,248
+86,1,Saturday,Evening,Male,65,Atlantian,231
+86,2,Sunday,Morning,Male,65,Atlantian,164
+86,2,Sunday,Midday,Male,65,Atlantian,0
+86,2,Sunday,Evening,Male,65,Atlantian,0
+86,2,Monday,Morning,Male,65,Atlantian,0
+86,2,Monday,Midday,Male,65,Atlantian,207
+86,2,Monday,Evening,Male,65,Atlantian,0
+86,2,Tuesday,Morning,Male,65,Atlantian,0
+86,2,Tuesday,Midday,Male,65,Atlantian,0
+86,2,Tuesday,Evening,Male,65,Atlantian,291
+86,2,Wednesday,Morning,Male,65,Atlantian,0
+86,2,Wednesday,Midday,Male,65,Atlantian,0
+86,2,Wednesday,Evening,Male,65,Atlantian,0
+86,2,Thursday,Morning,Male,65,Atlantian,160
+86,2,Thursday,Midday,Male,65,Atlantian,0
+86,2,Thursday,Evening,Male,65,Atlantian,162
+86,2,Friday,Morning,Male,65,Atlantian,307
+86,2,Friday,Midday,Male,65,Atlantian,0
+86,2,Friday,Evening,Male,65,Atlantian,199
+86,2,Saturday,Morning,Male,65,Atlantian,0
+86,2,Saturday,Midday,Male,65,Atlantian,0
+86,2,Saturday,Evening,Male,65,Atlantian,218
+87,1,Sunday,Morning,Female,37,Atlantian,0
+87,1,Sunday,Midday,Female,37,Atlantian,110
+87,1,Sunday,Evening,Female,37,Atlantian,0
+87,1,Monday,Morning,Female,37,Atlantian,0
+87,1,Monday,Midday,Female,37,Atlantian,0
+87,1,Monday,Evening,Female,37,Atlantian,0
+87,1,Tuesday,Morning,Female,37,Atlantian,0
+87,1,Tuesday,Midday,Female,37,Atlantian,0
+87,1,Tuesday,Evening,Female,37,Atlantian,0
+87,1,Wednesday,Morning,Female,37,Atlantian,0
+87,1,Wednesday,Midday,Female,37,Atlantian,0
+87,1,Wednesday,Evening,Female,37,Atlantian,196
+87,1,Thursday,Morning,Female,37,Atlantian,70
+87,1,Thursday,Midday,Female,37,Atlantian,0
+87,1,Thursday,Evening,Female,37,Atlantian,0
+87,1,Friday,Morning,Female,37,Atlantian,0
+87,1,Friday,Midday,Female,37,Atlantian,165
+87,1,Friday,Evening,Female,37,Atlantian,93
+87,1,Saturday,Morning,Female,37,Atlantian,0
+87,1,Saturday,Midday,Female,37,Atlantian,138
+87,1,Saturday,Evening,Female,37,Atlantian,156
+87,2,Sunday,Morning,Female,37,Atlantian,0
+87,2,Sunday,Midday,Female,37,Atlantian,0
+87,2,Sunday,Evening,Female,37,Atlantian,0
+87,2,Monday,Morning,Female,37,Atlantian,0
+87,2,Monday,Midday,Female,37,Atlantian,0
+87,2,Monday,Evening,Female,37,Atlantian,0
+87,2,Tuesday,Morning,Female,37,Atlantian,0
+87,2,Tuesday,Midday,Female,37,Atlantian,0
+87,2,Tuesday,Evening,Female,37,Atlantian,138
+87,2,Wednesday,Morning,Female,37,Atlantian,0
+87,2,Wednesday,Midday,Female,37,Atlantian,0
+87,2,Wednesday,Evening,Female,37,Atlantian,0
+87,2,Thursday,Morning,Female,37,Atlantian,0
+87,2,Thursday,Midday,Female,37,Atlantian,128
+87,2,Thursday,Evening,Female,37,Atlantian,0
+87,2,Friday,Morning,Female,37,Atlantian,0
+87,2,Friday,Midday,Female,37,Atlantian,0
+87,2,Friday,Evening,Female,37,Atlantian,0
+87,2,Saturday,Morning,Female,37,Atlantian,103
+87,2,Saturday,Midday,Female,37,Atlantian,0
+87,2,Saturday,Evening,Female,37,Atlantian,0
+88,1,Sunday,Morning,Female,84,Carthaginian,0
+88,1,Sunday,Midday,Female,84,Carthaginian,0
+88,1,Sunday,Evening,Female,84,Carthaginian,0
+88,1,Monday,Morning,Female,84,Carthaginian,305
+88,1,Monday,Midday,Female,84,Carthaginian,0
+88,1,Monday,Evening,Female,84,Carthaginian,0
+88,1,Tuesday,Morning,Female,84,Carthaginian,313
+88,1,Tuesday,Midday,Female,84,Carthaginian,254
+88,1,Tuesday,Evening,Female,84,Carthaginian,207
+88,1,Wednesday,Morning,Female,84,Carthaginian,0
+88,1,Wednesday,Midday,Female,84,Carthaginian,0
+88,1,Wednesday,Evening,Female,84,Carthaginian,226
+88,1,Thursday,Morning,Female,84,Carthaginian,0
+88,1,Thursday,Midday,Female,84,Carthaginian,188
+88,1,Thursday,Evening,Female,84,Carthaginian,164
+88,1,Friday,Morning,Female,84,Carthaginian,310
+88,1,Friday,Midday,Female,84,Carthaginian,282
+88,1,Friday,Evening,Female,84,Carthaginian,230
+88,1,Saturday,Morning,Female,84,Carthaginian,213
+88,1,Saturday,Midday,Female,84,Carthaginian,86
+88,1,Saturday,Evening,Female,84,Carthaginian,331
+88,2,Sunday,Morning,Female,84,Carthaginian,269
+88,2,Sunday,Midday,Female,84,Carthaginian,258
+88,2,Sunday,Evening,Female,84,Carthaginian,0
+88,2,Monday,Morning,Female,84,Carthaginian,0
+88,2,Monday,Midday,Female,84,Carthaginian,332
+88,2,Monday,Evening,Female,84,Carthaginian,0
+88,2,Tuesday,Morning,Female,84,Carthaginian,215
+88,2,Tuesday,Midday,Female,84,Carthaginian,0
+88,2,Tuesday,Evening,Female,84,Carthaginian,0
+88,2,Wednesday,Morning,Female,84,Carthaginian,207
+88,2,Wednesday,Midday,Female,84,Carthaginian,0
+88,2,Wednesday,Evening,Female,84,Carthaginian,0
+88,2,Thursday,Morning,Female,84,Carthaginian,179
+88,2,Thursday,Midday,Female,84,Carthaginian,205
+88,2,Thursday,Evening,Female,84,Carthaginian,70
+88,2,Friday,Morning,Female,84,Carthaginian,287
+88,2,Friday,Midday,Female,84,Carthaginian,0
+88,2,Friday,Evening,Female,84,Carthaginian,222
+88,2,Saturday,Morning,Female,84,Carthaginian,0
+88,2,Saturday,Midday,Female,84,Carthaginian,215
+88,2,Saturday,Evening,Female,84,Carthaginian,139
+89,1,Sunday,Morning,Female,110,Carthaginian,229
+89,1,Sunday,Midday,Female,110,Carthaginian,261
+89,1,Sunday,Evening,Female,110,Carthaginian,304
+89,1,Monday,Morning,Female,110,Carthaginian,269
+89,1,Monday,Midday,Female,110,Carthaginian,409
+89,1,Monday,Evening,Female,110,Carthaginian,395
+89,1,Tuesday,Morning,Female,110,Carthaginian,233
+89,1,Tuesday,Midday,Female,110,Carthaginian,348
+89,1,Tuesday,Evening,Female,110,Carthaginian,292
+89,1,Wednesday,Morning,Female,110,Carthaginian,217
+89,1,Wednesday,Midday,Female,110,Carthaginian,233
+89,1,Wednesday,Evening,Female,110,Carthaginian,145
+89,1,Thursday,Morning,Female,110,Carthaginian,314
+89,1,Thursday,Midday,Female,110,Carthaginian,133
+89,1,Thursday,Evening,Female,110,Carthaginian,418
+89,1,Friday,Morning,Female,110,Carthaginian,205
+89,1,Friday,Midday,Female,110,Carthaginian,314
+89,1,Friday,Evening,Female,110,Carthaginian,328
+89,1,Saturday,Morning,Female,110,Carthaginian,460
+89,1,Saturday,Midday,Female,110,Carthaginian,246
+89,1,Saturday,Evening,Female,110,Carthaginian,433
+89,2,Sunday,Morning,Female,110,Carthaginian,295
+89,2,Sunday,Midday,Female,110,Carthaginian,258
+89,2,Sunday,Evening,Female,110,Carthaginian,287
+89,2,Monday,Morning,Female,110,Carthaginian,436
+89,2,Monday,Midday,Female,110,Carthaginian,463
+89,2,Monday,Evening,Female,110,Carthaginian,440
+89,2,Tuesday,Morning,Female,110,Carthaginian,267
+89,2,Tuesday,Midday,Female,110,Carthaginian,329
+89,2,Tuesday,Evening,Female,110,Carthaginian,332
+89,2,Wednesday,Morning,Female,110,Carthaginian,97
+89,2,Wednesday,Midday,Female,110,Carthaginian,345
+89,2,Wednesday,Evening,Female,110,Carthaginian,215
+89,2,Thursday,Morning,Female,110,Carthaginian,317
+89,2,Thursday,Midday,Female,110,Carthaginian,275
+89,2,Thursday,Evening,Female,110,Carthaginian,294
+89,2,Friday,Morning,Female,110,Carthaginian,252
+89,2,Friday,Midday,Female,110,Carthaginian,167
+89,2,Friday,Evening,Female,110,Carthaginian,335
+89,2,Saturday,Morning,Female,110,Carthaginian,531
+89,2,Saturday,Midday,Female,110,Carthaginian,197
+89,2,Saturday,Evening,Female,110,Carthaginian,233
+90,1,Sunday,Morning,Male,53,Holy Roman,123
+90,1,Sunday,Midday,Male,53,Holy Roman,91
+90,1,Sunday,Evening,Male,53,Holy Roman,129
+90,1,Monday,Morning,Male,53,Holy Roman,135
+90,1,Monday,Midday,Male,53,Holy Roman,0
+90,1,Monday,Evening,Male,53,Holy Roman,153
+90,1,Tuesday,Morning,Male,53,Holy Roman,179
+90,1,Tuesday,Midday,Male,53,Holy Roman,173
+90,1,Tuesday,Evening,Male,53,Holy Roman,171
+90,1,Wednesday,Morning,Male,53,Holy Roman,107
+90,1,Wednesday,Midday,Male,53,Holy Roman,0
+90,1,Wednesday,Evening,Male,53,Holy Roman,86
+90,1,Thursday,Morning,Male,53,Holy Roman,0
+90,1,Thursday,Midday,Male,53,Holy Roman,99
+90,1,Thursday,Evening,Male,53,Holy Roman,127
+90,1,Friday,Morning,Male,53,Holy Roman,255
+90,1,Friday,Midday,Male,53,Holy Roman,204
+90,1,Friday,Evening,Male,53,Holy Roman,0
+90,1,Saturday,Morning,Male,53,Holy Roman,205
+90,1,Saturday,Midday,Male,53,Holy Roman,0
+90,1,Saturday,Evening,Male,53,Holy Roman,125
+90,2,Sunday,Morning,Male,53,Holy Roman,60
+90,2,Sunday,Midday,Male,53,Holy Roman,0
+90,2,Sunday,Evening,Male,53,Holy Roman,141
+90,2,Monday,Morning,Male,53,Holy Roman,0
+90,2,Monday,Midday,Male,53,Holy Roman,181
+90,2,Monday,Evening,Male,53,Holy Roman,0
+90,2,Tuesday,Morning,Male,53,Holy Roman,132
+90,2,Tuesday,Midday,Male,53,Holy Roman,0
+90,2,Tuesday,Evening,Male,53,Holy Roman,105
+90,2,Wednesday,Morning,Male,53,Holy Roman,106
+90,2,Wednesday,Midday,Male,53,Holy Roman,123
+90,2,Wednesday,Evening,Male,53,Holy Roman,107
+90,2,Thursday,Morning,Male,53,Holy Roman,0
+90,2,Thursday,Midday,Male,53,Holy Roman,201
+90,2,Thursday,Evening,Male,53,Holy Roman,90
+90,2,Friday,Morning,Male,53,Holy Roman,124
+90,2,Friday,Midday,Male,53,Holy Roman,116
+90,2,Friday,Evening,Male,53,Holy Roman,0
+90,2,Saturday,Morning,Male,53,Holy Roman,0
+90,2,Saturday,Midday,Male,53,Holy Roman,0
+90,2,Saturday,Evening,Male,53,Holy Roman,0
+91,1,Sunday,Morning,Male,69,Carthaginian,99
+91,1,Sunday,Midday,Male,69,Carthaginian,83
+91,1,Sunday,Evening,Male,69,Carthaginian,148
+91,1,Monday,Morning,Male,69,Carthaginian,97
+91,1,Monday,Midday,Male,69,Carthaginian,117
+91,1,Monday,Evening,Male,69,Carthaginian,274
+91,1,Tuesday,Morning,Male,69,Carthaginian,150
+91,1,Tuesday,Midday,Male,69,Carthaginian,189
+91,1,Tuesday,Evening,Male,69,Carthaginian,181
+91,1,Wednesday,Morning,Male,69,Carthaginian,185
+91,1,Wednesday,Midday,Male,69,Carthaginian,89
+91,1,Wednesday,Evening,Male,69,Carthaginian,182
+91,1,Thursday,Morning,Male,69,Carthaginian,172
+91,1,Thursday,Midday,Male,69,Carthaginian,168
+91,1,Thursday,Evening,Male,69,Carthaginian,138
+91,1,Friday,Morning,Male,69,Carthaginian,229
+91,1,Friday,Midday,Male,69,Carthaginian,202
+91,1,Friday,Evening,Male,69,Carthaginian,83
+91,1,Saturday,Morning,Male,69,Carthaginian,291
+91,1,Saturday,Midday,Male,69,Carthaginian,128
+91,1,Saturday,Evening,Male,69,Carthaginian,141
+91,2,Sunday,Morning,Male,69,Carthaginian,139
+91,2,Sunday,Midday,Male,69,Carthaginian,253
+91,2,Sunday,Evening,Male,69,Carthaginian,118
+91,2,Monday,Morning,Male,69,Carthaginian,190
+91,2,Monday,Midday,Male,69,Carthaginian,138
+91,2,Monday,Evening,Male,69,Carthaginian,119
+91,2,Tuesday,Morning,Male,69,Carthaginian,180
+91,2,Tuesday,Midday,Male,69,Carthaginian,234
+91,2,Tuesday,Evening,Male,69,Carthaginian,290
+91,2,Wednesday,Morning,Male,69,Carthaginian,169
+91,2,Wednesday,Midday,Male,69,Carthaginian,134
+91,2,Wednesday,Evening,Male,69,Carthaginian,158
+91,2,Thursday,Morning,Male,69,Carthaginian,117
+91,2,Thursday,Midday,Male,69,Carthaginian,133
+91,2,Thursday,Evening,Male,69,Carthaginian,155
+91,2,Friday,Morning,Male,69,Carthaginian,197
+91,2,Friday,Midday,Male,69,Carthaginian,183
+91,2,Friday,Evening,Male,69,Carthaginian,166
+91,2,Saturday,Morning,Male,69,Carthaginian,332
+91,2,Saturday,Midday,Male,69,Carthaginian,287
+91,2,Saturday,Evening,Male,69,Carthaginian,269
+92,1,Sunday,Morning,Female,39,Carthaginian,0
+92,1,Sunday,Midday,Female,39,Carthaginian,0
+92,1,Sunday,Evening,Female,39,Carthaginian,0
+92,1,Monday,Morning,Female,39,Carthaginian,0
+92,1,Monday,Midday,Female,39,Carthaginian,0
+92,1,Monday,Evening,Female,39,Carthaginian,0
+92,1,Tuesday,Morning,Female,39,Carthaginian,0
+92,1,Tuesday,Midday,Female,39,Carthaginian,0
+92,1,Tuesday,Evening,Female,39,Carthaginian,172
+92,1,Wednesday,Morning,Female,39,Carthaginian,134
+92,1,Wednesday,Midday,Female,39,Carthaginian,0
+92,1,Wednesday,Evening,Female,39,Carthaginian,114
+92,1,Thursday,Morning,Female,39,Carthaginian,0
+92,1,Thursday,Midday,Female,39,Carthaginian,122
+92,1,Thursday,Evening,Female,39,Carthaginian,155
+92,1,Friday,Morning,Female,39,Carthaginian,242
+92,1,Friday,Midday,Female,39,Carthaginian,277
+92,1,Friday,Evening,Female,39,Carthaginian,188
+92,1,Saturday,Morning,Female,39,Carthaginian,112
+92,1,Saturday,Midday,Female,39,Carthaginian,119
+92,1,Saturday,Evening,Female,39,Carthaginian,129
+92,2,Sunday,Morning,Female,39,Carthaginian,173
+92,2,Sunday,Midday,Female,39,Carthaginian,0
+92,2,Sunday,Evening,Female,39,Carthaginian,119
+92,2,Monday,Morning,Female,39,Carthaginian,94
+92,2,Monday,Midday,Female,39,Carthaginian,0
+92,2,Monday,Evening,Female,39,Carthaginian,180
+92,2,Tuesday,Morning,Female,39,Carthaginian,0
+92,2,Tuesday,Midday,Female,39,Carthaginian,0
+92,2,Tuesday,Evening,Female,39,Carthaginian,0
+92,2,Wednesday,Morning,Female,39,Carthaginian,70
+92,2,Wednesday,Midday,Female,39,Carthaginian,0
+92,2,Wednesday,Evening,Female,39,Carthaginian,0
+92,2,Thursday,Morning,Female,39,Carthaginian,126
+92,2,Thursday,Midday,Female,39,Carthaginian,0
+92,2,Thursday,Evening,Female,39,Carthaginian,132
+92,2,Friday,Morning,Female,39,Carthaginian,0
+92,2,Friday,Midday,Female,39,Carthaginian,172
+92,2,Friday,Evening,Female,39,Carthaginian,204
+92,2,Saturday,Morning,Female,39,Carthaginian,143
+92,2,Saturday,Midday,Female,39,Carthaginian,160
+92,2,Saturday,Evening,Female,39,Carthaginian,153
+93,1,Sunday,Morning,Male,66,Holy Roman,0
+93,1,Sunday,Midday,Male,66,Holy Roman,73
+93,1,Sunday,Evening,Male,66,Holy Roman,130
+93,1,Monday,Morning,Male,66,Holy Roman,0
+93,1,Monday,Midday,Male,66,Holy Roman,0
+93,1,Monday,Evening,Male,66,Holy Roman,168
+93,1,Tuesday,Morning,Male,66,Holy Roman,0
+93,1,Tuesday,Midday,Male,66,Holy Roman,377
+93,1,Tuesday,Evening,Male,66,Holy Roman,0
+93,1,Wednesday,Morning,Male,66,Holy Roman,0
+93,1,Wednesday,Midday,Male,66,Holy Roman,0
+93,1,Wednesday,Evening,Male,66,Holy Roman,124
+93,1,Thursday,Morning,Male,66,Holy Roman,0
+93,1,Thursday,Midday,Male,66,Holy Roman,0
+93,1,Thursday,Evening,Male,66,Holy Roman,129
+93,1,Friday,Morning,Male,66,Holy Roman,266
+93,1,Friday,Midday,Male,66,Holy Roman,181
+93,1,Friday,Evening,Male,66,Holy Roman,239
+93,1,Saturday,Morning,Male,66,Holy Roman,276
+93,1,Saturday,Midday,Male,66,Holy Roman,0
+93,1,Saturday,Evening,Male,66,Holy Roman,111
+93,2,Sunday,Morning,Male,66,Holy Roman,0
+93,2,Sunday,Midday,Male,66,Holy Roman,0
+93,2,Sunday,Evening,Male,66,Holy Roman,0
+93,2,Monday,Morning,Male,66,Holy Roman,198
+93,2,Monday,Midday,Male,66,Holy Roman,0
+93,2,Monday,Evening,Male,66,Holy Roman,106
+93,2,Tuesday,Morning,Male,66,Holy Roman,284
+93,2,Tuesday,Midday,Male,66,Holy Roman,122
+93,2,Tuesday,Evening,Male,66,Holy Roman,290
+93,2,Wednesday,Morning,Male,66,Holy Roman,166
+93,2,Wednesday,Midday,Male,66,Holy Roman,0
+93,2,Wednesday,Evening,Male,66,Holy Roman,191
+93,2,Thursday,Morning,Male,66,Holy Roman,83
+93,2,Thursday,Midday,Male,66,Holy Roman,227
+93,2,Thursday,Evening,Male,66,Holy Roman,182
+93,2,Friday,Morning,Male,66,Holy Roman,166
+93,2,Friday,Midday,Male,66,Holy Roman,310
+93,2,Friday,Evening,Male,66,Holy Roman,245
+93,2,Saturday,Morning,Male,66,Holy Roman,133
+93,2,Saturday,Midday,Male,66,Holy Roman,215
+93,2,Saturday,Evening,Male,66,Holy Roman,230
+94,1,Sunday,Morning,Female,59,First Nations,162
+94,1,Sunday,Midday,Female,59,First Nations,190
+94,1,Sunday,Evening,Female,59,First Nations,165
+94,1,Monday,Morning,Female,59,First Nations,200
+94,1,Monday,Midday,Female,59,First Nations,195
+94,1,Monday,Evening,Female,59,First Nations,131
+94,1,Tuesday,Morning,Female,59,First Nations,195
+94,1,Tuesday,Midday,Female,59,First Nations,242
+94,1,Tuesday,Evening,Female,59,First Nations,310
+94,1,Wednesday,Morning,Female,59,First Nations,223
+94,1,Wednesday,Midday,Female,59,First Nations,147
+94,1,Wednesday,Evening,Female,59,First Nations,140
+94,1,Thursday,Morning,Female,59,First Nations,230
+94,1,Thursday,Midday,Female,59,First Nations,76
+94,1,Thursday,Evening,Female,59,First Nations,188
+94,1,Friday,Morning,Female,59,First Nations,190
+94,1,Friday,Midday,Female,59,First Nations,359
+94,1,Friday,Evening,Female,59,First Nations,198
+94,1,Saturday,Morning,Female,59,First Nations,224
+94,1,Saturday,Midday,Female,59,First Nations,107
+94,1,Saturday,Evening,Female,59,First Nations,203
+94,2,Sunday,Morning,Female,59,First Nations,128
+94,2,Sunday,Midday,Female,59,First Nations,143
+94,2,Sunday,Evening,Female,59,First Nations,177
+94,2,Monday,Morning,Female,59,First Nations,260
+94,2,Monday,Midday,Female,59,First Nations,156
+94,2,Monday,Evening,Female,59,First Nations,170
+94,2,Tuesday,Morning,Female,59,First Nations,191
+94,2,Tuesday,Midday,Female,59,First Nations,132
+94,2,Tuesday,Evening,Female,59,First Nations,228
+94,2,Wednesday,Morning,Female,59,First Nations,215
+94,2,Wednesday,Midday,Female,59,First Nations,115
+94,2,Wednesday,Evening,Female,59,First Nations,187
+94,2,Thursday,Morning,Female,59,First Nations,214
+94,2,Thursday,Midday,Female,59,First Nations,159
+94,2,Thursday,Evening,Female,59,First Nations,97
+94,2,Friday,Morning,Female,59,First Nations,118
+94,2,Friday,Midday,Female,59,First Nations,291
+94,2,Friday,Evening,Female,59,First Nations,226
+94,2,Saturday,Morning,Female,59,First Nations,197
+94,2,Saturday,Midday,Female,59,First Nations,118
+94,2,Saturday,Evening,Female,59,First Nations,293
+95,1,Sunday,Morning,Male,76,Carthaginian,153
+95,1,Sunday,Midday,Male,76,Carthaginian,0
+95,1,Sunday,Evening,Male,76,Carthaginian,0
+95,1,Monday,Morning,Male,76,Carthaginian,179
+95,1,Monday,Midday,Male,76,Carthaginian,152
+95,1,Monday,Evening,Male,76,Carthaginian,133
+95,1,Tuesday,Morning,Male,76,Carthaginian,0
+95,1,Tuesday,Midday,Male,76,Carthaginian,167
+95,1,Tuesday,Evening,Male,76,Carthaginian,0
+95,1,Wednesday,Morning,Male,76,Carthaginian,0
+95,1,Wednesday,Midday,Male,76,Carthaginian,0
+95,1,Wednesday,Evening,Male,76,Carthaginian,185
+95,1,Thursday,Morning,Male,76,Carthaginian,168
+95,1,Thursday,Midday,Male,76,Carthaginian,0
+95,1,Thursday,Evening,Male,76,Carthaginian,138
+95,1,Friday,Morning,Male,76,Carthaginian,130
+95,1,Friday,Midday,Male,76,Carthaginian,337
+95,1,Friday,Evening,Male,76,Carthaginian,232
+95,1,Saturday,Morning,Male,76,Carthaginian,185
+95,1,Saturday,Midday,Male,76,Carthaginian,0
+95,1,Saturday,Evening,Male,76,Carthaginian,223
+95,2,Sunday,Morning,Male,76,Carthaginian,177
+95,2,Sunday,Midday,Male,76,Carthaginian,0
+95,2,Sunday,Evening,Male,76,Carthaginian,153
+95,2,Monday,Morning,Male,76,Carthaginian,226
+95,2,Monday,Midday,Male,76,Carthaginian,0
+95,2,Monday,Evening,Male,76,Carthaginian,0
+95,2,Tuesday,Morning,Male,76,Carthaginian,117
+95,2,Tuesday,Midday,Male,76,Carthaginian,0
+95,2,Tuesday,Evening,Male,76,Carthaginian,0
+95,2,Wednesday,Morning,Male,76,Carthaginian,125
+95,2,Wednesday,Midday,Male,76,Carthaginian,0
+95,2,Wednesday,Evening,Male,76,Carthaginian,202
+95,2,Thursday,Morning,Male,76,Carthaginian,0
+95,2,Thursday,Midday,Male,76,Carthaginian,246
+95,2,Thursday,Evening,Male,76,Carthaginian,0
+95,2,Friday,Morning,Male,76,Carthaginian,0
+95,2,Friday,Midday,Male,76,Carthaginian,208
+95,2,Friday,Evening,Male,76,Carthaginian,223
+95,2,Saturday,Morning,Male,76,Carthaginian,353
+95,2,Saturday,Midday,Male,76,Carthaginian,0
+95,2,Saturday,Evening,Male,76,Carthaginian,219
+96,1,Sunday,Morning,Male,101,Atlantian,177
+96,1,Sunday,Midday,Male,101,Atlantian,0
+96,1,Sunday,Evening,Male,101,Atlantian,86
+96,1,Monday,Morning,Male,101,Atlantian,348
+96,1,Monday,Midday,Male,101,Atlantian,0
+96,1,Monday,Evening,Male,101,Atlantian,335
+96,1,Tuesday,Morning,Male,101,Atlantian,0
+96,1,Tuesday,Midday,Male,101,Atlantian,234
+96,1,Tuesday,Evening,Male,101,Atlantian,384
+96,1,Wednesday,Morning,Male,101,Atlantian,194
+96,1,Wednesday,Midday,Male,101,Atlantian,0
+96,1,Wednesday,Evening,Male,101,Atlantian,199
+96,1,Thursday,Morning,Male,101,Atlantian,395
+96,1,Thursday,Midday,Male,101,Atlantian,0
+96,1,Thursday,Evening,Male,101,Atlantian,259
+96,1,Friday,Morning,Male,101,Atlantian,285
+96,1,Friday,Midday,Male,101,Atlantian,359
+96,1,Friday,Evening,Male,101,Atlantian,0
+96,1,Saturday,Morning,Male,101,Atlantian,208
+96,1,Saturday,Midday,Male,101,Atlantian,0
+96,1,Saturday,Evening,Male,101,Atlantian,235
+96,2,Sunday,Morning,Male,101,Atlantian,242
+96,2,Sunday,Midday,Male,101,Atlantian,350
+96,2,Sunday,Evening,Male,101,Atlantian,209
+96,2,Monday,Morning,Male,101,Atlantian,328
+96,2,Monday,Midday,Male,101,Atlantian,0
+96,2,Monday,Evening,Male,101,Atlantian,217
+96,2,Tuesday,Morning,Male,101,Atlantian,238
+96,2,Tuesday,Midday,Male,101,Atlantian,0
+96,2,Tuesday,Evening,Male,101,Atlantian,279
+96,2,Wednesday,Morning,Male,101,Atlantian,522
+96,2,Wednesday,Midday,Male,101,Atlantian,276
+96,2,Wednesday,Evening,Male,101,Atlantian,415
+96,2,Thursday,Morning,Male,101,Atlantian,0
+96,2,Thursday,Midday,Male,101,Atlantian,0
+96,2,Thursday,Evening,Male,101,Atlantian,207
+96,2,Friday,Morning,Male,101,Atlantian,202
+96,2,Friday,Midday,Male,101,Atlantian,234
+96,2,Friday,Evening,Male,101,Atlantian,351
+96,2,Saturday,Morning,Male,101,Atlantian,290
+96,2,Saturday,Midday,Male,101,Atlantian,222
+96,2,Saturday,Evening,Male,101,Atlantian,300
+97,1,Sunday,Morning,Female,28,Atlantian,0
+97,1,Sunday,Midday,Female,28,Atlantian,139
+97,1,Sunday,Evening,Female,28,Atlantian,121
+97,1,Monday,Morning,Female,28,Atlantian,0
+97,1,Monday,Midday,Female,28,Atlantian,0
+97,1,Monday,Evening,Female,28,Atlantian,0
+97,1,Tuesday,Morning,Female,28,Atlantian,136
+97,1,Tuesday,Midday,Female,28,Atlantian,0
+97,1,Tuesday,Evening,Female,28,Atlantian,0
+97,1,Wednesday,Morning,Female,28,Atlantian,0
+97,1,Wednesday,Midday,Female,28,Atlantian,0
+97,1,Wednesday,Evening,Female,28,Atlantian,128
+97,1,Thursday,Morning,Female,28,Atlantian,0
+97,1,Thursday,Midday,Female,28,Atlantian,0
+97,1,Thursday,Evening,Female,28,Atlantian,0
+97,1,Friday,Morning,Female,28,Atlantian,0
+97,1,Friday,Midday,Female,28,Atlantian,182
+97,1,Friday,Evening,Female,28,Atlantian,192
+97,1,Saturday,Morning,Female,28,Atlantian,0
+97,1,Saturday,Midday,Female,28,Atlantian,117
+97,1,Saturday,Evening,Female,28,Atlantian,220
+97,2,Sunday,Morning,Female,28,Atlantian,155
+97,2,Sunday,Midday,Female,28,Atlantian,0
+97,2,Sunday,Evening,Female,28,Atlantian,201
+97,2,Monday,Morning,Female,28,Atlantian,0
+97,2,Monday,Midday,Female,28,Atlantian,0
+97,2,Monday,Evening,Female,28,Atlantian,0
+97,2,Tuesday,Morning,Female,28,Atlantian,201
+97,2,Tuesday,Midday,Female,28,Atlantian,0
+97,2,Tuesday,Evening,Female,28,Atlantian,0
+97,2,Wednesday,Morning,Female,28,Atlantian,200
+97,2,Wednesday,Midday,Female,28,Atlantian,0
+97,2,Wednesday,Evening,Female,28,Atlantian,151
+97,2,Thursday,Morning,Female,28,Atlantian,93
+97,2,Thursday,Midday,Female,28,Atlantian,0
+97,2,Thursday,Evening,Female,28,Atlantian,0
+97,2,Friday,Morning,Female,28,Atlantian,0
+97,2,Friday,Midday,Female,28,Atlantian,0
+97,2,Friday,Evening,Female,28,Atlantian,114
+97,2,Saturday,Morning,Female,28,Atlantian,0
+97,2,Saturday,Midday,Female,28,Atlantian,0
+97,2,Saturday,Evening,Female,28,Atlantian,318
+98,1,Sunday,Morning,Male,72,First Nations,0
+98,1,Sunday,Midday,Male,72,First Nations,281
+98,1,Sunday,Evening,Male,72,First Nations,180
+98,1,Monday,Morning,Male,72,First Nations,243
+98,1,Monday,Midday,Male,72,First Nations,0
+98,1,Monday,Evening,Male,72,First Nations,155
+98,1,Tuesday,Morning,Male,72,First Nations,0
+98,1,Tuesday,Midday,Male,72,First Nations,320
+98,1,Tuesday,Evening,Male,72,First Nations,132
+98,1,Wednesday,Morning,Male,72,First Nations,154
+98,1,Wednesday,Midday,Male,72,First Nations,0
+98,1,Wednesday,Evening,Male,72,First Nations,0
+98,1,Thursday,Morning,Male,72,First Nations,0
+98,1,Thursday,Midday,Male,72,First Nations,215
+98,1,Thursday,Evening,Male,72,First Nations,147
+98,1,Friday,Morning,Male,72,First Nations,113
+98,1,Friday,Midday,Male,72,First Nations,0
+98,1,Friday,Evening,Male,72,First Nations,140
+98,1,Saturday,Morning,Male,72,First Nations,0
+98,1,Saturday,Midday,Male,72,First Nations,131
+98,1,Saturday,Evening,Male,72,First Nations,0
+98,2,Sunday,Morning,Male,72,First Nations,175
+98,2,Sunday,Midday,Male,72,First Nations,231
+98,2,Sunday,Evening,Male,72,First Nations,143
+98,2,Monday,Morning,Male,72,First Nations,219
+98,2,Monday,Midday,Male,72,First Nations,217
+98,2,Monday,Evening,Male,72,First Nations,0
+98,2,Tuesday,Morning,Male,72,First Nations,138
+98,2,Tuesday,Midday,Male,72,First Nations,0
+98,2,Tuesday,Evening,Male,72,First Nations,164
+98,2,Wednesday,Morning,Male,72,First Nations,154
+98,2,Wednesday,Midday,Male,72,First Nations,0
+98,2,Wednesday,Evening,Male,72,First Nations,151
+98,2,Thursday,Morning,Male,72,First Nations,180
+98,2,Thursday,Midday,Male,72,First Nations,0
+98,2,Thursday,Evening,Male,72,First Nations,104
+98,2,Friday,Morning,Male,72,First Nations,0
+98,2,Friday,Midday,Male,72,First Nations,318
+98,2,Friday,Evening,Male,72,First Nations,235
+98,2,Saturday,Morning,Male,72,First Nations,205
+98,2,Saturday,Midday,Male,72,First Nations,0
+98,2,Saturday,Evening,Male,72,First Nations,193
+99,1,Sunday,Morning,Male,25,Atlantian,0
+99,1,Sunday,Midday,Male,25,Atlantian,156
+99,1,Sunday,Evening,Male,25,Atlantian,0
+99,1,Monday,Morning,Male,25,Atlantian,0
+99,1,Monday,Midday,Male,25,Atlantian,96
+99,1,Monday,Evening,Male,25,Atlantian,0
+99,1,Tuesday,Morning,Male,25,Atlantian,0
+99,1,Tuesday,Midday,Male,25,Atlantian,162
+99,1,Tuesday,Evening,Male,25,Atlantian,0
+99,1,Wednesday,Morning,Male,25,Atlantian,68
+99,1,Wednesday,Midday,Male,25,Atlantian,0
+99,1,Wednesday,Evening,Male,25,Atlantian,0
+99,1,Thursday,Morning,Male,25,Atlantian,0
+99,1,Thursday,Midday,Male,25,Atlantian,139
+99,1,Thursday,Evening,Male,25,Atlantian,0
+99,1,Friday,Morning,Male,25,Atlantian,0
+99,1,Friday,Midday,Male,25,Atlantian,0
+99,1,Friday,Evening,Male,25,Atlantian,0
+99,1,Saturday,Morning,Male,25,Atlantian,266
+99,1,Saturday,Midday,Male,25,Atlantian,0
+99,1,Saturday,Evening,Male,25,Atlantian,0
+99,2,Sunday,Morning,Male,25,Atlantian,137
+99,2,Sunday,Midday,Male,25,Atlantian,0
+99,2,Sunday,Evening,Male,25,Atlantian,88
+99,2,Monday,Morning,Male,25,Atlantian,0
+99,2,Monday,Midday,Male,25,Atlantian,125
+99,2,Monday,Evening,Male,25,Atlantian,176
+99,2,Tuesday,Morning,Male,25,Atlantian,0
+99,2,Tuesday,Midday,Male,25,Atlantian,0
+99,2,Tuesday,Evening,Male,25,Atlantian,67
+99,2,Wednesday,Morning,Male,25,Atlantian,0
+99,2,Wednesday,Midday,Male,25,Atlantian,0
+99,2,Wednesday,Evening,Male,25,Atlantian,72
+99,2,Thursday,Morning,Male,25,Atlantian,164
+99,2,Thursday,Midday,Male,25,Atlantian,164
+99,2,Thursday,Evening,Male,25,Atlantian,0
+99,2,Friday,Morning,Male,25,Atlantian,139
+99,2,Friday,Midday,Male,25,Atlantian,0
+99,2,Friday,Evening,Male,25,Atlantian,306
+99,2,Saturday,Morning,Male,25,Atlantian,0
+99,2,Saturday,Midday,Male,25,Atlantian,0
+99,2,Saturday,Evening,Male,25,Atlantian,207
+100,1,Sunday,Morning,Female,63,First Nations,0
+100,1,Sunday,Midday,Female,63,First Nations,0
+100,1,Sunday,Evening,Female,63,First Nations,228
+100,1,Monday,Morning,Female,63,First Nations,397
+100,1,Monday,Midday,Female,63,First Nations,0
+100,1,Monday,Evening,Female,63,First Nations,225
+100,1,Tuesday,Morning,Female,63,First Nations,106
+100,1,Tuesday,Midday,Female,63,First Nations,0
+100,1,Tuesday,Evening,Female,63,First Nations,185
+100,1,Wednesday,Morning,Female,63,First Nations,233
+100,1,Wednesday,Midday,Female,63,First Nations,208
+100,1,Wednesday,Evening,Female,63,First Nations,0
+100,1,Thursday,Morning,Female,63,First Nations,75
+100,1,Thursday,Midday,Female,63,First Nations,305
+100,1,Thursday,Evening,Female,63,First Nations,119
+100,1,Friday,Morning,Female,63,First Nations,333
+100,1,Friday,Midday,Female,63,First Nations,252
+100,1,Friday,Evening,Female,63,First Nations,176
+100,1,Saturday,Morning,Female,63,First Nations,152
+100,1,Saturday,Midday,Female,63,First Nations,304
+100,1,Saturday,Evening,Female,63,First Nations,213
+100,2,Sunday,Morning,Female,63,First Nations,0
+100,2,Sunday,Midday,Female,63,First Nations,0
+100,2,Sunday,Evening,Female,63,First Nations,0
+100,2,Monday,Morning,Female,63,First Nations,239
+100,2,Monday,Midday,Female,63,First Nations,202
+100,2,Monday,Evening,Female,63,First Nations,292
+100,2,Tuesday,Morning,Female,63,First Nations,0
+100,2,Tuesday,Midday,Female,63,First Nations,0
+100,2,Tuesday,Evening,Female,63,First Nations,289
+100,2,Wednesday,Morning,Female,63,First Nations,169
+100,2,Wednesday,Midday,Female,63,First Nations,220
+100,2,Wednesday,Evening,Female,63,First Nations,97
+100,2,Thursday,Morning,Female,63,First Nations,200
+100,2,Thursday,Midday,Female,63,First Nations,219
+100,2,Thursday,Evening,Female,63,First Nations,0
+100,2,Friday,Morning,Female,63,First Nations,216
+100,2,Friday,Midday,Female,63,First Nations,327
+100,2,Friday,Evening,Female,63,First Nations,348
+100,2,Saturday,Morning,Female,63,First Nations,187
+100,2,Saturday,Midday,Female,63,First Nations,317
+100,2,Saturday,Evening,Female,63,First Nations,314

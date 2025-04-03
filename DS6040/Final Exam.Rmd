@@ -1,0 +1,78 @@
+---
+title: "Final Exam"
+author: "Ben Pelczynski"
+date: "2024-12-12"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Problem Statement
+
+I am attempting to determine how the demographic features and time period impact amount the engagement on VisageTome. Specifically, I will use a fitted model to determine if and how the age, gender, and nationality of a user can impact the amount of minutes they spend on the platform, as well as if and how the comtemporary time of day and day of the week has an impact on the platform. I will also be analyzing the model's ability to detect the presence of super-users, and if any useful insights can be gleaned from their presence.
+
+## Approach
+
+As the outcome variable MinPerBlock is measuring a discrete count of events over a period time, I have to decided to fit it to a hierarchical Poisson distibution. The model formula will assign a coefficient to the feature of gender, age, nationality, day_of_week, and time_of_day; additionally, the demographic features (age, gender, and nationality) will be hierachically grouped by their corresponding user.
+
+## Prior Rationale
+
+In order to maximize the impact of the data on the posterior distribution, I have selected the uninformative prior $N(0,1000)$ for the regression coefficient means, and the uninformative prior $Cauchy(0,5)$ (also known as the Half Cauchy prior) for the coefficient and error variances.
+
+## Findings
+
+```{r}
+library(brms)
+library(tidyverse)
+
+data = read.csv("DS6040F24_finaldat.csv")
+
+fit <- brm(
+formula = MinPerBlock ~ day_of_week + time_of_day + gender + age + nationality + (1 + gender + age + nationality | user_id),
+data = data,
+family = poisson(),
+prior = c(set_prior("normal(0, 1000)", class = "b"), set_prior("cauchy(0, 5)", class = "sd")),
+chains = 2,
+iter = 2000,
+warmup = 1000,
+seed = 123
+)
+summary(fit)
+```
+
+```{r}
+user_intercepts <- data.frame(ranef(fit)$user_id[, , "Intercept"]) 
+user_intercepts <- user_intercepts %>% mutate(User = rownames(user_intercepts)) %>% arrange(desc(user_intercepts$Estimate))
+
+head(aggregate(x= data$MinPerBlock, by = list(data$user_id), FUN = mean) %>% arrange(desc(x)), 10)
+head(user_intercepts, 10)
+
+user_intercepts$super <- ifelse(user_intercepts$Estimate > 0.3, "1", "0")
+
+ggplot(user_intercepts, aes(x = User, y = Estimate)) + geom_point(aes(colour = super)) + geom_errorbar(aes(ymin = Q2.5, ymax = Q97.5)) + theme(text = element_text(size = 6), axis.text.x = element_text(angle = 90, hjust = 1)) + scale_color_manual(values = c("black", "red"))
+
+```
+
+## Summary
+
+The gender and nationality demographics do seem to have somewhat of an effect on the amount of minutes users spend on the platform. Specifically, male users have a higher probability of spending more minutes on average on the platform than female users do, and from the nationality categories, Atlantians have the lowest probability of above-average levels of engagement, while Romans and particularly Holy Romans have the highest above-average levels of engagement. Curiously, the age of a user seems to have essentially no effect on their probable level of engagement to the platform. In terms of when the user engages with the platform, both the day of the week and the time of day does have an effect on the level of engagement, though time of day much less significantly so. It is clear from the coefficient levels that Fridays and Saturdays are the days with the greatest likelihood of engagement, and similarly evenings are the time of day with the greatest likelihood of engagement, while Wednesdays and Thurdsay and midday are respectively the days and times with the least likelihood of engagement.
+
+My criteria for defining the "super users" of the platform is primarily based on looking at their average level of engagement while controlling for demographic information (in other words, the users who are using the platform much more often than other individuals in their demographic group). I am also secondarily considering the users' absolute average MinPerBlock. Based on this criteria, the super users of the platform in this dataset are:
+
+-   User 76, a 57-year-old Carthaginian Female.
+-   User 6, a 42-year-old Atlantian Male.
+-   User 9, a 57-year-old Holy Roman Female.
+-   User 24, a 54-year-old First Nations Female.
+-   User 13, a 47-year-old Carthaginian Female.
+-   User 78, an 85-year-old Atlantian Male.
+-   User 40, an 111-year-old Atlantian Male, who is especially notable for also having the highest absolute average MinPerBlock.
+-   User 50, a 49-year-old First Nations Female.
+
+## Diagnostics
+
+```{r}
+plot(fit)
+pp_check(fit)
+```

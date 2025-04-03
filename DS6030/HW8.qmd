@@ -1,0 +1,234 @@
+---
+title: "Homework #8: Boosting" 
+author: "**Ben Pelczynski**"
+format: ds6030hw-html
+---
+
+::: {style="background-color:yellow; color:red; display: block; border-color: black; padding:1em"}
+This is an **independent assignment**. Do not discuss or work with classmates.
+:::
+
+```{r config, include=FALSE}
+# Set global configurations and settings here
+knitr::opts_chunk$set()                 # set global chunk options
+ggplot2::theme_set(ggplot2::theme_bw()) # set ggplot2 theme
+```
+
+# Required R packages and Directories {.unnumbered .unlisted}
+
+```{r packages, message=FALSE, warning=FALSE}
+data_url = "https://archive.ics.uci.edu/static/public/275/bike+sharing+dataset.zip"
+library(tidyverse)
+library(tidymodels)
+```
+
+# Problem 1: Bike Sharing Data
+
+This homework will work with bike rental data from Washington D.C.
+
+## a. Load data
+
+Load the *hourly* `Bikesharing` data from the [UCI ML Repository](https://archive.ics.uci.edu/dataset/275/bike+sharing+dataset).
+
+::: {.callout-note title="Solution"}
+```{r}
+library(ucimlrepo)
+bike_sharing = fetch_ucirepo(id=275) 
+rental_data = bike_sharing$data$original[,-1]
+```
+:::
+
+## b. Data Cleaning
+
+Check out the variable descriptions in the [Additional Variable Information](https://archive.ics.uci.edu/dataset/275/bike+sharing+dataset). To prepare the data for modeling, do the following:
+
+1.  Convert the `weathersit` to an *ordered factor*.
+2.  Unnormalize `temp` and `atemp` and convert to Fahrenheit.
+3.  Unnormalize `windspeed`.
+
+::: {.callout-note title="Solution"}
+```{r}
+rental_data[,9] = as.ordered(rental_data[,9])
+rental_data[,10] = rental_data[,10] * 47 - 8
+rental_data[,11] = rental_data[,11] * 66 - 16
+rental_data[,10] = rental_data[,10] * 1.8 + 32
+rental_data[,11] = rental_data[,11] * 1.8 + 32
+rental_data[,13] = rental_data[,13] * 67
+```
+:::
+
+## c. Missing times
+
+Not every hour of every day is represented in these data. Some times, like 2011-03-15 hr=3, is due to daylight savings time. Other times, like 2011-01-02 hr=5, is probably due to the data collection process which ignored any times when `cnt = 0`.
+
+This may not be perfect, but do the following to account for missing times:
+
+1.  Create new rows/observations for all missing date-hr combinations that we think are due to actual zero counts. That is, exclude daylight savings. Set the outcome variables to zero (`causal = 0`, `registered = 0`, and `cnt = 0`) for these new observations. `tidyr::complete()` can help.
+
+2.  Fill in the other missing feature values with values from previous hour. For example, the `temp` for 2011-01-02 **hr=5** should be set to the `temp` from the non-missing 2011-01-02 **hr=4**. `tidyr::fill()` can help.
+
+::: {.callout-note title="Solution"}
+```{r}
+rental_data = rental_data %>% complete(dteday, hr, fill = list(casual = 0, registered = 0, cnt = 0)) %>% fill(season, yr, mnth, holiday, weekday, workingday, weathersit, temp, atemp, hum, windspeed)
+```
+:::
+
+## d. New predictors
+
+1.  Add the variable `doy` to represent the day of the year (1-366).
+2.  Add the variable `days` to represent the *fractional number of days* since `2011-01-01`. For example hr=2 of 2011-01-02 is `r round(1 + 2/24, 3)`.
+3.  Add lagged counts: autoregressive. Add the variable `cnt_ar` to be the `cnt` in the previous hour. You will need to set the value for `cnt_ar` for the 1st observation.\
+4.  Add lagged counts: same time previous day, or a lag of 24 hours. You will need to set the values for the first 24 hours.
+
+Hints:
+
+-   The `lubridate` package (part of `tidymodels`) is useful for dealing with dates and times.
+-   `dplyr::lag()` can help with making the lagged variables.
+
+::: {.callout-note title="Solution"}
+```{r}
+library(lubridate)
+
+rental_data = rental_data %>% mutate(day = yday(dteday)) %>% 
+  mutate(days = round(yr * 365 + day + hr/24, 3)) %>%
+  mutate(cnt_ar = lag(cnt, default = 0)) %>%
+  mutate(cnt_stpd = lag(cnt, n = 24, default = 0))
+```
+:::
+
+## e. Train-Test split
+
+Randomly select 1000 observations for the test set and use the remaining for training.
+
+::: {.callout-note title="Solution"}
+```{r}
+n = 1000
+p = n / nrow(rental_data)
+rental_split = initial_split(rental_data, prop = 1 - p)
+rental_train =  training(rental_split)
+rental_test = testing(rental_split)
+```
+:::
+
+# Problem 2: Predicting bike rentals
+
+## a. Poisson loss
+
+The outcome variables, number of renters, are counts (i.e., non-negative integers). For count data, the variance often scales with the expected count. One way to accommodate this is to model the counts as a Poisson distribution with rate $\lambda_i = \lambda(x_i)$. In lightgbm, the "poisson" objective uses an ensemble of trees to model the *log of the rate* $F(x) = \log \lambda(x)$. The poisson loss function (negative log likelihood) for prediction $F_i = \log \lambda_i$ is $\ell(y_i, F_i) = -y_iF_i + e^{F_i}$ where $y_i$ is the count for observation $i$ and $F_i$ is the ensemble prediction.
+
+-   Given the current prediction $\hat{F}_i$, what is the *gradient* and *hessian* for observation $i$?
+-   Page 12 of the [Taylor Expansion notes](lectures/taylor-expansion.pdf) shows that each new iteration of boosting attempts to find the tree that minimizes $\sum_i w_i (z_i - \hat{f}(x_i))^2$. What are the values for $w_i$ and $z_i$ for the "poisson" objective (in terms of $\hat{\lambda}_i$ *or* $e^{\hat{F}_i}$).
+
+::: {.callout-note title="Solution"}
+The gradient and hessian for observation $i$ are equivalent to the first and second derivative (respectively) of the poisson loss function $\ell(y_i, F_i)$. Thus, given $\hat{F}_i$ the gradient for observation $i$ $g_i=\frac{∂\ell(F_i)}{∂F_i}=-y_i+e^{F_i}$ and the hessian for observation $i$ $h_i=\frac{∂^2\ell(F_i)}{∂F^2_i}=e^{F_i}$ . In turn as the values for $w_i$ and $z_i$ are $h_i/2$ and $-g_i/h_i$ respectively, the value of $w_i=\frac{e^{\hat{F}_i}}{2}$, and $z_i=-\frac{-y_i+e^{\hat{F}_i}}{e^{\hat{F}_i}}=\frac{y_i}{e^{\hat{F}_i}}-1$.
+:::
+
+## b. LightGBM Tuning
+
+Tune a lightgbm model on the training data to predict the number of total number of renters (`cnt`). Do *not* use `registered` or `causal` as predictors!
+
+-   Use the "poisson" objective; this is a good starting place for count data. This sets the loss function to the negative Poisson log-likelihood.
+
+-   You need to tune at least two parameters: one related to the complexity of the trees (e.g., tree depth) and another related to the complexity of the ensemble (e.g., number of trees/iterations). [LightGBM documentation on parameter tuning](https://lightgbm.readthedocs.io/en/latest/Parameters-Tuning.html). And [LightGBM list of all parameters](https://github.com/microsoft/LightGBM/blob/master/docs/Parameters.rst).
+
+-   You are free to tune other parameters as well, just be cautious of how long you are willing to wait for results.
+
+i.  List relevant tuning parameter values, even those left at their default values. Indicate which values are non-default (either through tuning or just selecting). You can get these from the `params` element of a fitted lightgbm model, e.g., `lgbm_fitted$params`.
+
+ii. Indicate what method was used for tuning (e.g., type of cross-validation).
+
+::: {.callout-note title="Solution"}
+```{r}
+library(lightgbm)
+
+max_depth = seq(3, 10, 1)
+num_iterations = seq(100,400,50)
+
+set.seed(115)
+folds = rep(1:10, length=nrow(rental_train)) %>% sample()
+
+opt_i = -1
+opt_j = -1
+min_mse = 10000000000000000000
+
+set.seed(1080)
+for(i in max_depth){
+  for(j in num_iterations){
+    rental_tune = 0
+    #10-fold cross validation for tuning evaluation
+    for(k in 1:10){
+      test = rental_train[(folds == k),]
+      train = rental_train[(folds != k),]
+      trainX = train[,!names(train) %in% c('dteday','cnt',"registered","causal")]
+      trainY = train[,names(train) %in% c('cnt')]
+      testX = test[,!names(test) %in% c('dteday','cnt',"registered","causal")]
+      testY = test[,names(test) %in% c('cnt')]
+      lgbm_train = lgb.Dataset(data = as.matrix(trainX), 
+                           colnames = colnames(trainX),
+                           label = as.matrix(trainY))
+      
+      lgbm_fit <- lightgbm(
+        data = lgbm_train,
+        params = list(
+          objective = 'poisson',
+          max_depth=i,
+          num_leaves=2**i,
+          num_iterations=j
+        ),
+        verbose = -1
+      )
+      yhat = predict(lgbm_fit, as.matrix(testX))
+      tune_mse = rental_tune + sapply((testY - yhat)^2, mean)/10
+    }
+    if(tune_mse < min_mse){
+      opt_i = i
+      opt_j = j
+      min_mse = tune_mse
+    }
+  }
+}
+
+finalX = rental_train[,!names(rental_train) %in% c('dteday','cnt',"registered","causal")]
+finalY = rental_train[,names(rental_train) %in% c('cnt')]
+lgbm_train = lgb.Dataset(data = as.matrix(finalX), 
+                           colnames = colnames(finalX),
+                           label = as.matrix(finalY))
+      
+final_lgbm <- lightgbm(
+  data = lgbm_train,
+  params = list(
+    objective = 'poisson',
+    max_depth=opt_i,
+    num_leaves=2**opt_i,
+    num_iterations=opt_j
+  ),
+  verbose = -1
+)
+final_lgbm$params
+```
+:::
+
+## c. Evaluation
+
+Make predictions on the test data and evaluate. Report the point estimate and 95% confidence interval for the poisson log loss *and* the mean absolute error.
+
+::: {.callout-note title="Solution"}
+```{r}
+
+yhat = predict(final_lgbm, as.matrix(rental_test[,!names(rental_test) %in% c('dteday','cnt',"registered","causal")]))
+rentalY = rental_test[,names(rental_test) %in% c('cnt')]
+
+final_mae = sapply(abs(rentalY - yhat), mean)
+final_pll = poisson_log_loss(tibble(rentalY = rentalY$cnt, yhat = yhat), rentalY, yhat)
+margin_error = qt(p=.025, df=nrow(rentalY)-1,lower.tail=F) * sapply(abs(rentalY - yhat), sd)
+
+
+print(tibble(poisson_point_estimate = final_pll$.estimate, 
+             poisson_CI_lower = final_pll$.estimate - margin_error, 
+             poisson_CI_upper = final_pll$.estimate + margin_error))
+print(tibble(mae_point_estimate = final_mae, 
+             mae_CI_lower = final_mae - margin_error, 
+             mae_CI_upper = final_mae + margin_error))
+
+```
+:::

@@ -1,0 +1,177 @@
+---
+title: "Homework #10: Density Estimation" 
+author: "**Benton Pelczynski**"
+format: ds6030hw-html
+---
+
+```{r config, include=FALSE}
+# Set global configurations and settings here
+knitr::opts_chunk$set()                 # set global chunk options
+ggplot2::theme_set(ggplot2::theme_bw()) # set ggplot2 theme
+```
+
+# Required R packages and Directories {.unnumbered .unlisted}
+
+```{r packages, message=FALSE, warning=FALSE}
+data_dir = 'https://mdporter.github.io/teaching/data' # data directory
+library(ks)        # functions for KDE
+library(tidyverse) # functions for data manipulation   
+```
+
+# Problem 1 Geographic Profiling
+
+Geographic profiling, a method developed in criminology, can be used to estimate the [home location (roost) of animals](https://www.sciencedirect.com/science/article/pii/S0022519305004157) based on a collection of sightings. The approach requires an estimate of the distribution the animal will travel from their roost to forage for food.
+
+A sample of $283$ distances that pipistrelle bats traveled (in meters) from their roost can be found at:
+
+-   **Bat Data**: \<`r file.path(data_dir, 'geo_profile.csv')`\>
+
+One probability model for the distance these bats will travel is: \begin{align*}
+f(x; \theta) = \frac{x}{\theta} \exp \left( - \frac{x^2}{2 \theta} \right)
+\end{align*} where the parameter $\theta > 0$ controls how far they are willing to travel.
+
+## a. Derive a closed-form expression for the MLE for $\theta$ (i.e., show the math).
+
+::: {.callout-note title="Solution"}
+$L(\theta)=\prod^{n}_{i=1}f(x_i;\theta)=\prod^{n}_{i=1}\frac{x_i}{\theta}exp(-\frac{x^2_i}{2\theta})$
+
+$L(\theta)=(\frac{1}{\theta})^n\prod^{n}_{i=1}x_i\cdot\prod^{n}_{i=1}exp(-\frac{x^2_i}{2\theta})=(\frac{1}{\theta})^n\prod^{n}_{i=1}x_i\cdot exp(-\frac{\sum^{n}_{i=1}x^2_i}{2\theta})$
+
+$logL(\theta)=-nlog\theta+\sum^{n}_{i=1}logx_i-\frac{\sum^{n}_{i=1}x^2_i}{2\theta}$
+
+$\frac{dlogL(\theta)}{d\theta}=\frac{-n}{\theta}+\frac{\sum^{n}_{i=1}x^2_i}{2\theta^2}$
+
+$\frac{-n}{\theta}+\frac{\sum^{n}_{i=1}x^2_i}{2\theta^2}=0$
+
+$-n\theta+\frac{\sum^{n}_{i=1}x^2_i}{2}=0$
+
+$\frac{\sum^{n}_{i=1}x^2_i}{2}=n\theta$
+
+$\frac{\sum^{n}_{i=1}x^2_i}{2n}=\theta$
+:::
+
+## b. Estimate $\theta$ for the bat data using MLE?
+
+Calculate using the solution to part a, or use computational methods.
+
+::: {.callout-note title="Solution"}
+```{r}
+bat = read.csv("geo_profile.csv", header = FALSE)
+
+theta = sum(bat$V1^2)/566
+theta
+```
+:::
+
+## c. Plot the estimated density
+
+Using the MLE value of $\theta$ from part b, calculate the estimated density at a set of evaluation points between 0 and 8 meters. Plot the estimated density.
+
+-   The x-axis should be distance and y-axis should be density (pdf).
+
+::: {.callout-note title="Solution"}
+```{r}
+eval = tibble(x = seq(0, 8, by=0.01))
+eval = eval %>% mutate(density = (eval$x/theta)*exp(-(eval$x^2)/(2*theta)))
+
+ggplot(eval, aes(x=x, y=density)) + geom_point()
+```
+:::
+
+## d. Estimate the density using KDE.
+
+Report the bandwidth you selected and produce a plot of the estimated density.
+
+::: {.callout-note title="Solution"}
+```{r}
+bat.kde = kde(bat$V1)
+
+bat.kde$h
+tibble(x = bat.kde$eval.points, y=bat.kde$estimate) %>%
+ggplot(aes(x,y)) + geom_point()
+```
+:::
+
+## e. Which model do you prefer, the parametric or KDE? Why?
+
+::: {.callout-note title="Solution"}
+I prefer KDE as model for estimating the distance distribution. While the parametric model is smoother and easier to use, the fact that it is based on an assumed distribution suggests it may be oversmoothed. On the other hand, the bat data has a large enough sample size that we can expect the KDE model to be more accurate to the actual distribution. That said, the models are similar enough to where I would expect their performance to generally be about the same.
+:::
+
+# Problem 2: Interstate Crash Density
+
+Interstate 64 (I-64) is a major east-west road that passes just south of Charlottesville. Where and when are the most dangerous places/times to be on I-64? The crash data (link below) gives the mile marker and fractional time-of-week for crashes that occurred on I-64 between mile marker 87 and 136 in 2016. The time-of-week data takes a numeric value of *\<dow\>.\<hour/24\>*, where the dow starts at 0 for Sunday (6 for Sat) and the decimal gives the time of day information. Thus `time=0.0417` corresponds to Sun at 1am and `time=6.5` corresponds to Sat at noon.
+
+-   **Crash Data**: \<`r file.path(data_dir, 'crashes16.csv')`\>
+
+## a. Crash Data
+
+Extract the crashes and make a scatter plot with mile marker on x-axis and time on y-axis.
+
+::: {.callout-note title="Solution"}
+```{r}
+crash = read.csv("crashes16.csv")
+
+ggplot(crash, aes(mile, time)) + geom_point()
+```
+:::
+
+## b. Use KDE to estimate the *mile marker* density.
+
+-   Report the bandwidth.
+-   Plot the density estimate.
+
+::: {.callout-note title="Solution"}
+```{r}
+mile.kde = kde(crash$mile)
+
+mile.kde$h
+tibble(x = mile.kde$eval.points, y=mile.kde$estimate) %>%
+ggplot(aes(x,y)) + geom_point()
+```
+:::
+
+## c. Use KDE to estimate the temporal *time-of-week* density.
+
+-   Report the bandwidth.
+-   Plot the density estimate.
+
+::: {.callout-note title="Solution"}
+```{r}
+time.kde = kde(crash$time)
+
+time.kde$h
+tibble(x = time.kde$eval.points, y=time.kde$estimate) %>%
+ggplot(aes(x,y)) + geom_point()
+```
+:::
+
+## d. Use KDE to estimate the bivariate mile-time density.
+
+-   Report the bandwidth parameters.
+-   Plot the bivariate density estimate.
+
+::: {.callout-note title="Solution"}
+```{r}
+miletime.kde = kde(crash)
+
+miletime.kde$H
+ggplot(reshape2::melt(miletime.kde$estimate)) +
+  geom_contour_filled(aes(x = Var1, y = Var2, z = value, color = stat(level)),
+               bins = 9)
+
+plot(miletime.kde,
+cont = c(10, 20, 30, 40, 50, 60, 70, 80, 90),
+las=1, xlim = c(80, 140), ylim=c(-1, 8))
+points(crash, pch=19, cex=.5)
+grid()
+```
+:::
+
+## e. Crash Hotspot
+
+Based on the estimated density, approximate the most dangerous place and time to drive on this stretch of road. Identify the mile marker and time-of-week pair (within a few miles and hours).
+
+::: {.callout-note title="Solution"}
+Based the estimated density, the most dangerous place/time pairs are around Mile Marker 118 at about 11pm on Mondays, and around Mile Marker 103 at about 10pm on Fridays.
+:::

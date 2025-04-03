@@ -1,0 +1,65 @@
+---
+title: "Homework 4: Analyzing Coffee Shop Data"
+author: "Ben Pelczynski"
+date: "2024-12-03"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Problem Statement
+
+I am attempting to determine how a store manager's personality can impact the sales of food and coffee. To that end, I am going to use the quantified personality characteristics of 20 store managers (specifically their conscientiousness and neuroticism) to fit a model of store performance. This model will demonstrate how the characteristics affect the sales of food and coffee, how the effect differs between sales of food and coffee, and how the stores would perform when controlling for the manager's personality.
+
+## Approach
+
+$Sales_{i, s}=\beta_{0s}+\beta_{1s}con_{i,s}+\beta_{2s} neur_{i,s}+\beta_{3s}con_{i,s}F_{i,s}+\beta_{4s} neur_{i,s}F_{i,s}+\beta_{5s} F_{i,s}+\epsilon_{i,s}$
+
+$\beta_s, \epsilon_s = N(\mu_\beta, 0, \sigma^2_\beta, \sigma^2_\epsilon)$
+
+This model is built to fit the sales of each observation $i$ of each store $s$ into a hierarchical Normal distribution. It does so by fitting $\beta$ coefficients to each store's conscientiousness values $con_{i,s}$ and neuroticism values $neur_{i,s}$. The model also takes into account whether the observation is for food sales ($F_{i.s}=1$) or coffee sales ($F_{i.s}=0$), and the interactions between the food indicator and the conscientiousness and neuroticism values (specifically, the first two terms measure the effects on coffee sales, and the latter two terms measure the difference in that effect for food sales). The model also accounts for the residual error $\epsilon_{i,s}$, which is assumed to be normally distributed around a mean 0.
+
+## Prior Rationale
+
+In order to maximize the impact of the data on the posterior distribution, I have selected the uninformative conjugate prior $N(0,1000)$ for the regression coefficient means, and the uninformative conjugate prior $Cauchy(0,5)$ (also known as the Half Cauchy prior) for the coefficient and error variances.
+
+## Findings
+
+```{r}
+library(brms)
+library(tidyverse)
+
+sales = read.csv("sales-ds6040.csv")
+
+sales_fit = brm(sales ~ con + neur + con*food + neur*food + (1 + con + neur|store), data = sales,  prior = c(set_prior("normal(0, 1000)", class = "b"), set_prior("cauchy(0, 5)", class = "sd")), refresh = 0)
+summary(sales_fit)
+```
+
+```{r}
+con_eff <- conditional_effects(sales_fit, effects = "con:food", method = "posterior_epred")
+neur_eff <- conditional_effects(sales_fit, effects = "neur:food", method = "posterior_epred")
+con_eff
+neur_eff
+```
+
+```{r}
+store_intercepts <- data.frame(ranef(sales_fit)$store[, , "Intercept"]) 
+store_intercepts <- store_intercepts %>% mutate(Store = rownames(store_intercepts))
+full_intercept <- fixef(sales_fit)["Intercept", "Estimate"]
+store_intercepts
+
+ggplot(store_intercepts, aes(x = Store, y = Estimate)) + geom_point() + geom_errorbar(aes(ymin = Q2.5, ymax = Q97.5)) + geom_hline(yintercept =  full_intercept, color = "red")
+```
+
+## Summary
+
+Perhaps unsurprisingly, the conscientiousness and neuroticism of a store's manager does appear to have an effect on the store's sales. Specifically a store manager's conscientiousness produces a positive correlation to sales, while their neuroticism produces a negative correlation. It is also worth noting that conscientiousness has a higher magnitude than neuroticism, and thus has a stronger impact on sales. As for the question of whether coffee and food sales impacted differently, the slopes in the conditional effects visualizations suggest that conscientiousness does have a much greater impact on food sales than it does coffee sales, but that neuroticism affects food and coffee sales in just about the same way. Finally, when controlling for the store managers' characteristics, we can see that stores 15, 17, and especially 14 perform better than average.
+
+## Diagnostics
+
+```{r}
+plot(sales_fit)
+pp_check(sales_fit)
+```

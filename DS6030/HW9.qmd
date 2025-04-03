@@ -1,0 +1,242 @@
+---
+title: "Homework #9: Feature Importance" 
+author: "**Benton Pelczynski**"
+format: ds6030hw-html
+---
+
+```{r config, include=FALSE}
+# Set global configurations and settings here
+knitr::opts_chunk$set()                 # set global chunk options
+ggplot2::theme_set(ggplot2::theme_bw()) # set ggplot2 theme
+```
+
+# Required R packages and Directories {.unnumbered .unlisted}
+
+```{r packages, message=FALSE, warning=FALSE}
+dir_data = 'https://mdporter.github.io/teaching/data/' # data directory
+library(tidyverse) # functions for data manipulation   
+```
+
+# Problem 1: Permutation Feature Importance
+
+Vanderbilt Biostats has collected data on Titanic survivors (https://hbiostat.org/data/). I have done some simple processing and split into a training and test sets.
+
+-   [titanic_train.csv](%60r%20file.path(dir_data,%20%22titanic_train.csv%22)%60)
+-   [titanic_test.csv](%60r%20file.path(dir_data,%20%22titanic_test.csv%22)%60)
+
+We are going to use this data to investigate feature importance. Use `Class`, `Sex`, `Age`, `Fare`, `sibsp` (number of siblings or spouse on board), `parch` (number of parents or children on board), and `Joined` (city where passenger boarded) for the predictor variables (features) and `Survived` as the outcome variable.
+
+## a. Load the titanic traning and testing data
+
+::: {.callout-note title="Solution"}
+```{r}
+ti_train = read.csv("titanic_train.csv")
+ti_test = read.csv("titanic_test.csv")
+
+ti_train$Age[is.na(ti_train$Age)] <- 0
+ti_train$Fare[is.na(ti_train$Fare)] <- 0
+ti_test$Fare[is.na(ti_test$Fare)] <- 0
+```
+:::
+
+## b. Method 1: Built-in importance scores
+
+Fit a tree ensemble model (e.g., Random Forest, boosted tree) on the training data. You are free to use any method to select the tuning parameters.
+
+Report the built-in feature importance scores and produce a barplot with feature on the x-axis and importance on the y-axis.
+
+::: {.callout-note title="Solution"}
+```{r}
+library(ranger)
+
+results <- tibble()
+
+for(i in 1:7){
+  for(j in 1:10){
+    mtry = i
+    min.bucket = j
+    oob_mse = 0
+    for(x in 1:5){
+      rf_model <- ranger(Survived ~ Class+Sex+Age+Fare+sibsp+parch+Joined, 
+                         data = ti_train, importance = "impurity", 
+                         mtry = mtry, min.bucket = min.bucket, seed = i)
+      oob_mse = oob_mse + rf_model$prediction.error
+    }
+    newres = tibble(loss_function = oob_mse/5, mtry = i, min.bucket = j)
+    results <- rbind(results, newres)
+  }
+}
+
+opt_result <- results[which.min(results$loss_function),]
+rf_final_model <- ranger(Survived ~ Class+Sex+Age+Fare+sibsp+parch+Joined, 
+                         data = ti_train, importance = "impurity", 
+                         mtry = opt_result$mtry, min.bucket = opt_result$min.bucket, 
+                         seed = opt_result$mtry)
+
+importance <- data.frame(rf_final_model$variable.importance)
+importance$feature <- row.names(importance)
+importance
+ggplot(importance, aes(feature)) + geom_bar(aes(weight = rf_final_model.variable.importance))+ ylab("importance")
+```
+:::
+
+## c. Performance
+
+Report the performance of the model fit from (a.) on the test data. Use the log-loss (where $M$ is the size of the test data): $$ 
+\text{log-loss}(\hat{p}) = - \frac{1}{M} \sum_{i=1}^m [y_i \log \, \hat{p}_i + (1 - y_i) \log \, (1 - \hat{p}_i)]
+$$
+
+::: {.callout-note title="Solution"}
+```{r}
+library(Metrics)
+
+p_hat = predict(rf_final_model, ti_test, type="response")
+base_loss = logLoss(ti_test$Survived, p_hat$predictions)
+base_loss
+```
+:::
+
+## d. Method 2: Permute *after* fitting
+
+Use the fitted model from question (a.) to perform permutation feature importance. Shuffle/permute each variable individually on the *test set* before making predictions. Record the loss. Repeat $M=10$ times and produce a boxplot of the change in loss (change from reported loss from part b.).
+
+::: {.callout-note title="Solution"}
+```{r}
+set.seed(2121)
+perm_loss = tibble(feature = character(), loss_change = numeric())
+for(i in importance$feature){
+  for(j in 1:10){
+    ti_test_perm <- ti_test
+    ti_test_perm[[i]] <- sample(ti_test_perm[[i]])
+    perm_p_hat = predict(rf_final_model, ti_test_perm, type="response")
+    perm_loss = perm_loss %>% add_row(data.frame(feature = i, loss_change = logLoss(ti_test$Survived, perm_p_hat$predictions) - base_loss))
+  }
+}
+ggplot(perm_loss, aes(y=feature)) + geom_boxplot(aes(x=loss_change))
+```
+:::
+
+## e. Method 3: Permute *before* fitting
+
+For this approach, shuffle/permute the *training data* and re-fit the ensemble model. Evaluate the predictions on the (unaltered) test data. Repeat $M=10$ times (for each predictor variable) and produce a boxplot of the change in loss.
+
+::: {.callout-note title="Solution"}
+```{r}
+set.seed(2121)
+perm_loss = tibble(feature = character(), loss_change = numeric())
+for(i in importance$feature){
+  for(j in 1:10){
+    ti_train_perm <- ti_train
+    ti_train_perm[[i]] <- sample(ti_train_perm[[i]])
+    perm_rf_final_model <- ranger(Survived ~ Class+Sex+Age+Fare+sibsp+parch+Joined, 
+                         data = ti_train_perm, importance = "impurity", 
+                         mtry = opt_result$mtry, min.bucket = opt_result$min.bucket, 
+                         seed = opt_result$mtry)
+    perm_p_hat = predict(perm_rf_final_model, ti_test, type="response")
+    perm_loss = perm_loss %>% add_row(data.frame(feature = i, loss_change = logLoss(ti_test$Survived, perm_p_hat$predictions) - base_loss))
+  }
+}
+ggplot(perm_loss, aes(y=feature)) + geom_boxplot(aes(x=loss_change))
+```
+:::
+
+## f. Understanding
+
+Describe the benefits of each of the three approaches to measure feature importance.
+
+::: {.callout-note title="Solution"}
+The built-in importance scores are very useful for determining the impact of individual features, allowing us to see which features are very significant to the outcome (e.g. Sex), and more importantly which feature aren't very signifigant and can be discarded to reduce dimensionality and improve performance (e.g. Joined, parch, sibsp). Fitting permutation reinforces and builds upon this hierarchy of importance; determining which variable causes the greatest reduction in performance when randomly shuffled detemines which variable has the greatest impact upon the predictions (and so on). Post-fitting permutation reduces the risk of overfitting to features based solely on the training data, while pre-fitting permutation is slightly more reliable at determining what features the model can rely upon, though both give about the same performance relative to the variables overall.
+:::
+
+# Problem 2: Effects of correlated predictors
+
+This problem will illustrate what happens to the importance scores when there are highly associated predictors.
+
+## a. Create an almost duplicate feature
+
+Create a new feature `Sex2` that is 95% the same as `Sex`. Do this by selecting 5% of training ($n=50$) and testing ($n=15$) data and flip the `Sex` value.
+
+::: {.callout-note title="Solution"}
+```{r}
+set.seed(700)
+ti_train2 = ti_train %>% mutate(Sex2 = Sex) %>% 
+  mutate(Sex2 = ifelse(row_number() %in% sample(row_number(), 50), 
+                       ifelse(Sex == "male", "female", "male"), Sex2))
+ti_test2 = ti_test %>% mutate(Sex2 = Sex) %>% 
+  mutate(Sex2 = ifelse(row_number() %in% sample(row_number(), 15), 
+                       ifelse(Sex == "male", "female", "male"), Sex2))
+```
+:::
+
+## b. Method 1: Built-in importance
+
+Fit the same model as in Problem 1b, but use the new data that includes `Sex2` (i.e., use both `Sex` and `Sex2` in the model). Calculate the built-in feature importance score and produce a barplot.
+
+::: {.callout-note title="Solution"}
+```{r}
+rf_final_model <- ranger(Survived ~ Class+Sex+Age+Fare+sibsp+parch+Joined+Sex2, 
+                         data = ti_train2, importance = "impurity", 
+                         mtry = opt_result$mtry, min.bucket = opt_result$min.bucket, 
+                         seed = opt_result$mtry)
+
+importance <- data.frame(rf_final_model$variable.importance)
+importance$feature <- row.names(importance)
+importance
+ggplot(importance, aes(feature)) + geom_bar(aes(weight = rf_final_model.variable.importance))+ ylab("importance")
+```
+:::
+
+## c. Method 2: Permute *after* fitting
+
+Redo Method 2 (problem 1d) on the new data/model and produce a boxplot of importance scores. The importance score is defined as the difference in loss.
+
+::: {.callout-note title="Solution"}
+```{r}
+p_hat = predict(rf_final_model, ti_test2, type="response")
+base_loss = logLoss(ti_test2$Survived, p_hat$predictions)
+
+set.seed(2121)
+perm_loss = tibble(feature = character(), loss_change = numeric())
+for(i in importance$feature){
+  for(j in 1:10){
+    ti_test_perm <- ti_test2
+    ti_test_perm[[i]] <- sample(ti_test_perm[[i]])
+    perm_p_hat = predict(rf_final_model, ti_test_perm, type="response")
+    perm_loss = perm_loss %>% add_row(data.frame(feature = i, loss_change = logLoss(ti_test2$Survived, perm_p_hat$predictions) - base_loss))
+  }
+}
+ggplot(perm_loss, aes(y=feature)) + geom_boxplot(aes(x=loss_change))
+```
+:::
+
+## d. Method 3: Permute *before* fitting
+
+Redo Method 3 (problem 1e) on the new data and produce a boxplot of importance scores. The importance score is defined as the difference in loss.
+
+::: {.callout-note title="Solution"}
+```{r}
+set.seed(2121)
+perm_loss = tibble(feature = character(), loss_change = numeric())
+for(i in importance$feature){
+  for(j in 1:10){
+    ti_train_perm <- ti_train2
+    ti_train_perm[[i]] <- sample(ti_train_perm[[i]])
+    perm_rf_final_model <- ranger(Survived ~ Class+Sex+Age+Fare+sibsp+parch+Joined+Sex2, 
+                         data = ti_train_perm, importance = "impurity", 
+                         mtry = opt_result$mtry, min.bucket = opt_result$min.bucket, 
+                         seed = opt_result$mtry)
+    perm_p_hat = predict(perm_rf_final_model, ti_test2, type="response")
+    perm_loss = perm_loss %>% add_row(data.frame(feature = i, loss_change = logLoss(ti_test2$Survived, perm_p_hat$predictions) - base_loss))
+  }
+}
+ggplot(perm_loss, aes(y=feature)) + geom_boxplot(aes(x=loss_change))
+```
+:::
+
+## e. Understanding
+
+Describe how the addition of the almost duplicated predictor impacted the feature importance results.
+
+::: {.callout-note title="Solution"}
+The near-duplicate Sex2 significantly reduced the importance of the Sex feature; while it is still the highest ranked feature in built-in score, it is much closer to features like Age and Fare than before. This is most noticeable in the measure of pre-fitting permutation, which actually ranks Age above Sex in terms of importance. This is because the loss of performance in Sex upon permutation is mitigated by the model instead fitting on Sex2, which predicts nearly the same performance. Notably, the measure of post-fitting permutation still has Sex as the significantly most important factor (though to a much lesser extent than without Sex2); this is because the post-fitting permutation uses a model that still regards Sex as the most important feature, while this is not necessarily true for the pre-fitting permutation.
+:::
